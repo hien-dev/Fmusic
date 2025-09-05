@@ -1,0 +1,10 @@
+{
+  "common": {
+    "ok": "OK",
+    "cancel": "Cancel"
+  },
+  "settings": {
+    "title": "Settings",
+    "theme": "Theme"
+  }
+}

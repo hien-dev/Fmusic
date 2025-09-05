@@ -1,0 +1,10 @@
+{
+  "common": {
+    "ok": "Đồng ý",
+    "cancel": "Hủy"
+  },
+  "settings": {
+    "title": "Cài đặt",
+    "theme": "Giao diện"
+  }
+}

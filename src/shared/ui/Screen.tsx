@@ -1,11 +1,11 @@
 import { useDS } from "@shared/provider/DSProvider";
 import React from "react";
-import { ViewStyle } from "react-native";
+import { StyleProp, ViewStyle } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 
 interface Props {
   children: React.ReactNode;
-  style?: ViewStyle;
+  style?: StyleProp<ViewStyle>;
 }
 
 const Screen = ({ children, style }: Props) => {

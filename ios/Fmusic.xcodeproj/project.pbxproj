@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		29F3519EE023E54A45C1AD75 /* libPods-Fmusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BD2445256F1E4A778AC8EB /* libPods-Fmusic.a */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		50A37F10D462CD0A37E067D1 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 42327E4F8E73E5799EC33094 /* PrivacyInfo.xcprivacy */; };
-		6C8B5420D84E881CC0425603 /* libPods-Fmusic.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A4CB50116930D27CD13A406 /* libPods-Fmusic.a */; };
-		7A453FC6BFB1A24174D0331D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F09DAED4A4FB5735E1A483 /* ExpoModulesProvider.swift */; };
+		4C068393F4E41F1D19250FDE /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3CFAE98EA40578B9B0614C4 /* ExpoModulesProvider.swift */; };
+		93E7C35BBFBF69E867402519 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 1B1BFF2F8D942B9F0980B6E9 /* PrivacyInfo.xcprivacy */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
@@ -20,16 +20,16 @@
 		13B07F961A680F5B00A75B9A /* Fmusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fmusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Fmusic/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Fmusic/Info.plist; sourceTree = "<group>"; };
-		42327E4F8E73E5799EC33094 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Fmusic/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		43D45DAFB7BAC8683A66BC81 /* Pods-Fmusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fmusic.debug.xcconfig"; path = "Target Support Files/Pods-Fmusic/Pods-Fmusic.debug.xcconfig"; sourceTree = "<group>"; };
-		60F09DAED4A4FB5735E1A483 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Fmusic/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		8A4CB50116930D27CD13A406 /* libPods-Fmusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fmusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1BFF2F8D942B9F0980B6E9 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = Fmusic/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = Fmusic/SplashScreen.storyboard; sourceTree = "<group>"; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		C8E1D646F3BDAC0A6B201622 /* Pods-Fmusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fmusic.release.xcconfig"; path = "Target Support Files/Pods-Fmusic/Pods-Fmusic.release.xcconfig"; sourceTree = "<group>"; };
+		C9BD2445256F1E4A778AC8EB /* libPods-Fmusic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Fmusic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3CFAE98EA40578B9B0614C4 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-Fmusic/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Fmusic/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* Fmusic-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Fmusic-Bridging-Header.h"; path = "Fmusic/Fmusic-Bridging-Header.h"; sourceTree = "<group>"; };
-		FA3816D44C5F1A86264D6884 /* Pods-Fmusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fmusic.release.xcconfig"; path = "Target Support Files/Pods-Fmusic/Pods-Fmusic.release.xcconfig"; sourceTree = "<group>"; };
+		F292FEE7F73F2916529A4119 /* Pods-Fmusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fmusic.debug.xcconfig"; path = "Target Support Files/Pods-Fmusic/Pods-Fmusic.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C8B5420D84E881CC0425603 /* libPods-Fmusic.a in Frameworks */,
+				29F3519EE023E54A45C1AD75 /* libPods-Fmusic.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,25 +53,7 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				42327E4F8E73E5799EC33094 /* PrivacyInfo.xcprivacy */,
-			);
-			name = Fmusic;
-			sourceTree = "<group>";
-		};
-		1830AEF7A080E59BC7C390B5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				43D45DAFB7BAC8683A66BC81 /* Pods-Fmusic.debug.xcconfig */,
-				FA3816D44C5F1A86264D6884 /* Pods-Fmusic.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		2573795E9D13E504FBEAE405 /* Fmusic */ = {
-			isa = PBXGroup;
-			children = (
-				60F09DAED4A4FB5735E1A483 /* ExpoModulesProvider.swift */,
+				1B1BFF2F8D942B9F0980B6E9 /* PrivacyInfo.xcprivacy */,
 			);
 			name = Fmusic;
 			sourceTree = "<group>";
@@ -80,9 +62,17 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				8A4CB50116930D27CD13A406 /* libPods-Fmusic.a */,
+				C9BD2445256F1E4A778AC8EB /* libPods-Fmusic.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DBB955AAE594A763CDE567F /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				C337756C8EC7EC1DF98241EA /* Fmusic */,
+			);
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -99,8 +89,8 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				1830AEF7A080E59BC7C390B5 /* Pods */,
-				89998301EF71B94704E950DD /* ExpoModulesProviders */,
+				B54AFC3CE7352F378264632B /* Pods */,
+				5DBB955AAE594A763CDE567F /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -115,12 +105,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		89998301EF71B94704E950DD /* ExpoModulesProviders */ = {
+		B54AFC3CE7352F378264632B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2573795E9D13E504FBEAE405 /* Fmusic */,
+				F292FEE7F73F2916529A4119 /* Pods-Fmusic.debug.xcconfig */,
+				C8E1D646F3BDAC0A6B201622 /* Pods-Fmusic.release.xcconfig */,
 			);
-			name = ExpoModulesProviders;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
@@ -132,6 +124,14 @@
 			path = Fmusic/Supporting;
 			sourceTree = "<group>";
 		};
+		C337756C8EC7EC1DF98241EA /* Fmusic */ = {
+			isa = PBXGroup;
+			children = (
+				E3CFAE98EA40578B9B0614C4 /* ExpoModulesProvider.swift */,
+			);
+			name = Fmusic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,13 +140,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Fmusic" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				C41144C482CBF2802FAA32E7 /* [Expo] Configure project */,
+				5B2FBD8FDF8DD35D09EA24A1 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				BE426C63A1A7CD37D2DF7F8F /* [CP] Embed Pods Frameworks */,
+				85E97189F1173583928B8604 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,7 +196,7 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				50A37F10D462CD0A37E067D1 /* PrivacyInfo.xcprivacy in Resources */,
+				93E7C35BBFBF69E867402519 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +239,25 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5B2FBD8FDF8DD35D09EA24A1 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-Fmusic/expo-configure-project.sh\"\n";
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -284,7 +303,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fmusic/Pods-Fmusic-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BE426C63A1A7CD37D2DF7F8F /* [CP] Embed Pods Frameworks */ = {
+		85E97189F1173583928B8604 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,25 +321,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Fmusic/Pods-Fmusic-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C41144C482CBF2802FAA32E7 /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-Fmusic/expo-configure-project.sh\"\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -329,7 +329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				7A453FC6BFB1A24174D0331D /* ExpoModulesProvider.swift in Sources */,
+				4C068393F4E41F1D19250FDE /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +338,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43D45DAFB7BAC8683A66BC81 /* Pods-Fmusic.debug.xcconfig */;
+			baseConfigurationReference = F292FEE7F73F2916529A4119 /* Pods-Fmusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -374,7 +374,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA3816D44C5F1A86264D6884 /* Pods-Fmusic.release.xcconfig */;
+			baseConfigurationReference = C8E1D646F3BDAC0A6B201622 /* Pods-Fmusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

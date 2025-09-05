@@ -16,6 +16,7 @@ export const sizes = {
   iconSm: 16,
   iconMd: 20,
   iconLg: 24,
+  iconXXL: 128,
   avatarSm: 24,
   avatarMd: 40,
   avatarLg: 64,
@@ -27,6 +28,15 @@ export const sizes = {
   radiusFull: 999,
   line: 1,
 } as const;
+
+export const commonStyles = {
+  flex: {
+    flex: 1,
+  } as ViewStyle,
+  row: {
+    flexDirection: "row"
+  } as ViewStyle
+}
 
 // helpers (ví dụ)
 type SpacingKey = keyof typeof spacing;
@@ -54,6 +64,11 @@ export const shadow = (isDark: boolean) => ({
 export const createUI = (colors: Colors, isDark: boolean) => {
   const sh = shadow(isDark);
 
+  const flex = {
+    flex: 1,
+    backgroundColor: colors.background
+  } as ViewStyle;
+
   const card = {
     container: {
       backgroundColor: colors.card,
@@ -80,5 +95,5 @@ export const createUI = (colors: Colors, isDark: boolean) => {
     textPrimary: { color: "#fff", fontWeight: "600", fontSize: 16 } as TextStyle,
   };
 
-  return { card, button };
+  return { flex, card, button };
 };

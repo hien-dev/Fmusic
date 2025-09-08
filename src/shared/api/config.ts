@@ -39,40 +39,36 @@ export const endpointPath = (endpoint: keyof typeof Endpoint): string => {
   }
 };
 
-// Equivalent of baseIOSBody() from Swift
-export const baseIOSBody = (): Record<string, any> => {
-  return {
-    context: {
-      client: {
-        remoteHost: "227.62.69.226",
-        visitorData: VISITOR_DATA,
-        clientName: "IOS",
-        clientVersion: IOS_CLIENT_VERSION,
-        deviceMake: "Apple",
-        deviceModel: IOS_DEVICE_MODEL,
-        platform: "MOBILE",
-        osName: "iOS",
-        osVersion: IOS_OS_VERSION,
-        hl: "vi",
-        gl: "VN",
-        utcOffsetMinutes: -240,
-        userAgent:
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_6) AppleWebKit/534.35 (KHTML, like Gecko) Chrome/85.4.3358.135 Safari/530.34,gzip(gfe)",
-      },
-      user: {
-        lockedSafetyMode: false,
-      },
-      request: {
-        useSsl: true,
-      },
+export const baseIOSBody = {
+  context: {
+    client: {
+      remoteHost: "227.62.69.226",
+      visitorData: VISITOR_DATA,
+      clientName: "IOS",
+      clientVersion: IOS_CLIENT_VERSION,
+      deviceMake: "Apple",
+      deviceModel: IOS_DEVICE_MODEL,
+      platform: "MOBILE",
+      osName: "iOS",
+      osVersion: IOS_OS_VERSION,
+      hl: "vi",
+      gl: "VN",
+      utcOffsetMinutes: -240,
+      userAgent:
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_6) AppleWebKit/534.35 (KHTML, like Gecko) Chrome/85.4.3358.135 Safari/530.34,gzip(gfe)",
     },
-    contentCheckOk: true,
-    racyCheckOk: true,
-  };
+    user: {
+      lockedSafetyMode: false,
+    },
+    request: {
+      useSsl: true,
+    },
+  },
+  contentCheckOk: true,
+  racyCheckOk: true,
 };
 
-// Equivalent of baseAudioBody(videoId:) from Swift
-export const baseAudioBody = (videoId: string): Record<string, any> => {
+export const baseAudioBody = (videoId: string) => {
   return {
     context: {
       client: {

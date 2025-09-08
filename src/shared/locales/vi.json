@@ -1,4 +1,7 @@
 {
+  "app": {
+    "title": "Fmusic"
+  },
   "common": {
     "ok": "Đồng ý",
     "cancel": "Hủy"

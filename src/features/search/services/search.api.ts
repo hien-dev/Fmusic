@@ -1,8 +1,13 @@
 import API from "@shared/api";
+import { baseIOSBody, endpointPath } from "@shared/api/config";
+import { PlaylistDTO } from "@shared/model";
 
-export const searchApi = {
-  async search(q: string): Promise<{ id: string; name: string }[]> {
-    const { data } = await API.get("/search", { params: { q } });
-    return data;
-  },
+export const initFetch = async (query: string) => {
+  try {
+    const body = Object.assign({query}, baseIOSBody);        
+    const response = await API.post(endpointPath("search"), body);
+    return PlaylistDTO.search(response.data);
+  } catch (error) {
+    throw error;
+  }
 };

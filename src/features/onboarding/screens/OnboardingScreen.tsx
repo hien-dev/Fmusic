@@ -2,10 +2,20 @@ import Images from "@assets/images";
 import { useDS } from "@shared/provider/DSProvider";
 import { sizes, spacing } from "@shared/themes/global-styles";
 import Screen from "@shared/ui/Screen";
+import { useEffect } from "react";
 import { ActivityIndicator, Image, StyleSheet } from "react-native";
 
-export default function OnboardingScreen() {
-  const { isDark, ui, colors} = useDS();
+interface Props {
+  onNext: () => void;
+}
+
+export default function OnboardingScreen({ onNext }: Props) {
+  const { isDark, ui, colors } = useDS();
+
+  useEffect(() => {
+    onNext();
+  }, []);
+
   return (
     <Screen style={[ui.flex, styles.container]}>
       <Image
@@ -29,6 +39,6 @@ const styles = StyleSheet.create({
   },
   loading: {
     position: "absolute",
-    bottom: spacing["3xl"]
-  }
+    bottom: spacing["3xl"],
+  },
 });

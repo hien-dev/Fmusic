@@ -1,35 +1,26 @@
+import { PlaylistDTO } from "@shared/model";
+import { Log } from "@shared/utils/function";
 import { useEffect, useState } from "react";
-import { searchApi } from "../services/search.api";
-import { useDebounce } from "../../../shared/hooks/useDebounce";
+import { initFetch } from "../services/search.api";
 
-type Item = { id: string; name: string };
+interface UseSearch {
+  isShowSearch: boolean;
+  onChangeShowSearch: (value: boolean) => void;
+  searching: string;
+  onChangeSearching: (value: string) => void;
+  playlist: PlaylistDTO | undefined;
+}
 
-export function useSearch() {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState<Item[]>([]);
-  const [loading, setLoading] = useState(false);
-
-  const debounced = useDebounce(query, 400);
+export const useSearch = (): UseSearch => {
+  const [isShowSearch, onChangeShowSearch] = useState(false);
+  const [searching, onChangeSearching] = useState("");
+  const [playlist, onChangePlaylist] = useState<PlaylistDTO | undefined>(undefined);
 
   useEffect(() => {
-    let alive = true;
-    (async () => {
-      if (!debounced || debounced.length < 2) {
-        setResults([]);
-        return;
-      }
-      setLoading(true);
-      try {
-        const data = await searchApi.search(debounced);
-        if (alive) setResults(data);
-      } finally {
-        if (alive) setLoading(false);
-      }
-    })();
-    return () => {
-      alive = false;
-    };
-  }, [debounced]);
+    initFetch("remix tiktok")
+      .then((response) => onChangePlaylist(response))
+      .catch((error) => Log.error(JSON.stringify(error)));
+  }, []);
 
-  return { query, setQuery, results, loading };
-}
+  return { isShowSearch, onChangeShowSearch, searching, onChangeSearching, playlist };
+};

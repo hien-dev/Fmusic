@@ -35,7 +35,11 @@ export const commonStyles = {
   } as ViewStyle,
   row: {
     flexDirection: "row"
-  } as ViewStyle
+  } as ViewStyle,
+  sizeMd: {
+    width: sizes.avatarMd,
+    height: sizes.avatarMd,
+  } as ViewStyle,
 }
 
 // helpers (ví dụ)

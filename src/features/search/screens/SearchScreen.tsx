@@ -1,24 +1,31 @@
+import { useDS } from "@shared/provider/DSProvider";
+import Header from "@shared/ui/Header";
+import { Playlist } from "@shared/ui/Playlist";
 import Screen from "@shared/ui/Screen";
-import { FlatList, Text, View } from "react-native";
+import { LayoutAnimation, StyleSheet } from "react-native";
 import SearchBar from "../components/SearchBar";
 import { useSearch } from "../hooks/useSearch";
 
 export default function SearchScreen() {
-  const { query, setQuery, results, loading } = useSearch();
+  const { isShowSearch, onChangeShowSearch, searching, onChangeSearching, playlist } = useSearch();
+  const { ui } = useDS();
 
   return (
-    <Screen style={{ flex: 1, padding: 12 }}>
-      <SearchBar value={query} onChange={setQuery} loading={loading} />
-      <FlatList
-        data={results}
-        keyExtractor={(it) => it.id}
-        renderItem={({ item }) => (
-          <View style={{ paddingVertical: 10, borderBottomWidth: 1, borderColor: "#eee" }}>
-            <Text style={{ fontWeight: "600" }}>{item.name}</Text>
-          </View>
-        )}
-        ListEmptyComponent={!loading ? <Text>No results</Text> : null}
+    <Screen style={[ui.flex, styles.container]}>
+      <Header
+        onPressRight={() => {
+          LayoutAnimation.configureNext(LayoutAnimation.Presets.linear);
+          onChangeShowSearch(true);
+        }}
       />
+      {isShowSearch && <SearchBar value={searching} onChange={onChangeSearching} />}
+      <Playlist data={playlist?.playlist || []} />
     </Screen>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    gap: 10,
+  },
+});

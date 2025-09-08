@@ -7,6 +7,7 @@ export type Colors = {
   placeholder: string;
   primary: string;
   text: string;
+  transparent: string;
 };
 
 export const colorsLight: Colors = {
@@ -18,6 +19,7 @@ export const colorsLight: Colors = {
   icon: "#222222",
   placeholder: "#999999",
   border: "#E0E0E0",
+  transparent: "#FFFFFF00"
 };
 
 export const colorsDark: Colors = {
@@ -29,4 +31,5 @@ export const colorsDark: Colors = {
   icon: "#FFFFFF",
   placeholder: "#FFFFFF30",
   border: "#2A2A2A",
+  transparent: "#00000000"
 };

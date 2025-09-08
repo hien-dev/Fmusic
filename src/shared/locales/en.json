@@ -1,4 +1,7 @@
 {
+  "app": {
+    "title": "Fmusic"
+  },
   "common": {
     "ok": "OK",
     "cancel": "Cancel"

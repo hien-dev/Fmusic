@@ -1,21 +1,37 @@
-import { View, ActivityIndicator } from "react-native";
-import Input from "../../../shared/ui/Input";
+import { spacing } from "@shared/themes/global-styles";
+import Input from "@shared/ui/Input";
+import { StyleSheet, View } from "react-native";
 
 export default function SearchBar({
   value,
   onChange,
-  loading,
 }: {
   value: string;
   onChange: (v: string) => void;
-  loading?: boolean;
 }) {
   return (
-    <View style={{ flexDirection: "row", gap: 8, alignItems: "center", marginBottom: 12 }}>
-      <View style={{ flex: 1 }}>
-        <Input placeholder="Search..." value={value} onChangeText={onChange} />
+    <View style={styles.row}>
+      <View style={styles.flex}>
+        <Input
+          placeholder="Search..."
+          autoCorrect={false}
+          autoCapitalize="characters"
+          value={value}
+          onChangeText={onChange}
+        />
       </View>
-      {loading ? <ActivityIndicator /> : null}
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  row: {
+    flexDirection: "row",
+    gap: 8,
+    alignItems: "center",
+    marginBottom: spacing.md,
+  },
+  flex: {
+    flex: 1,
+  },
+});

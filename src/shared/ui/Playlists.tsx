@@ -8,9 +8,11 @@ import { Text } from "./Text";
 
 interface Props {
   data: VideoDTO[];
+  isLoading: boolean;
+  onLoadMore: () => void;
 }
 
-export function Playlists({ data }: Props) {
+export function Playlists({ data, isLoading, onLoadMore }: Props) {
   const { colors } = useDesignSystem();
 
   const renderItem: ListRenderItem<VideoDTO> = ({ item }) => (
@@ -33,8 +35,10 @@ export function Playlists({ data }: Props) {
       renderItem={renderItem}
       keyExtractor={(item, idx) => item.id + idx.toString()}
       estimatedItemSize={50}
+      onEndReachedThreshold={0.1}
+      onEndReached={onLoadMore}
       ListFooterComponent={<Loading size={"small"} />}
-      ListFooterComponentStyle={{ alignItems: "center", marginTop: spacing.md }}
+      ListFooterComponentStyle={[styles.listFooterComponentStyle, { opacity: isLoading ? 1 : 0 }]}
     />
   );
 }
@@ -56,5 +60,10 @@ const styles = StyleSheet.create({
     width: 75,
     height: 60,
     borderRadius: 5,
+  },
+  listFooterComponentStyle: {
+    alignItems: "center",
+    paddingTop: spacing.md,
+    paddingBottom: spacing["120"],
   },
 });

@@ -4,7 +4,15 @@ import SearchBar from "../components/SearchBar";
 import { useSearch } from "../hooks/useSearch";
 
 export default function SearchScreen() {
-  const { isShowSearch, onChangeShowSearch, searching, onChangeSearching, playlist } = useSearch();
+  const {
+    isShowSearch,
+    onChangeShowSearch,
+    searching,
+    onChangeSearching,
+    playlists,
+    isLoading,
+    onLoadMore,
+  } = useSearch();
 
   return (
     <Screen style={styles.container}>
@@ -15,7 +23,7 @@ export default function SearchScreen() {
         }}
       />
       {isShowSearch && <SearchBar value={searching} onChange={onChangeSearching} />}
-      <Playlists data={playlist?.playlist || []} />
+      <Playlists data={playlists?.playlist || []} isLoading={isLoading} onLoadMore={onLoadMore} />
     </Screen>
   );
 }

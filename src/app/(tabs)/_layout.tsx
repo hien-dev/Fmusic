@@ -1,26 +1,19 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useDesignSystem } from "@shared/provider";
+import { BottomBar } from "@shared/ui";
 import { Tabs } from "expo-router";
 export default function TabsLayout() {
-  const { colors } = useDesignSystem();
+  const { typography,colors } = useDesignSystem();
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: colors.primary,
-        tabBarInactiveTintColor: colors.placeholder,
-        tabBarStyle: {
-          backgroundColor: colors.card,
-          borderTopColor: colors.border,
-        },
-        headerStyle: {
-          backgroundColor: colors.card,
-        },
+        tabBarShowLabel: false,
+        tabBarStyle: { display: "none" },
+        headerStyle: { backgroundColor: colors.background },
         headerTintColor: colors.text,
-        tabBarLabelStyle: {
-          fontSize: 12,
-        },
       }}
+      tabBar={(props) => <BottomBar {...props} />}
     >
       <Tabs.Screen
         name="search/index"

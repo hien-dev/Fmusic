@@ -1,3 +1,4 @@
+export * from "./BottomBar";
 export * from "./Header";
 export * from "./Input";
 export * from "./Loading";

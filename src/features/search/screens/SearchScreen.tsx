@@ -1,17 +1,13 @@
-import { useDS } from "@shared/provider/DSProvider";
-import Header from "@shared/ui/Header";
-import { Playlist } from "@shared/ui/Playlist";
-import Screen from "@shared/ui/Screen";
+import { Header, Playlists, Screen } from "@shared/ui";
 import { LayoutAnimation, StyleSheet } from "react-native";
 import SearchBar from "../components/SearchBar";
 import { useSearch } from "../hooks/useSearch";
 
 export default function SearchScreen() {
   const { isShowSearch, onChangeShowSearch, searching, onChangeSearching, playlist } = useSearch();
-  const { ui } = useDS();
 
   return (
-    <Screen style={[ui.flex, styles.container]}>
+    <Screen style={styles.container}>
       <Header
         onPressRight={() => {
           LayoutAnimation.configureNext(LayoutAnimation.Presets.linear);
@@ -19,13 +15,14 @@ export default function SearchScreen() {
         }}
       />
       {isShowSearch && <SearchBar value={searching} onChange={onChangeSearching} />}
-      <Playlist data={playlist?.playlist || []} />
+      <Playlists data={playlist?.playlist || []} />
     </Screen>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     gap: 10,
   },
 });

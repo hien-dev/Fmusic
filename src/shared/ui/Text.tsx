@@ -1,42 +1,31 @@
 import { tr, type TranslateValues, type TxKey } from "@shared/locales/i18n";
-import { useDS } from "@shared/provider/DSProvider";
-import { Colors } from "@shared/themes/color-styles";
-import React from "react";
+import { useDesignSystem } from "@shared/provider";
+import { Colors, Typography } from "@shared/themes";
 import { Text as RNText, type TextProps, type TextStyle } from "react-native";
 
-type Variant =
-  | "h1"
-  | "h2"
-  | "h3"
-  | "body"
-  | "bodyBold"
-  | "bodyItalic"
-  | "caption"
-  | "captionItalic";
-
-type ColorSemantic = keyof Colors 
+type ColorSemantic = keyof Colors;
 
 export interface TProps extends Omit<TextProps, "style"> {
   tx?: TxKey;
   values?: TranslateValues;
-  variant?: Variant;
+  variant?: keyof Typography;
   color?: ColorSemantic;
   align?: TextStyle["textAlign"];
   style?: TextStyle | TextStyle[];
   children?: React.ReactNode;
 }
 
-export default function Text({
+export function Text({
   tx,
   values,
-  variant = "body",
+  variant = "r4",
   color = "text",
   align = "center",
   style,
   children,
   ...rest
 }: TProps) {
-  const { t: typo, colors } = useDS();
+  const { typography: typo, colors } = useDesignSystem();
 
   const content = typeof tx === "string" ? tr(tx, values) : children;
   const colorStyle: TextStyle | undefined = color ? { color: colors[color] } : undefined;

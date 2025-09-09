@@ -1,36 +1,40 @@
 import { useTheme } from "@shared/hooks/useTheme";
-import { createTypography } from "@shared/themes/font-styles";
-import { createUI, sizes, spacing } from "@shared/themes/global-styles";
-import React, { createContext, PropsWithChildren, useContext, useMemo } from "react";
+import { createTypography, sizes, spacing } from "@shared/themes";
+import { createContext, PropsWithChildren, useContext, useMemo } from "react";
 
-type DS = {
+type DesignSystem = {
   mode: "light" | "dark";
   isDark: boolean;
   colors: ReturnType<typeof useTheme>["colors"];
-  t: ReturnType<typeof createTypography>;
-  ui: ReturnType<typeof createUI>;
-  s: typeof spacing;
-  sz: typeof sizes;
+  typography: ReturnType<typeof createTypography>;
+  spacing: typeof spacing;
+  sizes: typeof sizes;
 };
 
-const DSContext = createContext<DS | null>(null);
+const DesignSystemContext = createContext<DesignSystem | null>(null);
 
-export function DSProvider({ children }: PropsWithChildren) {
+export function DesignSystemProvider({ children }: PropsWithChildren) {
   const { colors, isDark, mode } = useTheme();
 
-  const t = useMemo(() => createTypography(colors), [colors]);
-  const ui = useMemo(() => createUI(colors, isDark), [colors, isDark]);
+  const typography = useMemo(() => createTypography(colors), [colors]);
 
-  const value = useMemo<DS>(
-    () => ({ mode, isDark, colors, t, ui, s: spacing, sz: sizes }),
-    [mode, isDark, colors, t, ui]
+  const value = useMemo<DesignSystem>(
+    () => ({
+      mode,
+      isDark,
+      colors,
+      typography,
+      spacing,
+      sizes,
+    }),
+    [mode, isDark, colors, typography]
   );
 
-  return <DSContext.Provider value={value}>{children}</DSContext.Provider>;
+  return <DesignSystemContext.Provider value={value}>{children}</DesignSystemContext.Provider>;
 }
 
-export function useDS() {
-  const ctx = useContext(DSContext);
-  if (!ctx) throw new Error("useDS must be used inside <DSProvider>");
+export function useDesignSystem() {
+  const ctx = useContext(DesignSystemContext);
+  if (!ctx) throw new Error("useDesignSystem must be used inside <DesignSystemProvider>");
   return ctx;
 }

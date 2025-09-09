@@ -1,13 +1,18 @@
 import type { TextStyle } from "react-native";
 import type { Colors } from "./color-styles";
 
+// Define available font families
 export const fonts = {
   regular: "regular",
   bold: "bold",
-  italic: "italic",
 } as const;
 
-export const createTypography = (colors: Colors) => {
+// Define style keys
+type HeadingKey = `h${1 | 2 | 3 | 4 | 5}`;
+type RegularKey = `r${1 | 2 | 3 | 4 | 5}`;
+export type Typography = Record<HeadingKey | RegularKey, TextStyle>;
+
+export const createTypography = (colors: Colors): Typography => {
   const base: TextStyle = {
     fontFamily: fonts.regular,
     fontSize: 16,
@@ -15,16 +20,32 @@ export const createTypography = (colors: Colors) => {
     color: colors.text,
   };
 
-  return {
-    h1: { ...base, fontFamily: fonts.bold, fontSize: 28, lineHeight: 34 } as TextStyle,
-    h2: { ...base, fontFamily: fonts.bold, fontSize: 22, lineHeight: 28 } as TextStyle,
-    h3: { ...base, fontFamily: fonts.bold, fontSize: 18, lineHeight: 24 } as TextStyle,
+  const sizes = {
+    1: { fontSize: 24, lineHeight: 32 },
+    2: { fontSize: 20, lineHeight: 28 },
+    3: { fontSize: 18, lineHeight: 24 },
+    4: { fontSize: 16, lineHeight: 22 },
+    5: { fontSize: 14, lineHeight: 20 },
+  };
 
-    body: { ...base } as TextStyle,
-    bodyBold: { ...base, fontFamily: fonts.bold } as TextStyle,
-    bodyItalic: { ...base, fontFamily: fonts.italic } as TextStyle,
+  const typography: Partial<Typography> = {};
 
-    caption: { ...base, fontSize: 12, lineHeight: 16 } as TextStyle,
-    captionItalic: { ...base, fontFamily: fonts.italic, fontSize: 12, lineHeight: 16 } as TextStyle,
-  } as const;
+  for (let i = 1; i <= 5; i++) {
+    typography[`h${i}` as HeadingKey] = {
+      ...base,
+      fontFamily: fonts.bold,
+      fontSize: sizes[i as keyof typeof sizes].fontSize,
+      lineHeight: sizes[i as keyof typeof sizes].lineHeight,
+    };
+  }
+
+  for (let i = 1; i <= 5; i++) {
+    typography[`r${i}` as RegularKey] = {
+      ...base,
+      fontSize: sizes[i as keyof typeof sizes].fontSize,
+      lineHeight: sizes[i as keyof typeof sizes].lineHeight,
+    };
+  }
+
+  return typography as Typography;
 };

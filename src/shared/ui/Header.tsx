@@ -1,16 +1,16 @@
 import Images from "@assets/images";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import { useDS } from "@shared/provider/DSProvider";
-import { sizes, spacing } from "@shared/themes/global-styles";
+import { useDesignSystem } from "@shared/provider";
+import { sizes, spacing } from "@shared/themes";
 import { Image, StyleSheet, View } from "react-native";
-import Text from "./Text";
+import { Text } from "./Text";
 
 interface Props {
   onPressRight?: () => void;
 }
 
-export default function Header({ onPressRight }: Props) {
-  const { isDark, colors } = useDS();
+export function Header({ onPressRight }: Props) {
+  const { isDark, colors } = useDesignSystem();
   return (
     <View style={styles.container}>
       <View style={styles.row}>
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    paddingHorizontal: spacing.lg
+    paddingHorizontal: spacing.lg,
   },
   row: {
     flexDirection: "row",

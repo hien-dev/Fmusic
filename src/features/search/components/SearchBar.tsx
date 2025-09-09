@@ -1,5 +1,5 @@
-import { spacing } from "@shared/themes/global-styles";
-import Input from "@shared/ui/Input";
+import { spacing } from "@shared/themes";
+import { Input } from "@shared/ui";
 import { StyleSheet, View } from "react-native";
 
 export default function SearchBar({

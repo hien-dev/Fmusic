@@ -41,14 +41,13 @@ export class VideoDTO {
 
   static compactVideo(json: any): VideoDTO | null {
     const videoId =
-      json?.onTap?.innertubeCommand?.coWatchWatchEndpointWrapperCommand
-        ?.watchEndpoint?.watchEndpoint?.videoId;
+      json?.onTap?.innertubeCommand?.coWatchWatchEndpointWrapperCommand?.watchEndpoint
+        ?.watchEndpoint?.videoId;
 
     const videoData = json?.videoData ?? {};
     const title = videoData?.metadata?.title ?? "";
     const author = videoData?.metadata?.byline ?? "";
-    const thumbnailURL =
-      videoData?.thumbnail?.image?.sources?.[0]?.url ?? "";
+    const thumbnailURL = videoData?.thumbnail?.image?.sources?.[0]?.url ?? "";
 
     if (!title && !thumbnailURL && !author && !videoId) return null;
 
@@ -63,20 +62,16 @@ export class VideoDTO {
   static compactPlaylist(json: any): VideoDTO | null {
     const title = json?.metadata?.title ?? "";
     const author = `Playlist · ${json?.thumbnail?.videoCountA11y ?? "mix"}`;
-    const thumbnailURL =
-      json?.thumbnail?.image?.sources?.[0]?.url ?? "";
+    const thumbnailURL = json?.thumbnail?.image?.sources?.[0]?.url ?? "";
 
     const dragAndDropUrl: string | undefined = json?.dragAndDropUrl;
     const browseIdFromDragAndDropUrl = this.replaceBrowseId(dragAndDropUrl);
 
-    const explicitBrowseId =
-      json?.onTap?.innertubeCommand?.browseEndpoint?.browseId;
+    const explicitBrowseId = json?.onTap?.innertubeCommand?.browseEndpoint?.browseId;
 
     const browseId =
       explicitBrowseId ??
-      (typeof browseIdFromDragAndDropUrl === "string"
-        ? browseIdFromDragAndDropUrl
-        : undefined);
+      (typeof browseIdFromDragAndDropUrl === "string" ? browseIdFromDragAndDropUrl : undefined);
 
     const videoId =
       typeof browseIdFromDragAndDropUrl === "object"
@@ -104,10 +99,7 @@ export class VideoDTO {
 
   static next(json: any): VideoDTO | null {
     const videoId = json?.videoId;
-    const title =
-      json?.title?.simpleText ??
-      json?.title?.runs?.[0]?.text ??
-      "";
+    const title = json?.title?.simpleText ?? json?.title?.runs?.[0]?.text ?? "";
     const author = json?.shortBylineText?.runs?.[0]?.text ?? "";
     const thumbnailURL = json?.thumbnail?.thumbnails?.[0]?.url ?? "";
 
@@ -123,22 +115,17 @@ export class VideoDTO {
 
   static nextContinuations(json: any): VideoDTO | null {
     const videoWithContextData =
-      json?.newElement?.type?.componentType?.model?.videoWithContextModel
-        ?.videoWithContextData;
+      json?.newElement?.type?.componentType?.model?.videoWithContextModel?.videoWithContextData;
 
     const videoId =
-      videoWithContextData?.onTap?.innertubeCommand
-        ?.coWatchWatchEndpointWrapperCommand?.watchEndpoint?.watchEndpoint
-        ?.videoId ?? "";
+      videoWithContextData?.onTap?.innertubeCommand?.coWatchWatchEndpointWrapperCommand
+        ?.watchEndpoint?.watchEndpoint?.videoId ?? "";
 
-    const title =
-      videoWithContextData?.videoData?.metadata?.title ?? "";
+    const title = videoWithContextData?.videoData?.metadata?.title ?? "";
 
     const author = json?.videoData?.metadata?.metadataDetails ?? "";
 
-    const thumbnailURL =
-      videoWithContextData?.videoData?.thumbnail?.image?.sources?.[0]?.url ??
-      "";
+    const thumbnailURL = videoWithContextData?.videoData?.thumbnail?.image?.sources?.[0]?.url ?? "";
 
     if (!title && !thumbnailURL && !author && !videoId) return null;
 
@@ -175,8 +162,7 @@ export class VideoDTO {
     const videoId = playerResponse?.videoDetails?.videoId;
     const title = playerResponse?.videoDetails?.title ?? "";
     const thumbnailURL =
-      playerResponse?.videoDetails?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ??
-      "";
+      playerResponse?.videoDetails?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ?? "";
     const url = playerResponse?.streamingData?.hlsManifestUrl;
 
     if (!title && !thumbnailURL && !videoId && !url) return null;
@@ -195,8 +181,7 @@ export class VideoDTO {
     const videoId = playerResponse?.videoDetails?.videoId;
     const title = playerResponse?.videoDetails?.title ?? "";
     const thumbnailURL =
-      playerResponse?.videoDetails?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ??
-      "";
+      playerResponse?.videoDetails?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ?? "";
     const url = playerResponse?.streamingData?.formats?.[0]?.url ?? "";
 
     if (!title && !thumbnailURL && !videoId && !url) return null;

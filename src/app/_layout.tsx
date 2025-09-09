@@ -1,5 +1,4 @@
-import { DSProvider, useDS } from "@shared/provider/DSProvider";
-import FontProvider from "@shared/provider/FontProvider";
+import { DesignSystemProvider, FontProvider, useDesignSystem } from "@shared/provider";
 import { Stack } from "expo-router";
 import { Platform, StatusBar, UIManager } from "react-native";
 
@@ -10,21 +9,21 @@ if (Platform.OS === "android") {
 }
 
 function StatusBarByTheme() {
-  const { isDark } = useDS();
+  const { isDark } = useDesignSystem();
   return <StatusBar barStyle={isDark ? "light-content" : "dark-content"} />;
 }
 
 export default function RootLayout() {
   return (
     <FontProvider>
-      <DSProvider>
+      <DesignSystemProvider>
         <StatusBarByTheme />
         <Stack screenOptions={{ headerShown: false }}>
           <Stack.Screen name="index" />
           <Stack.Screen name="onboarding" />
           <Stack.Screen name="(tabs)" />
         </Stack>
-      </DSProvider>
+      </DesignSystemProvider>
     </FontProvider>
   );
 }

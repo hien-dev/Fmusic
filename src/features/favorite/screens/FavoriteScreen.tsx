@@ -1,4 +1,4 @@
-import Screen from "@shared/ui/Screen";
+import { Screen } from "@shared/ui";
 import { FlatList, Text } from "react-native";
 import FavoriteItem from "../components/FavoriteItem";
 import { useFavorite } from "../hooks/useFavorite";

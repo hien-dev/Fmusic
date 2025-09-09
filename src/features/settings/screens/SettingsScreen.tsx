@@ -1,4 +1,4 @@
-import Screen from "@shared/ui/Screen";
+import { Screen } from "@shared/ui";
 import { Text } from "react-native";
 import SettingsOption from "../components/SettingsOption";
 

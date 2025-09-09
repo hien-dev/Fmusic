@@ -1,24 +1,26 @@
 import { VideoDTO } from "@shared/model";
-import { useDS } from "@shared/provider/DSProvider";
-import { spacing } from "@shared/themes/global-styles";
+import { useDesignSystem } from "@shared/provider";
+import { spacing } from "@shared/themes";
 import { FlashList, ListRenderItem } from "@shopify/flash-list";
 import { Pressable as Button, Image, StyleSheet, View } from "react-native";
-import Text from "./Text";
+import { Loading } from "./Loading";
+import { Text } from "./Text";
 
 interface Props {
   data: VideoDTO[];
 }
 
-export function Playlist({ data }: Props) {
-  const {colors} = useDS();
+export function Playlists({ data }: Props) {
+  const { colors } = useDesignSystem();
+
   const renderItem: ListRenderItem<VideoDTO> = ({ item }) => (
-    <Button style={[styles.item, {borderColor: colors.border}]}>
+    <Button style={[styles.item, { borderColor: colors.border }]}>
       <Image source={{ uri: item.thumbnailURL }} resizeMode="stretch" style={styles.image} />
-      <View style={{flex: 1}}>
-        <Text numberOfLines={2} align="left" style={{ flex: 2 }}>
+      <View style={styles.flex}>
+        <Text variant="h5" numberOfLines={2} align="left">
           {item.title}
         </Text>
-        <Text variant="caption" align="left" style={{ flex: 1 }}>
+        <Text variant="r5" align="left">
           {item.author}
         </Text>
       </View>
@@ -31,23 +33,28 @@ export function Playlist({ data }: Props) {
       renderItem={renderItem}
       keyExtractor={(item, idx) => item.id + idx.toString()}
       estimatedItemSize={50}
+      ListFooterComponent={<Loading size={"small"} />}
+      ListFooterComponentStyle={{ alignItems: "center", marginTop: spacing.md }}
     />
   );
 }
 
 const styles = StyleSheet.create({
+  flex: {
+    flex: 1,
+  },
   item: {
     flexDirection: "row",
-    alignItems: "center",
     maxWidth: "100%",
     height: 70,
     gap: 10,
-    marginHorizontal: spacing.lg,
+    marginHorizontal: spacing.md,
     borderBottomWidth: 1,
+    alignItems: "center",
   },
   image: {
     width: 75,
-    height: 55,
-    borderRadius: 5
+    height: 60,
+    borderRadius: 5,
   },
 });

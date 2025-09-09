@@ -1,4 +1,4 @@
-import { useDS } from "@shared/provider/DSProvider";
+import { useDesignSystem } from "@shared/provider";
 import React from "react";
 import { StyleProp, ViewStyle } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -8,11 +8,9 @@ interface Props {
   style?: StyleProp<ViewStyle>;
 }
 
-const Screen = ({ children, style }: Props) => {
-  const { t: typo, colors } = useDS();
+export const Screen = ({ children, style }: Props) => {
+  const { colors } = useDesignSystem();
   return (
     <SafeAreaView style={[{ backgroundColor: colors.background }, style]}>{children}</SafeAreaView>
   );
 };
-
-export default Screen;

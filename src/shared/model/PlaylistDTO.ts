@@ -22,21 +22,17 @@ export class PlaylistDTO {
   }
 
   static search(data: any): PlaylistDTO {
-    const contents =
-      data?.contents?.sectionListRenderer?.contents ?? [];
+    const contents = data?.contents?.sectionListRenderer?.contents ?? [];
 
     const continuation =
       data?.contents?.sectionListRenderer?.continuations?.[0]?.nextContinuationData?.continuation;
 
-    const allContents = contents
-      .map((c: any) => c?.itemSectionRenderer?.contents ?? [])
-      .flat();
+    const allContents = contents.map((c: any) => c?.itemSectionRenderer?.contents ?? []).flat();
 
     const results: VideoDTO[] = [];
 
     for (const item of allContents) {
-      const model =
-        item?.elementRenderer?.newElement?.type?.componentType?.model;
+      const model = item?.elementRenderer?.newElement?.type?.componentType?.model;
 
       const videoData = model?.compactVideoModel?.compactVideoData;
       const playlistData = model?.compactPlaylistModel?.compactPlaylistData;
@@ -61,17 +57,14 @@ export class PlaylistDTO {
 
   static searchContinuations(data: any): PlaylistDTO {
     const result = data?.continuationContents?.sectionListContinuation;
-    const continuation =
-      result?.continuations?.[0]?.nextContinuationData?.continuation;
+    const continuation = result?.continuations?.[0]?.nextContinuationData?.continuation;
 
-    const contents =
-      result?.contents?.[0]?.itemSectionRenderer?.contents ?? [];
+    const contents = result?.contents?.[0]?.itemSectionRenderer?.contents ?? [];
 
     const results: VideoDTO[] = [];
 
     for (const item of contents) {
-      const model =
-        item?.elementRenderer?.newElement?.type?.componentType?.model;
+      const model = item?.elementRenderer?.newElement?.type?.componentType?.model;
 
       const videoData = model?.compactVideoModel?.compactVideoData;
       const playlistData = model?.compactPlaylistModel?.compactPlaylistData;
@@ -96,12 +89,10 @@ export class PlaylistDTO {
 
   static next(data: any): PlaylistDTO {
     const result =
-      data?.contents?.twoColumnWatchNextResults ??
-      data?.contents?.singleColumnWatchNextResults;
+      data?.contents?.twoColumnWatchNextResults ?? data?.contents?.singleColumnWatchNextResults;
 
     const continuation =
-      result?.results?.results?.continuations?.[0]?.nextContinuationData
-        ?.continuation;
+      result?.results?.results?.continuations?.[0]?.nextContinuationData?.continuation;
 
     const playlistData = result?.playlist?.playlist;
     const playlistId = playlistData?.playlistId as string | undefined;
@@ -110,9 +101,7 @@ export class PlaylistDTO {
     const contents = playlistData?.contents ?? [];
 
     const videos: VideoDTO[] = contents
-      .map((c: any) =>
-        c?.playlistPanelVideoRenderer ? c.playlistPanelVideoRenderer : null
-      )
+      .map((c: any) => (c?.playlistPanelVideoRenderer ? c.playlistPanelVideoRenderer : null))
       .filter(Boolean)
       .map((node: any) => VideoDTO.next(node))
       .filter((v: VideoDTO | null): v is VideoDTO => !!v);
@@ -128,8 +117,7 @@ export class PlaylistDTO {
 
   static nextContinuations(data: any): PlaylistDTO {
     const result = data?.continuationContents?.sectionListContinuation;
-    const continuation =
-      result?.continuations?.[0]?.nextContinuationData?.continuation;
+    const continuation = result?.continuations?.[0]?.nextContinuationData?.continuation;
 
     const contents = result?.contents?.[0]?.itemSectionRenderer?.contents ?? [];
 
@@ -158,17 +146,13 @@ export class PlaylistDTO {
         ?.itemSectionRenderer?.contents?.[0]?.playlistVideoListRenderer;
 
     const contents = playlistData?.contents ?? [];
-    const continuation =
-      playlistData?.continuations?.[0]?.nextContinuationData?.continuation;
+    const continuation = playlistData?.continuations?.[0]?.nextContinuationData?.continuation;
 
     const playlistId = playlistData?.playlistId as string | undefined;
-    const title =
-      data?.header?.pageHeaderRenderer?.pageTitle as string | undefined;
+    const title = data?.header?.pageHeaderRenderer?.pageTitle as string | undefined;
 
     const videos: VideoDTO[] = contents
-      .map((c: any) =>
-        c?.playlistVideoRenderer ? c.playlistVideoRenderer : null
-      )
+      .map((c: any) => (c?.playlistVideoRenderer ? c.playlistVideoRenderer : null))
       .filter(Boolean)
       .map((node: any) => VideoDTO.browse(node))
       .filter((v: VideoDTO | null): v is VideoDTO => !!v);
@@ -184,15 +168,12 @@ export class PlaylistDTO {
 
   static browseContinuations(data: any): PlaylistDTO {
     const result = data?.continuationContents?.playlistVideoListContinuation;
-    const continuation =
-      result?.continuations?.[0]?.nextContinuationData?.continuation;
+    const continuation = result?.continuations?.[0]?.nextContinuationData?.continuation;
 
     const contents = result?.contents ?? [];
 
     const videos: VideoDTO[] = contents
-      .map((c: any) =>
-        c?.playlistVideoRenderer ? c.playlistVideoRenderer : null
-      )
+      .map((c: any) => (c?.playlistVideoRenderer ? c.playlistVideoRenderer : null))
       .filter(Boolean)
       .map((node: any) => VideoDTO.browseContinuations(node))
       .filter((v: VideoDTO | null): v is VideoDTO => !!v);

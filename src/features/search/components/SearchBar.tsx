@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     gap: 8,
     alignItems: "center",
     marginBottom: spacing.md,
+    marginHorizontal: spacing.md
   },
   flex: {
     flex: 1,

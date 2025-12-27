@@ -1,7 +1,7 @@
 const Fonts = {
-  regular: require("./Roboto-Regular.ttf"),
-  bold: require("./Roboto-Bold.ttf"),
-  italic: require("./Roboto-Italic.ttf")
+  regular: require("./segoe-regular.ttf"),
+  bold: require("./segoe-bold.ttf"),
+  italic: require("./segoe-italic.ttf")
 }
 
 export default Fonts

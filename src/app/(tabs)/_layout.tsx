@@ -2,6 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { useDesignSystem } from "@shared/provider";
 import { BottomBar } from "@shared/ui";
 import { Tabs } from "expo-router";
+
 export default function TabsLayout() {
   const { typography,colors } = useDesignSystem();
   return (

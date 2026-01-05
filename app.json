@@ -17,11 +17,8 @@
       "bundleIdentifier": "com.nguyennhuhien2381997.Fmusic"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.nguyennhuhien2381997.Fmusic"
     },
     "web": {
       "bundler": "metro",
@@ -42,7 +39,10 @@
           "imageWidth": 200
         }
       ],
-      "expo-localization"
+      "expo-localization",
+      "expo-video",
+      "expo-font",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true

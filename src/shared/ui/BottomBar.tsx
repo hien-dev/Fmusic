@@ -55,7 +55,7 @@ export function BottomBar({ state, navigation }: BottomTabBarProps) {
             styles.bar,
             {
               backgroundColor: colors.primary,
-              shadowColor: colors.text,
+              shadowColor: colors.background,
             },
           ]}
         >

@@ -9,14 +9,15 @@ import { Text } from "./Text";
 interface Props {
   data: VideoDTO[];
   isLoading: boolean;
+  onPress: (video: VideoDTO) => void;
   onLoadMore: () => void;
 }
 
-export function Playlists({ data, isLoading, onLoadMore }: Props) {
+export function Playlists({ data, isLoading, onPress, onLoadMore }: Props) {
   const { colors } = useDesignSystem();
 
   const renderItem: ListRenderItem<VideoDTO> = ({ item }) => (
-    <Button style={[styles.item, { borderColor: colors.border }]}>
+    <Button style={[styles.item, { borderColor: colors.border }]} onPress={() => onPress(item)}>
       <Image source={{ uri: item.thumbnailURL }} resizeMode="stretch" style={styles.image} />
       <View style={styles.flex}>
         <Text variant="h5" numberOfLines={2} align="left">
@@ -34,7 +35,6 @@ export function Playlists({ data, isLoading, onLoadMore }: Props) {
       data={data}
       renderItem={renderItem}
       keyExtractor={(item, idx) => item.id + idx.toString()}
-      estimatedItemSize={50}
       onEndReachedThreshold={0.1}
       onEndReached={onLoadMore}
       ListFooterComponent={<Loading size={"small"} />}

@@ -1,9 +1,15 @@
-import { useState } from 'react';
+import { Log } from "@shared/utils/function";
+import { initFetch } from "../services/music-bottom-sheet.api";
 
 export function useMusicBottomSheet() {
-  const [data, setData] = useState<any[]>([]);
-  const fetchData = async () => {
-    // TODO: implement fetch logic
+  const fetchMusicById = (videoId: string) => {
+    initFetch(videoId)
+      .then((response) => {
+        Log.log("Fetched music data:", JSON.stringify(response));
+      })
+      .catch((error) => {
+        Log.error("Failed to fetch music data:", error);
+      });
   };
-  return { data, fetchData };
+  return { fetchMusicById };
 }

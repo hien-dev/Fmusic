@@ -1,10 +1,32 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useDesignSystem } from "@shared/provider";
 import { BottomBar } from "@shared/ui";
+import { iPhone } from "@shared/utils/function";
 import { Tabs } from "expo-router";
+import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
 
 export default function TabsLayout() {
-  const { typography,colors } = useDesignSystem();
+  const { colors } = useDesignSystem();
+
+  if (iPhone) {
+    return (
+      <NativeTabs iconColor={colors.accent}>
+        <NativeTabs.Trigger name="search/index">
+          <Icon sf={"magnifyingglass"} />
+          <Label>Search</Label>
+        </NativeTabs.Trigger>
+        <NativeTabs.Trigger name="favorite/index" options={{ title: "Favorite" }}>
+          <Icon sf={"heart"} />
+          <Label>Favorite</Label>
+        </NativeTabs.Trigger>
+        <NativeTabs.Trigger name="settings/index" options={{ title: "Settings" }}>
+          <Icon sf={"gear"} />
+          <Label>Settings</Label>
+        </NativeTabs.Trigger>
+      </NativeTabs>
+    );
+  }
+
   return (
     <Tabs
       screenOptions={{

@@ -1,3 +1,4 @@
+import { useMusicBottomSheet } from "@features/music-bottom-sheet";
 import { Header, Playlists, Screen } from "@shared/ui";
 import { LayoutAnimation, StyleSheet } from "react-native";
 import SearchBar from "../components/SearchBar";
@@ -14,6 +15,8 @@ export default function SearchScreen() {
     onLoadMore,
   } = useSearch();
 
+  const { fetchMusicById } = useMusicBottomSheet();
+
   return (
     <Screen style={styles.container}>
       <Header
@@ -23,7 +26,16 @@ export default function SearchScreen() {
         }}
       />
       {isShowSearch && <SearchBar value={searching} onChange={onChangeSearching} />}
-      <Playlists data={playlists?.playlist || []} isLoading={isLoading} onLoadMore={onLoadMore} />
+      <Playlists
+        data={playlists?.playlist || []}
+        isLoading={isLoading}
+        onLoadMore={onLoadMore}
+        onPress={(video) => {
+          if (video.videoId) {
+            fetchMusicById(video.videoId);
+          }
+        }}
+      />
     </Screen>
   );
 }

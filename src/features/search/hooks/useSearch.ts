@@ -20,7 +20,7 @@ export const useSearch = (): UseSearch => {
 
   useEffect(() => {
     onChangeLoading(true);
-    initFetch("remix tiktok")
+    initFetch("remix tiktok than thoai")
       .then((response) => onChangePlaylists(response))
       .finally(() => {
         onChangeLoading(false);

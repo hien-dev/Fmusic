@@ -15,11 +15,12 @@ export default function SearchScreen() {
     onLoadMore,
   } = useSearch();
 
-  const { fetchMusicById } = useMusicBottomSheet();
+  const { fetchMusicById, toggleBottomSheet } = useMusicBottomSheet();
 
   return (
     <Screen style={styles.container}>
       <Header
+        onPressLogo={toggleBottomSheet}
         onPressRight={() => {
           LayoutAnimation.configureNext(LayoutAnimation.Presets.linear);
           onChangeShowSearch(true);

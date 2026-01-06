@@ -1,3 +1,4 @@
+import { Log } from "@shared/utils/function";
 import axios from "axios";
 import { endpointPath } from "./config";
 
@@ -16,6 +17,7 @@ API.interceptors.request.use(async (config) => {
       ...headers,
     };
   }
+  Log.log("API Request URL:", config.url);
   return config;
 });
 

@@ -2,25 +2,26 @@ import Images from "@assets/images";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { useDesignSystem } from "@shared/provider";
 import { sizes, spacing } from "@shared/themes";
-import { Image, StyleSheet, View } from "react-native";
+import { Image, StyleSheet, TouchableOpacity, View } from "react-native";
 import { Text } from "./Text";
 
 interface Props {
+  onPressLogo?: () => void;
   onPressRight?: () => void;
 }
 
-export function Header({ onPressRight }: Props) {
+export function Header({ onPressLogo, onPressRight }: Props) {
   const { isDark, colors } = useDesignSystem();
   return (
     <View style={styles.container}>
-      <View style={styles.row}>
+      <TouchableOpacity style={styles.row} activeOpacity={0.8} onPress={onPressLogo}>
         <Image
           source={isDark ? Images.logoDark : Images.logoLight}
           resizeMode="contain"
           style={{ width: sizes.avatarMd, height: sizes.avatarMd }}
         />
         <Text tx="app.title" variant="h2" />
-      </View>
+      </TouchableOpacity>
       {onPressRight && (
         <Ionicons.Button
           name="search"

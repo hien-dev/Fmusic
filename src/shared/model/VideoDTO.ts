@@ -1,8 +1,18 @@
-export interface VideoSource {
+interface VideoSource {
   uri: string;
   metadata: {
     title: string;
     imageUri: string;
+  };
+}
+
+export const createVideoSource = (video: VideoDTO): VideoSource => {
+  return {
+    uri: video.url ?? "",
+    metadata: {
+      title: video.title,
+      imageUri: video.thumbnailURL,
+    },
   };
 }
 

@@ -11,6 +11,8 @@ interface Props {
 export const Screen = ({ children, style }: Props) => {
   const { colors } = useDesignSystem();
   return (
-    <SafeAreaView edges={["top"]} style={[{ backgroundColor: colors.background }, style]}>{children}</SafeAreaView>
+    <SafeAreaView edges={["top"]} style={[{ backgroundColor: colors.background }, style]}>
+      {children}
+    </SafeAreaView>
   );
 };

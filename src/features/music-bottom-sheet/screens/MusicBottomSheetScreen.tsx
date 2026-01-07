@@ -2,11 +2,12 @@ import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet";
 import { useTheme } from "@shared/hooks/useTheme";
 import { createVideoSource } from "@shared/model";
 import { spacing } from "@shared/themes";
-import { Text } from "@shared/ui";
+import { Playlists, Text } from "@shared/ui";
+import { windowSize } from "@shared/utils/constants";
 import { useEventListener } from "expo";
 import { useVideoPlayer, VideoView } from "expo-video";
-import { useCallback, useEffect, useMemo, useRef } from "react";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { ActivityIndicator, StyleSheet, View, ViewStyle } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { useMusicBottomSheet } from "../hooks/useMusicBottomSheet";
 
@@ -14,10 +15,19 @@ interface Props {
   children?: React.ReactNode | undefined;
 }
 
+interface VideoSize {
+  width: number;
+  height: number;
+}
+
 export default function MusicBottomSheetScreen({ children }: Props) {
   const { colors } = useTheme();
-  const { isShowBottomSheet, video, onChangeShowBottomSheet } = useMusicBottomSheet();
+  const { isShowBottomSheet, video, nextVideos, onChangeShowBottomSheet } = useMusicBottomSheet();
 
+  const [videoSize, onChangeVideoSize] = useState<VideoSize>({
+    width: windowSize.width,
+    height: 300,
+  });
   const bottomSheetRef = useRef<BottomSheet>(null);
   const currentTimeRef = useRef<number>(0);
   const snapPoints = useMemo(() => ["1%", "98%"], []);
@@ -50,9 +60,22 @@ export default function MusicBottomSheetScreen({ children }: Props) {
     player.play();
   });
 
+  useEventListener(player, "videoTrackChange", (event) => {
+    onChangeVideoSize(event.videoTrack.size);
+  });
+
   useEventListener(player, "timeUpdate", (event) => {
     currentTimeRef.current = event.currentTime;
   });
+
+  const videoContainerStyle = useMemo(() => {
+    return {
+      width: windowSize.width,
+      height: videoSize.height * (windowSize.width / videoSize.width),
+      marginTop: spacing.xl,
+      marginBottom: spacing.md,
+    } as ViewStyle;
+  }, [videoSize]);
 
   return (
     <>
@@ -62,23 +85,31 @@ export default function MusicBottomSheetScreen({ children }: Props) {
           ref={bottomSheetRef}
           bottomInset={-10}
           snapPoints={snapPoints}
+          enableDynamicSizing={false}
           onChange={handleSheetChanges}
           handleStyle={{ ...styles.handleStyle, backgroundColor: colors.background }}
           handleIndicatorStyle={{ backgroundColor: colors.icon }}
           backgroundStyle={{ backgroundColor: colors.background }}
         >
           <BottomSheetView style={{ ...styles.container, backgroundColor: colors.background }}>
-            <View style={styles.videoContainer}>
+            <View style={videoContainerStyle}>
               <View style={styles.videoLoading}>
                 <ActivityIndicator size="small" color={colors.icon} />
               </View>
               {player ? <VideoView style={styles.video} player={player} /> : null}
             </View>
             <View style={styles.content}>
-              <Text variant="h5" align="left">
+              <Text variant="h4" align="left">
                 {video?.title}
               </Text>
               <Text tx="music.next" variant="h4" align="left" />
+            </View>
+            <View style={styles.nextVideos}>
+              <Playlists
+                data={nextVideos?.playlist || []}
+                isLoading={false}
+                onPress={(video) => {}}
+              />
             </View>
           </BottomSheetView>
         </BottomSheet>
@@ -102,10 +133,6 @@ const styles = StyleSheet.create({
     borderTopRightRadius: spacing.lg,
     borderTopLeftRadius: spacing.lg,
   },
-  videoContainer: {
-    width: "100%",
-    height: 275,
-  },
   video: {
     width: "100%",
     height: "100%",
@@ -118,5 +145,10 @@ const styles = StyleSheet.create({
     height: "100%",
     justifyContent: "center",
     alignItems: "center",
+  },
+  nextVideos: {
+    flex: 1,
+    marginTop: spacing.xs,
+    paddingBottom: spacing[120],
   },
 });

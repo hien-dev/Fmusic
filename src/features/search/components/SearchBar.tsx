@@ -10,7 +10,7 @@ export default function SearchBar({
   isShow,
   value,
   onChange,
-  onSubmit
+  onSubmit,
 }: {
   isShow: boolean;
   value: string;

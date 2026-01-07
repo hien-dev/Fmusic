@@ -52,6 +52,6 @@ const styles = StyleSheet.create({
   listFooterComponentStyle: {
     alignItems: "center",
     paddingTop: spacing.md,
-    paddingBottom: spacing["120"]*100,
+    paddingBottom: spacing["120"] * 100,
   },
 });

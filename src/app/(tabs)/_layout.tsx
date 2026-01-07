@@ -1,7 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { useDesignSystem } from "@shared/provider";
 import { BottomBar } from "@shared/ui";
-import { iPhone } from "@shared/utils/function";
+import { iPhone } from "@shared/utils/constants";
 import { Tabs } from "expo-router";
 import { Icon, Label, NativeTabs } from "expo-router/unstable-native-tabs";
 

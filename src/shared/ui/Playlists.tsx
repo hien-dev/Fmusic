@@ -9,11 +9,12 @@ import { Text } from "./Text";
 interface Props {
   data: VideoDTO[];
   isLoading: boolean;
+  scrollEnabled?: boolean;
   onPress: (video: VideoDTO) => void;
-  onLoadMore: () => void;
+  onLoadMore?: () => void;
 }
 
-export function Playlists({ data, isLoading, onPress, onLoadMore }: Props) {
+export function Playlists({ data, isLoading, scrollEnabled = true, onPress, onLoadMore }: Props) {
   const { colors } = useDesignSystem();
 
   const renderItem: ListRenderItem<VideoDTO> = ({ item }) => (
@@ -37,6 +38,7 @@ export function Playlists({ data, isLoading, onPress, onLoadMore }: Props) {
       keyExtractor={(item, idx) => item.id + idx.toString()}
       onEndReachedThreshold={0.1}
       onEndReached={onLoadMore}
+      scrollEnabled={scrollEnabled}
       ListFooterComponent={<Loading size={"small"} />}
       ListFooterComponentStyle={[styles.listFooterComponentStyle, { opacity: isLoading ? 1 : 0 }]}
     />

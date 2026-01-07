@@ -35,7 +35,7 @@ export const useSearch = (): UseSearch => {
 
   useEffect(() => {
     onChangeLoading(true);
-    initFetch("Hà nhân")
+    initFetch("Remix")
       .then((response) => onChangePlaylists(response))
       .finally(() => {
         onChangeLoading(false);
@@ -58,7 +58,7 @@ export const useSearch = (): UseSearch => {
       .finally(() => {
         onChangeLoading(false);
       });
-  }
+  };
 
   const onLoadMore = () => {
     if (playlists?.continuation) {
@@ -94,6 +94,6 @@ export const useSearch = (): UseSearch => {
     onLoadMore,
     isLoading,
     suggestions,
-    onSearching
+    onSearching,
   };
 };

@@ -1,6 +1,6 @@
 import API from "@shared/api";
 import { baseAudioBody, baseIOSBody, endpointPath } from "@shared/api/config";
-import { VideoDTO } from "@shared/model";
+import { PlaylistDTO, VideoDTO } from "@shared/model";
 import { Log } from "@shared/utils/function";
 import * as Network from "expo-network";
 
@@ -11,7 +11,6 @@ export const initFetch = async (videoId: string): Promise<VideoDTO | null> => {
     const isCellular = true;
     if (isCellular) {
       const response = await API.post(endpointPath("reel"), baseAudioBody(videoId));
-      Log.log("MusicBottomSheet->initFetch\n", JSON.stringify(response.data));
       return VideoDTO.iTag18(response.data);
     }
     const body = Object.assign({ videoId: videoId }, baseIOSBody);
@@ -19,6 +18,17 @@ export const initFetch = async (videoId: string): Promise<VideoDTO | null> => {
     return VideoDTO.detail(response.data);
   } catch (error) {
     Log.error("MusicBottomSheet->initFetch\n", JSON.stringify(error));
+    throw error;
+  }
+};
+
+export const fetchNextMusic = async (videoId: string): Promise<PlaylistDTO | null> => {
+  try {
+    const body = Object.assign({ videoId: videoId, playlistId: `RD${videoId}` }, baseIOSBody);
+    const response = await API.post(endpointPath("next"), body);
+    return PlaylistDTO.next(response.data);
+  } catch (error) {
+    Log.error("MusicBottomSheet->fetchNextMusic\n", JSON.stringify(error));
     throw error;
   }
 };

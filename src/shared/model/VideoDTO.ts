@@ -14,7 +14,7 @@ export const createVideoSource = (video: VideoDTO): VideoSource => {
       artwork: video.thumbnailURL,
     },
   };
-}
+};
 
 export class VideoDTO {
   public readonly id: string;

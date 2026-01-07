@@ -6,8 +6,14 @@
     "ok": "Đồng ý",
     "cancel": "Hủy"
   },
+  "search": {
+    "placeholder": "Tìm kiếm bài hát, nghệ sĩ, album..."
+  },
   "settings": {
     "title": "Cài đặt",
     "theme": "Giao diện"
+  },
+  "music": {
+    "next": "Tiếp theo:"
   }
 }

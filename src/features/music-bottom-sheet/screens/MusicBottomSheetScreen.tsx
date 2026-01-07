@@ -78,6 +78,7 @@ export default function MusicBottomSheetScreen({ children }: Props) {
               <Text variant="h5" align="left">
                 {video?.title}
               </Text>
+              <Text tx="music.next" variant="h4" align="left" />
             </View>
           </BottomSheetView>
         </BottomSheet>
@@ -94,6 +95,7 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   content: {
+    gap: spacing.md,
     paddingHorizontal: spacing.sm,
   },
   handleStyle: {

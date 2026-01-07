@@ -1,0 +1,19 @@
+{
+  "app": {
+    "title": "Fmusic"
+  },
+  "common": {
+    "ok": "확인",
+    "cancel": "취소"
+  },
+  "search": {
+    "placeholder": "노래, 아티스트, 앨범을 검색하세요..."
+  },
+  "settings": {
+    "title": "설정",
+    "theme": "테마"
+  },
+  "music": {
+    "next": "다음:"
+  }
+}

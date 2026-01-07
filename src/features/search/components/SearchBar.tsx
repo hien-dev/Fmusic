@@ -1,8 +1,9 @@
 import { useTheme } from "@shared/hooks/useTheme";
 import { spacing } from "@shared/themes";
 import { Input } from "@shared/ui";
-import { useEffect, useRef, useState } from "react";
-import { Animated, StyleSheet, View } from "react-native";
+import { useEffect, useRef } from "react";
+import { StyleSheet, TextInput, View } from "react-native";
+import Animated, { useAnimatedStyle, useSharedValue, withSpring } from "react-native-reanimated";
 
 export default function SearchBar({
   isShow,
@@ -14,44 +15,32 @@ export default function SearchBar({
   onChange: (v: string) => void;
 }) {
   const { colors } = useTheme();
-
-  const [mounted, setMounted] = useState(isShow);
-  const anim = useRef(new Animated.Value(isShow ? 1 : 0)).current;
+  const inputRef = useRef<TextInput | null>(null);
+  const show = useSharedValue(0);
 
   useEffect(() => {
-    if (isShow) {
-      setMounted(true);
-      Animated.timing(anim, {
-        toValue: 1,
-        duration: 220,
-        useNativeDriver: true,
-      }).start();
-    } else {
-      Animated.timing(anim, {
-        toValue: 0,
-        duration: 180,
-        useNativeDriver: true,
-      }).start(({ finished }) => {
-        if (finished) setMounted(false);
-      });
+    show.value = isShow ? 1 : 0;
+    if (inputRef.current) {
+      isShow ? inputRef.current.focus() : inputRef.current.blur();
     }
-  }, [isShow, anim]);
+  }, [isShow]);
 
-  if (!mounted) return null;
-
-  const translateY = anim.interpolate({ inputRange: [0, 1], outputRange: [-8, 0] });
-  const opacity = anim;
+  const animationStyle = useAnimatedStyle(() => {
+    return {
+      opacity: withSpring(show.value, { duration: 300 }),
+      transform: [{ translateY: withSpring(show.value ? 0 : -56, { duration: 800 }) }],
+      height: withSpring(show.value ? 56 : 0, { duration: isShow ? 500 : 700 }),
+    };
+  });
 
   return (
-    <Animated.View
-      style={[styles.row, { opacity, transform: [{ translateY }] }]}
-      pointerEvents={isShow ? "auto" : "none"}
-    >
+    <Animated.View style={[styles.row, animationStyle]}>
       <View style={styles.flex}>
         <Input
+          ref={inputRef}
           placeholder="Search..."
           autoCorrect={false}
-          autoCapitalize="words"
+          autoCapitalize="none"
           value={value}
           onChangeText={onChange}
           style={{ color: colors.text }}
@@ -63,10 +52,6 @@ export default function SearchBar({
 
 const styles = StyleSheet.create({
   row: {
-    flexDirection: "row",
-    gap: 8,
-    alignItems: "center",
-    marginBottom: spacing.md,
     marginHorizontal: spacing.md,
   },
   flex: {

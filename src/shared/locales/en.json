@@ -6,8 +6,14 @@
     "ok": "OK",
     "cancel": "Cancel"
   },
+  "search": {
+    "placeholder": "Search for songs, artists, albums..."
+  },
   "settings": {
     "title": "Settings",
     "theme": "Theme"
+  },
+  "music": {
+    "next": "Next:"
   }
 }

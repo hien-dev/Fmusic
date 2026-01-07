@@ -1,6 +1,5 @@
 import { PlaylistDTO } from "@shared/model";
 import { debounce } from "@shared/utils/debounce";
-import { Log } from "@shared/utils/function";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { LayoutAnimation } from "react-native";
 import { continuationFetch, fetchSuggestions, initFetch } from "../services/search.api";
@@ -13,6 +12,8 @@ interface UseSearch {
   playlists: PlaylistDTO | undefined;
   onLoadMore: () => void;
   isLoading: boolean;
+  suggestions: string[];
+  onSearching: (queryString?: string) => void;
 }
 
 export const useSearch = (): UseSearch => {
@@ -20,6 +21,7 @@ export const useSearch = (): UseSearch => {
   const [searching, setSearching] = useState("");
   const [isLoading, onChangeLoading] = useState(false);
   const [playlists, onChangePlaylists] = useState<PlaylistDTO | undefined>(undefined);
+  const [suggestions, onChangeSuggestions] = useState<string[]>([]);
 
   const fetchSuggestionsDebouncedRef = useRef(
     debounce(async (query: string) => {
@@ -27,13 +29,13 @@ export const useSearch = (): UseSearch => {
         return;
       }
       const suggestions = await fetchSuggestions(query);
-      Log.log("Suggestions:", JSON.stringify(suggestions));
-    }, 800)
+      onChangeSuggestions(suggestions);
+    }, 500)
   );
 
   useEffect(() => {
     onChangeLoading(true);
-    initFetch("tay trai chi trang dan tranh")
+    initFetch("Hà nhân")
       .then((response) => onChangePlaylists(response))
       .finally(() => {
         onChangeLoading(false);
@@ -47,6 +49,16 @@ export const useSearch = (): UseSearch => {
     }
     fetchSuggestionsDebouncedRef.current(value);
   };
+
+  const onSearching = (queryString?: string) => {
+    onChangeLoading(true);
+    onChangePlaylists(undefined);
+    initFetch(queryString || searching)
+      .then((response) => onChangePlaylists(response))
+      .finally(() => {
+        onChangeLoading(false);
+      });
+  }
 
   const onLoadMore = () => {
     if (playlists?.continuation) {
@@ -81,5 +93,7 @@ export const useSearch = (): UseSearch => {
     playlists,
     onLoadMore,
     isLoading,
+    suggestions,
+    onSearching
   };
 };

@@ -11,6 +11,7 @@ export const initFetch = async (videoId: string): Promise<VideoDTO | null> => {
     const isCellular = true;
     if (isCellular) {
       const response = await API.post(endpointPath("reel"), baseAudioBody(videoId));
+      Log.log("MusicBottomSheet->initFetch\n", JSON.stringify(response.data));
       return VideoDTO.iTag18(response.data);
     }
     const body = Object.assign({ videoId: videoId }, baseIOSBody);

@@ -2,7 +2,7 @@ interface VideoSource {
   uri: string;
   metadata: {
     title: string;
-    imageUri: string;
+    artwork: string;
   };
 }
 
@@ -11,7 +11,7 @@ export const createVideoSource = (video: VideoDTO): VideoSource => {
     uri: video.url ?? "",
     metadata: {
       title: video.title,
-      imageUri: video.thumbnailURL,
+      artwork: video.thumbnailURL,
     },
   };
 }

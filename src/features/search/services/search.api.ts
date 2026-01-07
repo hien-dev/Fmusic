@@ -1,7 +1,7 @@
 import API from "@shared/api";
 import { baseIOSBody, endpointPath } from "@shared/api/config";
 import { PlaylistDTO } from "@shared/model";
-import { Log } from "@shared/utils/function";
+import { Log, suggestQueriesParse } from "@shared/utils/function";
 
 export const initFetch = async (query: string) => {
   try {
@@ -21,6 +21,18 @@ export const continuationFetch = async (continuation: string) => {
     return PlaylistDTO.searchContinuations(response.data);
   } catch (error) {
     Log.error("Search->continuation\n", JSON.stringify(error));
+    throw error;
+  }
+};
+
+export const fetchSuggestions = async (query: string): Promise<string[]> => {
+  try {
+    const url = `${endpointPath("suggestQueries")}${query}`;
+    const response = await API.get(url);
+    const parse = suggestQueriesParse(response.data);
+    return parse;
+  } catch (error) {
+    Log.error("Search->suggestions\n", JSON.stringify(error));
     throw error;
   }
 };

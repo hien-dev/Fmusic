@@ -5,7 +5,7 @@ export function Input(props: React.ComponentProps<typeof TextInput>) {
     <TextInput
       {...props}
       style={[
-        { borderWidth: 1, borderColor: "#ddd", padding: 12, borderRadius: 8 },
+        { borderWidth: 1, borderColor: "#ddd", padding: 12, borderRadius: 30 },
         props.style as any,
       ]}
     />

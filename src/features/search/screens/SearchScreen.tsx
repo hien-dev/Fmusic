@@ -23,7 +23,15 @@ export default function SearchScreen() {
   return (
     <Screen style={styles.container}>
       <Header onPressLogo={toggleBottomSheet} onPressRight={onToggleShowSearch} />
-      <SearchBar isShow={isShowSearch} value={searching} onChange={onChangeSearching} />
+      <SearchBar
+        isShow={isShowSearch}
+        value={searching}
+        onChange={onChangeSearching}
+        onSubmit={() => {
+          onSearching();
+          onToggleShowSearch();
+        }}
+      />
       {suggestions.length > 0 && isShowSearch ? (
         <SuggestionList
           data={suggestions}

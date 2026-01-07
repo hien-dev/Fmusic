@@ -1,4 +1,5 @@
 import { useTheme } from "@shared/hooks/useTheme";
+import { tr } from "@shared/locales/i18n";
 import { spacing } from "@shared/themes";
 import { Input } from "@shared/ui";
 import { useEffect, useRef } from "react";
@@ -9,10 +10,12 @@ export default function SearchBar({
   isShow,
   value,
   onChange,
+  onSubmit
 }: {
   isShow: boolean;
   value: string;
   onChange: (v: string) => void;
+  onSubmit?: () => void;
 }) {
   const { colors } = useTheme();
   const inputRef = useRef<TextInput | null>(null);
@@ -38,11 +41,13 @@ export default function SearchBar({
       <View style={styles.flex}>
         <Input
           ref={inputRef}
-          placeholder="Search..."
+          placeholder={tr("search.placeholder")}
           autoCorrect={false}
           autoCapitalize="none"
           value={value}
+          enterKeyHint="search"
           onChangeText={onChange}
+          onSubmitEditing={onSubmit}
           style={{ color: colors.text }}
         />
       </View>

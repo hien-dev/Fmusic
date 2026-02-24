@@ -36,12 +36,16 @@ export class PlaylistDTO {
 
       const videoData = model?.compactVideoModel?.compactVideoData;
       const playlistData = model?.compactPlaylistModel?.compactPlaylistData;
+      const videoWithContextData = model?.videoWithContextModel?.videoWithContextData;
 
       if (videoData && typeof videoData === "object") {
         const v = VideoDTO.compactVideo(videoData);
         if (v) results.push(v);
       } else if (playlistData && typeof playlistData === "object") {
         const v = VideoDTO.compactPlaylist(playlistData);
+        if (v) results.push(v);
+      } else if (videoWithContextData && typeof videoWithContextData === "object") {
+        const v = VideoDTO.videoWithContext(videoWithContextData);
         if (v) results.push(v);
       }
     }

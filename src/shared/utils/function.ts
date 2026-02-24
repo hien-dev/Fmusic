@@ -2,7 +2,7 @@ export const formatDate = (d: Date) => d.toISOString().split("T")[0];
 
 const timestamp = () => new Date().toISOString();
 const log = (...args: any[]) => console.log(`[LOG ${timestamp()}]`, ...args);
-const error = (...args: any[]) => console.error(`[ERROR ${timestamp()}]`, ...args);
+const error = (...args: any[]) => console.log(`[ERROR ${timestamp()}]`, ...args);
 export const Log = { log, error };
 
 const decodeUnicodeDeep = (input: string): string => {

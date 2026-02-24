@@ -1,4 +1,3 @@
-import { Log } from "@shared/utils/function";
 import { useCallback } from "react";
 import { useShallow } from "zustand/shallow";
 import { fetchNextMusic, initFetch } from "../services/music-bottom-sheet.api";
@@ -15,19 +14,15 @@ export function useMusicBottomSheet() {
 
   const fetchMusicById = (videoId: string) => {
     onChangeShowBottomSheet(true);
-    initFetch(videoId)
-      .then((response) => {
-        onChangeVideo(response);
-        setTimeout(() => {
-          (async () => {
-            const nextPlaylist = await fetchNextMusic(videoId);
-            onChangeNextVideo(nextPlaylist);
-          })();
-        }, 500);
-      })
-      .catch((error) => {
-        Log.error("Failed to fetch music data:", error);
-      });
+    initFetch(videoId).then((response) => {
+      onChangeVideo(response);
+      setTimeout(() => {
+        (async () => {
+          const nextPlaylist = await fetchNextMusic(videoId);
+          onChangeNextVideo(nextPlaylist);
+        })();
+      }, 500);
+    });
   };
 
   const toggleBottomSheet = useCallback(() => {

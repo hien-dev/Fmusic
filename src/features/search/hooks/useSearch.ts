@@ -30,10 +30,15 @@ export const useSearch = (): UseSearch => {
       }
       const suggestions = await fetchSuggestions(query);
       onChangeSuggestions(suggestions);
-    }, 500)
+    }, 300)
   );
 
+  const initializedRef = useRef(false);
+
   useEffect(() => {
+    if (initializedRef.current) return;
+    initializedRef.current = true;
+
     onChangeLoading(true);
     initFetch("Remix")
       .then((response) => onChangePlaylists(response))

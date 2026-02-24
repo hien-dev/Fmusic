@@ -107,6 +107,47 @@ export class VideoDTO {
     });
   }
 
+  static videoWithContext(json: any): VideoDTO | null {
+    const videoData = json?.videoData;
+
+    const title = videoData?.lockupMetadata?.lockupMetadataViewModel?.title?.content ?? "";
+    const author = videoData?.thumbnail?.videoCount
+      ? `Playlist · ${videoData?.thumbnail?.videoCount}`
+      : "";
+    const thumbnailURL = videoData?.thumbnail?.image?.sources?.[0]?.url ?? "";
+
+    const dragAndDropUrl: string | undefined = videoData?.dragAndDropUrl;
+    const browseIdFromDragAndDropUrl = this.replaceBrowseId(dragAndDropUrl);
+
+    const explicitBrowseId = json?.onTap?.innertubeCommand?.browseEndpoint?.browseId;
+
+    const browseId =
+      explicitBrowseId ??
+      (typeof browseIdFromDragAndDropUrl === "string" ? browseIdFromDragAndDropUrl : undefined);
+
+    const videoId =
+      typeof browseIdFromDragAndDropUrl === "object"
+        ? (browseIdFromDragAndDropUrl as Record<string, string>)?.videoId
+        : undefined;
+
+    const playlistId =
+      typeof browseIdFromDragAndDropUrl === "object"
+        ? (browseIdFromDragAndDropUrl as Record<string, string>)?.playlistId
+        : undefined;
+
+    if (!title && !thumbnailURL && !author && !browseId && !playlistId) {
+      return null;
+    }
+    return new VideoDTO({
+      title,
+      thumbnailURL,
+      author,
+      videoId,
+      browseId,
+      playlistId,
+    });
+  }
+
   static next(json: any): VideoDTO | null {
     const videoId = json?.videoId;
     const title = json?.title?.simpleText ?? json?.title?.runs?.[0]?.text ?? "";

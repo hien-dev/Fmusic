@@ -4,9 +4,35 @@ import { endpointPath } from "./config";
 
 const API = axios.create({ timeout: 15000 });
 
+let headersPromise: Promise<any> | null = null;
+let lastFetchTime = 0;
+const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
+
 const fetchDynamicHeaders = async () => {
-  const res = await axios.get(endpointPath("requestHeader"));
-  return res.data.headers;
+  const now = Date.now();
+
+  if (headersPromise && now - lastFetchTime < CACHE_DURATION) {
+    return headersPromise;
+  }
+
+  const performFetch = async (retries: number): Promise<any> => {
+    try {
+      Log.log(`API Request Header attempt: ${6 - retries}`);
+      const res = await axios.get(endpointPath("requestHeader"));
+      lastFetchTime = Date.now();
+      return res.data.headers;
+    } catch (err) {
+      if (retries > 1) {
+        await new Promise((resolve) => setTimeout(resolve, 1000));
+        return performFetch(retries - 1);
+      }
+      headersPromise = null;
+      throw err;
+    }
+  };
+
+  headersPromise = performFetch(5);
+  return headersPromise;
 };
 
 API.interceptors.request.use(
@@ -19,6 +45,7 @@ API.interceptors.request.use(
       };
     }
     Log.log("API Request URL:", config.url);
+    Log.log("API Request Body:", JSON.stringify(config.data));
     return config;
   },
   (error) => {

@@ -19,7 +19,7 @@ export function Playlists({ data, isLoading, scrollEnabled = true, onPress, onLo
 
   const renderItem: ListRenderItem<VideoDTO> = ({ item }) => (
     <Button style={[styles.item, { borderColor: colors.border }]} onPress={() => onPress(item)}>
-      <Image source={{ uri: item.thumbnailURL }} resizeMode="stretch" style={styles.image} />
+      <Image source={{ uri: item.thumbnailURL }} resizeMode="center" style={styles.image} />
       <View style={styles.flex}>
         <Text variant="h5" numberOfLines={2} align="left">
           {item.title}
@@ -62,6 +62,8 @@ const styles = StyleSheet.create({
     width: 75,
     height: 60,
     borderRadius: 5,
+    borderWidth: 1,
+    borderColor: "white",
   },
   listFooterComponentStyle: {
     alignItems: "center",

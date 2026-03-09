@@ -13,16 +13,14 @@ export function useMusicBottomSheet() {
   const nextVideos = useMusicBottomSheetState((state) => state.nextVideos);
 
   const fetchMusicById = (videoId: string) => {
-    onChangeShowBottomSheet(true);
-    initFetch(videoId).then((response) => {
-      onChangeVideo(response);
-      setTimeout(() => {
-        (async () => {
-          const nextPlaylist = await fetchNextMusic(videoId);
-          onChangeNextVideo(nextPlaylist);
-        })();
-      }, 500);
-    });
+    Promise.all([initFetch(videoId), fetchNextMusic(videoId)])
+      .then(([video, nextVideos]) => {
+        onChangeVideo(video);
+        onChangeNextVideo(nextVideos);
+      })
+      .finally(() => {
+        onChangeShowBottomSheet(true);
+      });
   };
 
   const toggleBottomSheet = useCallback(() => {

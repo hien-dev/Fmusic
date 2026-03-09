@@ -18,6 +18,14 @@ export enum Endpoint {
   player = "player",
 }
 
+export enum ContentTabs {
+  all = "EgIQAfABAQ==",
+  videos = "EgIQAQ==",
+  live = "EgJAAQ==",
+  artists = "EgIQAg==",
+  albums = "EgIQAw==",
+}
+
 export const endpointPath = (endpoint: keyof typeof Endpoint): string => {
   switch (endpoint) {
     case Endpoint.requestHeader:

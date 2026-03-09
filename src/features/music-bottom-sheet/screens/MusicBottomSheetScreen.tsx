@@ -1,15 +1,22 @@
-import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet";
 import { useTheme } from "@shared/hooks/useTheme";
 import { createVideoSource } from "@shared/model";
 import { spacing } from "@shared/themes";
-import { Playlists, Text } from "@shared/ui";
 import { windowSize } from "@shared/utils/constants";
 import { useEventListener } from "expo";
-import { useVideoPlayer, VideoView } from "expo-video";
+import { useVideoPlayer } from "expo-video";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { ActivityIndicator, StyleSheet, View, ViewStyle } from "react-native";
+import { StyleSheet, View, ViewStyle } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
+import Animated, {
+  Extrapolation,
+  interpolate,
+  useAnimatedStyle,
+  useSharedValue,
+} from "react-native-reanimated";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useMusicBottomSheet } from "../hooks/useMusicBottomSheet";
+import { MiniPlayer } from "../components/MiniPlayer";
+import { MusicBottomSheetContent } from "../components/MusicBottomSheetContent";
 
 interface Props {
   children?: React.ReactNode | undefined;
@@ -22,19 +29,24 @@ interface VideoSize {
 
 export default function MusicBottomSheetScreen({ children }: Props) {
   const { colors } = useTheme();
+  const { bottom } = useSafeAreaInsets();
   const { isShowBottomSheet, video, nextVideos, onChangeShowBottomSheet } = useMusicBottomSheet();
 
   const [videoSize, onChangeVideoSize] = useState<VideoSize>({
     width: windowSize.width,
     height: 300,
   });
-  const bottomSheetRef = useRef<BottomSheet>(null);
+  const bottomSheetRef = useRef<any>(null);
   const currentTimeRef = useRef<number>(0);
-  const snapPoints = useMemo(() => ["1%", "98%"], []);
+  const snapPoints = useMemo(() => ["98%"], []);
+
+  const animatedIndex = useSharedValue(-1);
+
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const handleSheetChanges = useCallback(
     (index: number) => {
-      if (index === 0 && isShowBottomSheet) {
+      if (index === -1 && isShowBottomSheet) {
         onChangeShowBottomSheet(false);
       }
     },
@@ -48,9 +60,20 @@ export default function MusicBottomSheetScreen({ children }: Props) {
         player.seekBy(currentTimeRef.current);
       }
     } else {
-      bottomSheetRef.current?.collapse();
+      bottomSheetRef.current?.close();
     }
   }, [isShowBottomSheet]);
+
+  const miniPlayerStyle = useAnimatedStyle(() => {
+    const opacity = interpolate(animatedIndex.value, [-1, -0.8, 0], [1, 0, 0], Extrapolation.CLAMP);
+    const translateY = interpolate(animatedIndex.value, [-1, 0], [0, 50], Extrapolation.CLAMP);
+
+    return {
+      opacity,
+      transform: [{ translateY }],
+      zIndex: animatedIndex.value <= -0.5 ? 99 : -1,
+    };
+  });
 
   const videoSource = video && video.url ? createVideoSource(video) : undefined;
   const player = useVideoPlayer(videoSource as any, (player) => {
@@ -60,6 +83,10 @@ export default function MusicBottomSheetScreen({ children }: Props) {
     player.play();
   });
 
+  useEventListener(player, "playingChange", (event) => {
+    setIsPlaying(event.isPlaying);
+  });
+
   useEventListener(player, "videoTrackChange", (event) => {
     onChangeVideoSize(event.videoTrack.size);
   });
@@ -67,6 +94,14 @@ export default function MusicBottomSheetScreen({ children }: Props) {
   useEventListener(player, "timeUpdate", (event) => {
     currentTimeRef.current = event.currentTime;
   });
+
+  const togglePlayPause = useCallback(() => {
+    if (player.playing) {
+      player.pause();
+    } else {
+      player.play();
+    }
+  }, [player]);
 
   const videoContainerStyle = useMemo(() => {
     return {
@@ -81,38 +116,29 @@ export default function MusicBottomSheetScreen({ children }: Props) {
     <>
       <GestureHandlerRootView style={styles.root}>
         {children}
-        <BottomSheet
-          ref={bottomSheetRef}
-          bottomInset={-10}
+        <MusicBottomSheetContent
+          bottomSheetRef={bottomSheetRef}
           snapPoints={snapPoints}
-          enableDynamicSizing={false}
+          colors={colors}
+          video={video}
+          nextVideos={nextVideos}
+          player={player}
+          videoContainerStyle={videoContainerStyle}
+          animatedIndex={animatedIndex}
           onChange={handleSheetChanges}
-          handleStyle={{ ...styles.handleStyle, backgroundColor: colors.background }}
-          handleIndicatorStyle={{ backgroundColor: colors.icon }}
-          backgroundStyle={{ backgroundColor: colors.background }}
-        >
-          <BottomSheetView style={{ ...styles.container, backgroundColor: colors.background }}>
-            <View style={videoContainerStyle}>
-              <View style={styles.videoLoading}>
-                <ActivityIndicator size="small" color={colors.icon} />
-              </View>
-              {player ? <VideoView style={styles.video} player={player} /> : null}
-            </View>
-            <View style={styles.content}>
-              <Text variant="h4" align="left">
-                {video?.title}
-              </Text>
-              <Text tx="music.next" variant="h4" align="left" />
-            </View>
-            <View style={styles.nextVideos}>
-              <Playlists
-                data={nextVideos?.playlist || []}
-                isLoading={false}
-                onPress={(video) => {}}
-              />
-            </View>
-          </BottomSheetView>
-        </BottomSheet>
+        />
+
+        {video && (
+          <MiniPlayer
+            video={video}
+            isPlaying={isPlaying}
+            bottomInset={bottom + 50}
+            colors={colors}
+            animatedStyle={miniPlayerStyle}
+            onTogglePlayPause={togglePlayPause}
+            onPress={() => onChangeShowBottomSheet(true)}
+          />
+        )}
       </GestureHandlerRootView>
     </>
   );
@@ -120,35 +146,5 @@ export default function MusicBottomSheetScreen({ children }: Props) {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-  },
-  container: {
-    flex: 1,
-    height: "100%",
-  },
-  content: {
-    gap: spacing.md,
-    paddingHorizontal: spacing.sm,
-  },
-  handleStyle: {
-    borderTopRightRadius: spacing.lg,
-    borderTopLeftRadius: spacing.lg,
-  },
-  video: {
-    width: "100%",
-    height: "100%",
-  },
-  videoLoading: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    width: "100%",
-    height: "100%",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  nextVideos: {
-    flex: 1,
-    marginTop: spacing.xs,
-    // paddingBottom: spacing[120],
   },
 });

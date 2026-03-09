@@ -25,7 +25,7 @@ export const endpointPath = (endpoint: keyof typeof Endpoint): string => {
     case Endpoint.suggestQueries:
       return "https://suggestqueries-clients6.youtube.com/complete/search?ds=yt&client=youtube&gs_ri=youtube&q=";
     case Endpoint.search:
-      return `${BASE_URL}youtubei/v1/search?prettyPrint=false&key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8`;
+      return `${BASE_URL}youtubei/v1/search?prettyPrint=false`;
     case Endpoint.next:
       return `${BASE_URL}youtubei/v1/next?prettyPrint=false&key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8`;
     case Endpoint.browse:
@@ -39,71 +39,55 @@ export const endpointPath = (endpoint: keyof typeof Endpoint): string => {
   }
 };
 
-export const baseIOSBody = {
-  context: {
-    client: {
-      remoteHost: "227.62.69.226",
-      visitorData: VISITOR_DATA,
-      clientName: "IOS",
-      clientVersion: IOS_CLIENT_VERSION,
-      deviceMake: "Apple",
-      deviceModel: IOS_DEVICE_MODEL,
-      platform: "MOBILE",
-      osName: "iOS",
-      osVersion: IOS_OS_VERSION,
-      hl: "vi",
-      gl: "VN",
-      utcOffsetMinutes: -240,
-      userAgent:
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_6) AppleWebKit/534.35 (KHTML, like Gecko) Chrome/85.4.3358.135 Safari/530.34,gzip(gfe)",
+export const baseWebBody = ({
+  query,
+  continuation,
+  videoId,
+}: {
+  query?: string;
+  continuation?: string;
+  videoId?: string;
+}) => {
+  return {
+    context: {
+      client: {
+        clientName: "WEB",
+        clientVersion: "2.20241205.01.00",
+      },
     },
-    user: {
-      lockedSafetyMode: false,
-    },
-    request: {
-      useSsl: true,
-    },
-  },
-  contentCheckOk: true,
-  racyCheckOk: true,
+    ...(query ? { query } : {}),
+    ...(continuation ? { continuation } : {}),
+    ...(videoId ? { videoId } : {}),
+    contentCheckOk: true,
+    racyCheckOk: true,
+  };
 };
 
 export const baseAudioBody = (videoId: string) => {
   return {
+    videoId: videoId,
+    cpn: "DUA5nfxp-d977GYp",
+    contentCheckOk: true,
+    racyCheckOk: true,
     context: {
       client: {
-        osVersion: ANDROID_OS_VERSION,
         clientName: "ANDROID",
-        hl: "vi",
-        deviceMake: "Apple",
-        browserName: "Chrome",
-        remoteHost: "14.232.210.53",
-        platform: "DESKTOP",
-        userAgent: `Mozilla/5.0 (Macintosh; Intel Mac OS X ${ANDROID_OS_VERSION}) AppleWebKit/539.31 (KHTML, like Gecko) Chrome/${BROWSER_VERSION} Safari/540.34,gzip(gfe)`,
-        clientVersion: ANDROID_CLIENT_VERSION,
-        originalUrl: "https://www.youtube.com/",
-        deviceModel: "",
-        acceptHeader: "*/*",
-        gl: "VN",
-        visitorData: VISITOR_DATA,
+        clientVersion: "21.08.265",
+        platform: "MOBILE",
         osName: "Android",
-        browserVersion: BROWSER_VERSION,
-        androidSdkVersion: ANDROID_SDK_VERSION,
+        osVersion: "14",
+        androidSdkVersion: "34",
+        hl: "en",
+        gl: "US",
+        utcOffsetMinutes: -240,
       },
       request: {
+        internalExperimentFlags: [],
         useSsl: true,
       },
       user: {
         lockedSafetyMode: false,
-        enableSafetyMode: false,
       },
     },
-    videoId,
-    contentCheckOk: true,
-    racyCheckOk: true,
-    playerRequest: {
-      videoId,
-    },
-    disablePlayerResponse: false,
   };
 };

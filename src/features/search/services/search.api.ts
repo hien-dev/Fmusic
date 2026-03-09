@@ -1,11 +1,11 @@
 import API from "@shared/api";
-import { baseIOSBody, endpointPath } from "@shared/api/config";
+import { baseWebBody, endpointPath } from "@shared/api/config";
 import { PlaylistDTO } from "@shared/model";
 import { Log, suggestQueriesParse } from "@shared/utils/function";
 
 export const initFetch = async (query: string) => {
   try {
-    let body = Object.assign({ query }, baseIOSBody);
+    const body = baseWebBody({ query });
     const response = await API.post(endpointPath("search"), body);
     return PlaylistDTO.search(response.data);
   } catch (error) {
@@ -16,7 +16,7 @@ export const initFetch = async (query: string) => {
 
 export const continuationFetch = async (continuation: string) => {
   try {
-    const body = Object.assign({ continuation }, baseIOSBody);
+    const body = baseWebBody({ continuation });
     const response = await API.post(endpointPath("search"), body);
     return PlaylistDTO.searchContinuations(response.data);
   } catch (error) {

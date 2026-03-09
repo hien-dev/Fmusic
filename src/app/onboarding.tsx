@@ -3,5 +3,13 @@ import { useRouter } from "expo-router";
 
 export default function OnboardingRoute() {
   const router = useRouter();
-  return <OnboardingScreen onNext={() => router.push("/(tabs)/search")} />;
+  return (
+    <OnboardingScreen
+      onNext={async () => {
+        setTimeout(() => {
+          router.replace("/(tabs)/search");
+        }, 1000);
+      }}
+    />
+  );
 }

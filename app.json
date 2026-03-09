@@ -8,10 +8,7 @@
     "scheme": "fmusic",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
-    "assetBundlePatterns": [
-      "assets/fonts/*",
-      "assets/images/*"
-    ],
+    "assetBundlePatterns": ["assets/fonts/*", "assets/images/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.nguyennhuhien2381997.Fmusic"
@@ -41,9 +38,7 @@
       ],
       "expo-localization",
       "expo-video",
-      "expo-font",
-      "expo-web-browser",
-      "expo-audio"
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true

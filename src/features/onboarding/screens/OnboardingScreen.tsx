@@ -1,4 +1,5 @@
 import Images from "@assets/images";
+import { fetchDynamicHeaders } from "@shared/api";
 import { useDesignSystem } from "@shared/provider";
 import { sizes, spacing } from "@shared/themes";
 import { Screen } from "@shared/ui";
@@ -13,7 +14,9 @@ export default function OnboardingScreen({ onNext }: Props) {
   const { isDark, colors } = useDesignSystem();
 
   useEffect(() => {
-    onNext();
+    fetchDynamicHeaders().finally(() => {
+      onNext();
+    });
   }, []);
 
   return (

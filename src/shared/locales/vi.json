@@ -4,7 +4,8 @@
   },
   "common": {
     "ok": "Đồng ý",
-    "cancel": "Hủy"
+    "cancel": "Hủy",
+    "retry": "Thử lại"
   },
   "search": {
     "placeholder": "Tìm kiếm bài hát, nghệ sĩ, album..."

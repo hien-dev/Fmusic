@@ -8,7 +8,7 @@ let headersPromise: Promise<any> | null = null;
 let lastFetchTime = 0;
 const CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
-const fetchDynamicHeaders = async () => {
+export const fetchDynamicHeaders = async () => {
   const now = Date.now();
 
   if (headersPromise && now - lastFetchTime < CACHE_DURATION) {

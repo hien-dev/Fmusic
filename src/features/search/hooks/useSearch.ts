@@ -1,7 +1,8 @@
+import { tr } from "@shared/locales/i18n";
 import { PlaylistDTO } from "@shared/model";
 import { debounce } from "@shared/utils/debounce";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { LayoutAnimation } from "react-native";
+import { Alert, LayoutAnimation } from "react-native";
 import { continuationFetch, fetchSuggestions, initFetch } from "../services/search.api";
 
 interface UseSearch {
@@ -35,17 +36,32 @@ export const useSearch = (): UseSearch => {
 
   const initializedRef = useRef(false);
 
-  useEffect(() => {
-    if (initializedRef.current) return;
-    initializedRef.current = true;
-
+  const fetchPlaylists = useCallback((query: string) => {
     onChangeLoading(true);
-    initFetch("Remix")
+    initFetch(query)
       .then((response) => onChangePlaylists(response))
+      .catch((error) => {
+        Alert.alert(tr("app.title"), error?.message, [
+          {
+            text: tr("common.retry"),
+            onPress: () => fetchPlaylists(query),
+          },
+          {
+            text: tr("common.cancel"),
+            onPress: () => {},
+          },
+        ]);
+      })
       .finally(() => {
         onChangeLoading(false);
       });
   }, []);
+
+  useEffect(() => {
+    if (initializedRef.current) return;
+    initializedRef.current = true;
+    fetchPlaylists("remix tiktok 2025");
+  }, [fetchPlaylists]);
 
   const onChangeSearching = (value: string) => {
     setSearching(value);
@@ -56,13 +72,8 @@ export const useSearch = (): UseSearch => {
   };
 
   const onSearching = (queryString?: string) => {
-    onChangeLoading(true);
     onChangePlaylists(undefined);
-    initFetch(queryString || searching)
-      .then((response) => onChangePlaylists(response))
-      .finally(() => {
-        onChangeLoading(false);
-      });
+    fetchPlaylists(queryString || searching);
   };
 
   const onLoadMore = () => {
@@ -71,13 +82,26 @@ export const useSearch = (): UseSearch => {
       continuationFetch(playlists.continuation)
         .then((response) => {
           if (playlists.playlist.length > 0) {
-            let updatePlaylist = playlists;
-            updatePlaylist.continuation = response.continuation;
-            updatePlaylist.playlist = [...playlists.playlist, ...response.playlist];
-            onChangePlaylists(updatePlaylist);
+            onChangePlaylists({
+              ...playlists,
+              continuation: response.continuation,
+              playlist: [...playlists.playlist, ...response.playlist],
+            });
             return;
           }
           onChangePlaylists(response);
+        })
+        .catch((error) => {
+          Alert.alert(tr("app.title"), JSON.stringify(error?.message), [
+            {
+              text: tr("common.retry"),
+              onPress: onLoadMore,
+            },
+            {
+              text: tr("common.cancel"),
+              onPress: () => {},
+            },
+          ]);
         })
         .finally(() => {
           onChangeLoading(false);

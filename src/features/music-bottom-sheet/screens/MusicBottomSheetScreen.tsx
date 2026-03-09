@@ -149,6 +149,6 @@ const styles = StyleSheet.create({
   nextVideos: {
     flex: 1,
     marginTop: spacing.xs,
-    paddingBottom: spacing[120],
+    // paddingBottom: spacing[120],
   },
 });

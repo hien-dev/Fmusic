@@ -4,7 +4,8 @@
   },
   "common": {
     "ok": "OK",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "retry": "Retry"
   },
   "search": {
     "placeholder": "Search for songs, artists, albums..."

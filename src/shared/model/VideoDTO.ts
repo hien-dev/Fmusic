@@ -204,14 +204,95 @@ export class VideoDTO {
     });
   }
 
+  static search(json: any): VideoDTO | null {
+    const videoRenderer = json?.videoRenderer;
+    const playlistRenderer = json?.playlistRenderer;
+    const radioRenderer = json?.radioRenderer;
+
+    if (videoRenderer) {
+      const videoId = videoRenderer?.videoId;
+      const title = videoRenderer?.title?.runs?.[0]?.text ?? "";
+      const author = videoRenderer?.longBylineText?.runs?.[0]?.text ?? "";
+      const thumbnailURL = videoRenderer?.thumbnail?.thumbnails?.[0]?.url ?? "";
+
+      if (!title && !thumbnailURL && !author && !videoId) return null;
+
+      return new VideoDTO({
+        title,
+        thumbnailURL,
+        author,
+        videoId,
+      });
+    }
+
+    if (playlistRenderer) {
+      const playlistId = playlistRenderer?.playlistId;
+      const title = playlistRenderer?.title?.simpleText ?? "";
+      const author = playlistRenderer?.longBylineText?.runs?.[0]?.text ?? "";
+      const thumbnailURL = playlistRenderer?.thumbnails?.[0]?.thumbnails?.[0]?.url ?? "";
+
+      if (!title && !thumbnailURL && !author && !playlistId) return null;
+
+      return new VideoDTO({
+        title,
+        thumbnailURL,
+        author,
+        playlistId,
+      });
+    }
+
+    if (radioRenderer) {
+      const playlistId = radioRenderer?.playlistId;
+      const title = radioRenderer?.title?.simpleText ?? "";
+      const author = `Radio · ${radioRenderer?.videoCountText?.runs?.[0]?.text ?? "mix"}`;
+      const thumbnailURL = radioRenderer?.thumbnail?.thumbnails?.[0]?.url ?? "";
+
+      if (!title && !thumbnailURL && !author && !playlistId) return null;
+
+      return new VideoDTO({
+        title,
+        thumbnailURL,
+        author,
+        playlistId,
+      });
+    }
+
+    return null;
+  }
+
+  static lockup(json: any): VideoDTO | null {
+    const lockup = json?.lockupViewModel;
+    if (!lockup) return null;
+
+    const videoId = lockup.contentId;
+    const title = lockup.metadata?.lockupMetadataViewModel?.title?.content ?? "";
+    const thumbnailURL =
+      lockup.contentImage?.thumbnailViewModel?.image?.sources?.slice(-1)[0]?.url ?? "";
+
+    const metadataRows =
+      lockup.metadata?.lockupMetadataViewModel?.metadata?.contentMetadataViewModel?.metadataRows ??
+      [];
+    const author = metadataRows[0]?.metadataParts?.[0]?.text?.content ?? "";
+
+    if (!title && !thumbnailURL && !videoId) return null;
+
+    return new VideoDTO({
+      title,
+      thumbnailURL,
+      author,
+      videoId,
+    });
+  }
+
   static browseContinuations(json: any): VideoDTO | null {
     return this.browse(json);
   }
 
   static detail(json: any): VideoDTO | null {
-    const playerResponse = json;
+    const playerResponse = json?.playerResponse ?? json;
     const videoId = playerResponse?.videoDetails?.videoId;
     const title = playerResponse?.videoDetails?.title ?? "";
+    const author = playerResponse?.videoDetails?.author ?? "";
     const thumbnailURL =
       playerResponse?.videoDetails?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ?? "";
     const url = playerResponse?.streamingData?.hlsManifestUrl;
@@ -221,26 +302,35 @@ export class VideoDTO {
     return new VideoDTO({
       title,
       thumbnailURL,
-      author: "",
+      author,
       videoId,
       url,
     });
   }
 
   static iTag18(json: any): VideoDTO | null {
-    const playerResponse = json?.playerResponse;
-    const videoId = playerResponse?.videoDetails?.videoId;
-    const title = playerResponse?.videoDetails?.title ?? "";
-    const thumbnailURL =
-      playerResponse?.videoDetails?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ?? "";
-    const url = playerResponse?.streamingData?.formats?.[0]?.url ?? "";
+    const playerResponse = json?.playerResponse ?? json;
+    const videoDetails = playerResponse?.videoDetails;
+    const streamingData = playerResponse?.streamingData;
+
+    const videoId = videoDetails?.videoId;
+    const title = videoDetails?.title ?? "";
+    const author = videoDetails?.author ?? "";
+    const thumbnailURL = videoDetails?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ?? "";
+
+    const formats = streamingData?.formats ?? [];
+    const adaptiveFormats = streamingData?.adaptiveFormats ?? [];
+    const allFormats = [...formats, ...adaptiveFormats];
+
+    const itag18Format = allFormats.find((f: any) => f.itag === 18);
+    const url = itag18Format?.url ?? formats?.[0]?.url ?? adaptiveFormats?.[0]?.url ?? "";
 
     if (!title && !thumbnailURL && !videoId && !url) return null;
 
     return new VideoDTO({
       title,
       thumbnailURL,
-      author: "",
+      author,
       videoId,
       url,
     });

@@ -44,8 +44,8 @@ export function SearchTabs({ activeTab, onChangeTab }: Props) {
     const layout = tabLayouts[activeIndex];
     if (!layout) return;
 
-    indicatorWidth.value = withTiming(layout.width, { duration: 220 });
-    indicatorX.value = withTiming(layout.x, { duration: 220 });
+    indicatorWidth.value = withTiming(layout.width + 4, { duration: 220 });
+    indicatorX.value = withTiming(layout.x - 2, { duration: 220 });
   }, [activeIndex, tabLayouts, indicatorWidth, indicatorX]);
 
   const indicatorStyle = useAnimatedStyle(() => ({

@@ -1,3 +1,4 @@
+import { ContentTabs } from "@shared/api/config";
 import { tr } from "@shared/locales/i18n";
 import { PlaylistDTO } from "@shared/model";
 import { debounce } from "@shared/utils/debounce";
@@ -15,6 +16,8 @@ interface UseSearch {
   isLoading: boolean;
   suggestions: string[];
   onSearching: (queryString?: string) => void;
+  contentTab: ContentTabs;
+  onChangeTab: (tab: ContentTabs) => void;
 }
 
 export const useSearch = (): UseSearch => {
@@ -23,6 +26,7 @@ export const useSearch = (): UseSearch => {
   const [isLoading, onChangeLoading] = useState(false);
   const [playlists, onChangePlaylists] = useState<PlaylistDTO | undefined>(undefined);
   const [suggestions, onChangeSuggestions] = useState<string[]>([]);
+  const [contentTab, onChangeContentTab] = useState<ContentTabs>(ContentTabs.all);
 
   const fetchSuggestionsDebouncedRef = useRef(
     debounce(async (query: string) => {
@@ -36,15 +40,15 @@ export const useSearch = (): UseSearch => {
 
   const initializedRef = useRef(false);
 
-  const fetchPlaylists = useCallback((query: string) => {
+  const fetchPlaylists = useCallback((query: string, tab: ContentTabs) => {
     onChangeLoading(true);
-    initFetch(query)
+    initFetch(query, tab)
       .then((response) => onChangePlaylists(response))
       .catch((error) => {
         Alert.alert(tr("app.title"), error?.message, [
           {
             text: tr("common.retry"),
-            onPress: () => fetchPlaylists(query),
+            onPress: () => fetchPlaylists(query, tab),
           },
           {
             text: tr("common.cancel"),
@@ -60,7 +64,7 @@ export const useSearch = (): UseSearch => {
   useEffect(() => {
     if (initializedRef.current) return;
     initializedRef.current = true;
-    fetchPlaylists("remix tiktok 2025");
+    fetchPlaylists("Dj phuong kally", ContentTabs.all);
   }, [fetchPlaylists]);
 
   const onChangeSearching = (value: string) => {
@@ -73,7 +77,7 @@ export const useSearch = (): UseSearch => {
 
   const onSearching = (queryString?: string) => {
     onChangePlaylists(undefined);
-    fetchPlaylists(queryString || searching);
+    fetchPlaylists(queryString || searching, contentTab);
   };
 
   const onLoadMore = () => {
@@ -124,5 +128,11 @@ export const useSearch = (): UseSearch => {
     isLoading,
     suggestions,
     onSearching,
+    contentTab,
+    onChangeTab: (tab: ContentTabs) => {
+      onChangeContentTab(tab);
+      onChangePlaylists(undefined);
+      fetchPlaylists(searching || "dj phuong kally", tab);
+    },
   };
 };

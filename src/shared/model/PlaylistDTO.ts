@@ -53,6 +53,14 @@ export class PlaylistDTO {
           continue;
         }
 
+        if (item?.lockupViewModel) {
+          const lockupVideo = VideoDTO.lockup(item);
+          if (lockupVideo) {
+            results.push(lockupVideo);
+            continue;
+          }
+        }
+
         // Check for continuation at the item level
         if (item?.continuationItemRenderer && !continuation) {
           continuation =
@@ -126,6 +134,14 @@ export class PlaylistDTO {
         if (v) {
           results.push(v);
           continue;
+        }
+
+        if (item?.lockupViewModel) {
+          const lockupVideo = VideoDTO.lockup(item);
+          if (lockupVideo) {
+            results.push(lockupVideo);
+            continue;
+          }
         }
 
         if (item?.continuationItemRenderer && !continuation) {

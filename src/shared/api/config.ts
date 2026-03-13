@@ -51,10 +51,12 @@ export const baseWebBody = ({
   query,
   continuation,
   videoId,
+  params,
 }: {
   query?: string;
   continuation?: string;
   videoId?: string;
+  params?: string;
 }) => {
   return {
     context: {
@@ -66,6 +68,7 @@ export const baseWebBody = ({
     ...(query ? { query } : {}),
     ...(continuation ? { continuation } : {}),
     ...(videoId ? { videoId } : {}),
+    ...(params ? { params } : {}),
     contentCheckOk: true,
     racyCheckOk: true,
   };

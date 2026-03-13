@@ -208,6 +208,7 @@ export class VideoDTO {
     const videoRenderer = json?.videoRenderer;
     const playlistRenderer = json?.playlistRenderer;
     const radioRenderer = json?.radioRenderer;
+    const channelRenderer = json?.channelRenderer;
 
     if (videoRenderer) {
       const videoId = videoRenderer?.videoId;
@@ -257,17 +258,44 @@ export class VideoDTO {
       });
     }
 
+    if (channelRenderer) {
+      const browseId =
+        channelRenderer?.navigationEndpoint?.browseEndpoint?.browseId ??
+        channelRenderer?.channelId;
+      const title = channelRenderer?.title?.simpleText ?? "";
+      const rawThumb = channelRenderer?.thumbnail?.thumbnails?.[0]?.url ?? "";
+      const thumbnailURL = rawThumb.startsWith("//") ? `https:${rawThumb}` : rawThumb;
+      const author =
+        channelRenderer?.subscriberCountText?.simpleText ??
+        channelRenderer?.shortBylineText?.runs?.[0]?.text ??
+        "";
+
+      if (!title && !thumbnailURL && !author && !browseId) return null;
+
+      return new VideoDTO({
+        title,
+        thumbnailURL,
+        author,
+        browseId,
+      });
+    }
+
     return null;
   }
 
   static lockup(json: any): VideoDTO | null {
-    const lockup = json?.lockupViewModel;
+    const lockup = json?.lockupViewModel ?? json;
     if (!lockup) return null;
 
     const videoId = lockup.contentId;
     const title = lockup.metadata?.lockupMetadataViewModel?.title?.content ?? "";
-    const thumbnailURL =
-      lockup.contentImage?.thumbnailViewModel?.image?.sources?.slice(-1)[0]?.url ?? "";
+
+    const imageSources =
+      lockup.contentImage?.thumbnailViewModel?.image?.sources ??
+      lockup.contentImage?.collectionThumbnailViewModel?.primaryThumbnail?.thumbnailViewModel?.image
+        ?.sources;
+
+    const thumbnailURL = imageSources?.slice(-1)[0]?.url ?? "";
 
     const metadataRows =
       lockup.metadata?.lockupMetadataViewModel?.metadata?.contentMetadataViewModel?.metadataRows ??

@@ -2,6 +2,7 @@ import { useMusicBottomSheet } from "@features/music-bottom-sheet";
 import { Header, Playlists, Screen } from "@shared/ui";
 import { StyleSheet } from "react-native";
 import SearchBar from "../components/SearchBar";
+import { SearchTabs } from "../components/SearchTabs";
 import SuggestionList from "../components/SuggestionList";
 import { useSearch } from "../hooks/useSearch";
 
@@ -16,6 +17,8 @@ export default function SearchScreen() {
     onLoadMore,
     suggestions,
     onSearching,
+    contentTab,
+    onChangeTab,
   } = useSearch();
 
   const { fetchMusicById, toggleBottomSheet } = useMusicBottomSheet();
@@ -23,6 +26,7 @@ export default function SearchScreen() {
   return (
     <Screen style={styles.container}>
       <Header onPressLogo={toggleBottomSheet} onPressRight={onToggleShowSearch} />
+      <SearchTabs activeTab={contentTab} onChangeTab={onChangeTab} />
       <SearchBar
         isShow={isShowSearch}
         value={searching}

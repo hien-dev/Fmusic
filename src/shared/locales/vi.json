@@ -7,8 +7,20 @@
     "cancel": "Hủy",
     "retry": "Thử lại"
   },
+  "bottomTabs": {
+    "search": "Tìm kiếm",
+    "favorite": "Yêu thích",
+    "settings": "Cài đặt"
+  },
   "search": {
-    "placeholder": "Tìm kiếm bài hát, nghệ sĩ, album..."
+    "placeholder": "Tìm kiếm bài hát, nghệ sĩ, album...",
+    "tabs": {
+      "all": "Tất cả",
+      "videos": "Video",
+      "live": "Trực tiếp",
+      "artists": "Nghệ sĩ",
+      "albums": "Album"
+    }
   },
   "settings": {
     "title": "Cài đặt",

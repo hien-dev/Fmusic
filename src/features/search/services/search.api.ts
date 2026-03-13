@@ -1,11 +1,11 @@
 import API from "@shared/api";
-import { baseWebBody, endpointPath } from "@shared/api/config";
+import { ContentTabs, baseWebBody, endpointPath } from "@shared/api/config";
 import { PlaylistDTO } from "@shared/model";
 import { Log, suggestQueriesParse } from "@shared/utils/function";
 
-export const initFetch = async (query: string) => {
+export const initFetch = async (query: string, tab?: ContentTabs) => {
   try {
-    const body = baseWebBody({ query });
+    const body = baseWebBody({ query, params: tab });
     const response = await API.post(endpointPath("search"), body);
     return PlaylistDTO.search(response.data);
   } catch (error) {

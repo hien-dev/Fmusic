@@ -1,0 +1,2719 @@
+{
+  "contents": {
+    "twoColumnSearchResultsRenderer": {
+      "primaryContents": {
+        "sectionListRenderer": {
+          "contents": [
+            {
+              "itemSectionRenderer": {
+                "contents": [
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCGO3xOdjuKhULFkwwPoE3Mg",
+                      "title": { "simpleText": "H2O Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CFwQ2jAYACITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@H2ORemix88",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCGO3xOdjuKhULFkwwPoE3Mg",
+                          "canonicalBaseUrl": "/@H2ORemix88"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/KRv2S3JnnYIGlkT_ccM0KLu3TcPp9dAmFABg0SJhVRxuSYnC7Guyeh_JpxB9f1tNk_Ak6GHzbw=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/KRv2S3JnnYIGlkT_ccM0KLu3TcPp9dAmFABg0SJhVRxuSYnC7Guyeh_JpxB9f1tNk_Ak6GHzbw=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "H2O " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " là Channel nhạc " },
+                          { "text": "Remix", "bold": true },
+                          {
+                            "text": " thuộc hệ thống H2O Music hợp tác cùng VCPMC, Metub Network, Viettel Media, BH Media và ..."
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "H2O Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFwQ2jAYACITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@H2ORemix88",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCGO3xOdjuKhULFkwwPoE3Mg",
+                                "canonicalBaseUrl": "/@H2ORemix88"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "2.72 million subscribers" }
+                        },
+                        "simpleText": "2.72M subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "ownerBadges": [
+                        {
+                          "metadataBadgeRenderer": {
+                            "icon": { "iconType": "CHECK_CIRCLE_THICK" },
+                            "style": "BADGE_STYLE_TYPE_VERIFIED",
+                            "tooltip": "Verified",
+                            "trackingParams": "CFwQ2jAYACITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                            "accessibilityData": { "label": "Verified" }
+                          }
+                        }
+                      ],
+                      "subscriberCountText": { "simpleText": "@H2ORemix88" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CF0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqa1REaGxnT25PQnZXWW04UkNhTXljT0c0cS1NZ3xBQ3Jtc0tuell3d2RfZ1VpNzRiMFJJMkMwR1NxYXpESnZiSHhHTGlWbERpNi1mU3hKc2lHaHJ6Ymk2UnQ4NUFNaVI2ZTl4TUF4azRYR0REajg4S3V1NUdWQjl6R1Jwd296RDl2TUZ3eDJWaUt0REVDSnNCUkp2QTVLdjdvcllVLWZHWlBuXy1KRUNnQXNTa080dnY0THBQM1dhWjVJNXV4ZmhTRE1fYmJxYVFfQzZaZXZTeTlZVWo1RVQ2R2lUM29qRnhFZkdmaXVHa0s&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CF0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqa1REaGxnT25PQnZXWW04UkNhTXljT0c0cS1NZ3xBQ3Jtc0tuell3d2RfZ1VpNzRiMFJJMkMwR1NxYXpESnZiSHhHTGlWbERpNi1mU3hKc2lHaHJ6Ymk2UnQ4NUFNaVI2ZTl4TUF4azRYR0REajg4S3V1NUdWQjl6R1Jwd296RDl2TUZ3eDJWaUt0REVDSnNCUkp2QTVLdjdvcllVLWZHWlBuXy1KRUNnQXNTa080dnY0THBQM1dhWjVJNXV4ZmhTRE1fYmJxYVFfQzZaZXZTeTlZVWo1RVQ2R2lUM29qRnhFZkdmaXVHa0s"
+                            }
+                          },
+                          "trackingParams": "CF0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CFwQ2jAYACITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "H2O Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFwQ2jAYACITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@H2ORemix88",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCGO3xOdjuKhULFkwwPoE3Mg",
+                                "canonicalBaseUrl": "/@H2ORemix88"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCylV9o8bh6_UQYKv3xIu1kQ",
+                      "title": { "simpleText": "TikTok Thailand Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CFoQ2jAYASITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@tiktokthailandremix",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCylV9o8bh6_UQYKv3xIu1kQ",
+                          "canonicalBaseUrl": "/@tiktokthailandremix"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/Zaew74klQZCUwgdDVvyf0JII3yco9mu4xkIfzZtpjDIDf4R80uZkBIOd4tYysUsEEXbMqY8j=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/Zaew74klQZCUwgdDVvyf0JII3yco9mu4xkIfzZtpjDIDf4R80uZkBIOd4tYysUsEEXbMqY8j=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "TikTok", "bold": true },
+                          { "text": " Thailand " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " - EDM Nhạc Thái Lan " },
+                          { "text": "Remix 2025", "bold": true },
+                          { "text": " Chào mừng bạn đến với " },
+                          { "text": "TikTok", "bold": true },
+                          { "text": " Thailand " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " – nơi hội tụ những ..." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "TikTok Thailand Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFoQ2jAYASITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@tiktokthailandremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCylV9o8bh6_UQYKv3xIu1kQ",
+                                "canonicalBaseUrl": "/@tiktokthailandremix"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "67 thousand subscribers" }
+                        },
+                        "simpleText": "67K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@tiktokthailandremix" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CFsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqa29oQTlncktfOU1qV3ZsU0FPS2xfTzl6NEZad3xBQ3Jtc0tueTlMRUZSZ3FiaEFtWDJzbGlEWkxlTlhXemFybS1MNEdoWjRTdUR0S2owRnF6YzlrdDExempESE90Y2pHX25ZMHdKLTd0VnRKOG0xS0ZJMEcycHoyQVVtNExsdnlYU2RQcEwtQ3JJV2dTaHIzbEJRcU1NWG9NdWZUcWlGN2dpZTAzWF96OW9FUGhfTVF6WUEzZ1l1MWd2YXYtNGhFZlFkSnVYRE83NTFxbHB5WGFVT0stTkF2QWxQZmVoMDdWdklSM0ZRMTA&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CFsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqa29oQTlncktfOU1qV3ZsU0FPS2xfTzl6NEZad3xBQ3Jtc0tueTlMRUZSZ3FiaEFtWDJzbGlEWkxlTlhXemFybS1MNEdoWjRTdUR0S2owRnF6YzlrdDExempESE90Y2pHX25ZMHdKLTd0VnRKOG0xS0ZJMEcycHoyQVVtNExsdnlYU2RQcEwtQ3JJV2dTaHIzbEJRcU1NWG9NdWZUcWlGN2dpZTAzWF96OW9FUGhfTVF6WUEzZ1l1MWd2YXYtNGhFZlFkSnVYRE83NTFxbHB5WGFVT0stTkF2QWxQZmVoMDdWdklSM0ZRMTA"
+                            }
+                          },
+                          "trackingParams": "CFsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CFoQ2jAYASITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "TikTok Thailand Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFoQ2jAYASITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@tiktokthailandremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCylV9o8bh6_UQYKv3xIu1kQ",
+                                "canonicalBaseUrl": "/@tiktokthailandremix"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCPg69a0lrR7AOi88X6CQGeA",
+                      "title": { "simpleText": "Air Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CFgQ2jAYAiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@airremix",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCPg69a0lrR7AOi88X6CQGeA",
+                          "canonicalBaseUrl": "/@airremix"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/iFrZjKgcc5paIGOFMMAJXyD15W4nMLX74_Ucj5jJpUMylxcw0jFxFH4C1wUgWVZHPfnN7-POdw=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/iFrZjKgcc5paIGOFMMAJXyD15W4nMLX74_Ucj5jJpUMylxcw0jFxFH4C1wUgWVZHPfnN7-POdw=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "Air " },
+                          { "text": "Remix", "bold": true },
+                          {
+                            "text": " - Kênh âm nhạc hàng đầu hiện nay ♫♫♫ Nơi tuyển chọn những bản nhạc "
+                          },
+                          { "text": "remix", "bold": true },
+                          { "text": " hay nhất, hot nhất. Với hi vọng đem ..." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Air Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFgQ2jAYAiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@airremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCPg69a0lrR7AOi88X6CQGeA",
+                                "canonicalBaseUrl": "/@airremix"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "793 thousand subscribers" }
+                        },
+                        "simpleText": "793K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "ownerBadges": [
+                        {
+                          "metadataBadgeRenderer": {
+                            "icon": { "iconType": "CHECK_CIRCLE_THICK" },
+                            "style": "BADGE_STYLE_TYPE_VERIFIED",
+                            "tooltip": "Verified",
+                            "trackingParams": "CFgQ2jAYAiITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                            "accessibilityData": { "label": "Verified" }
+                          }
+                        }
+                      ],
+                      "subscriberCountText": { "simpleText": "@airremix" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CFkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbFkzR2E0aWZvXzFvSFNuX19aNE0zMENDMm56UXxBQ3Jtc0tsQXpRaFlDWHdCc2lEVE1mMFpMemdzWGQxbHMzQkdfcjZQdlF2aTFSQnJ6dkNMRlJLNDhxM0pVeHJpQmEwYUZfX3A3VFcxVlF5ZDM1eGZkT0l5YWpHN3lkYkhueTRMMlEwYnV3eVdsaFVyb3JRMlRweEROMS1HLTdIbHdTRW03VE5mX0pvcXNsRFZTOG1uZ0F4YXR6Mk9vRnhQbjVUSG9QWlJqTUJkY2k1TzBrWFN1SWJ5UlgwS3JlVjNuam1uRkRyRTlJbmg&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CFkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbFkzR2E0aWZvXzFvSFNuX19aNE0zMENDMm56UXxBQ3Jtc0tsQXpRaFlDWHdCc2lEVE1mMFpMemdzWGQxbHMzQkdfcjZQdlF2aTFSQnJ6dkNMRlJLNDhxM0pVeHJpQmEwYUZfX3A3VFcxVlF5ZDM1eGZkT0l5YWpHN3lkYkhueTRMMlEwYnV3eVdsaFVyb3JRMlRweEROMS1HLTdIbHdTRW03VE5mX0pvcXNsRFZTOG1uZ0F4YXR6Mk9vRnhQbjVUSG9QWlJqTUJkY2k1TzBrWFN1SWJ5UlgwS3JlVjNuam1uRkRyRTlJbmg"
+                            }
+                          },
+                          "trackingParams": "CFkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CFgQ2jAYAiITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Air Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFgQ2jAYAiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@airremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCPg69a0lrR7AOi88X6CQGeA",
+                                "canonicalBaseUrl": "/@airremix"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCmZqPHa-Rl0vD1-cHykVKiA",
+                      "title": { "simpleText": "Remix Tiktok 2025" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CFYQ2jAYAyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@RemixTiktokCR",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCmZqPHa-Rl0vD1-cHykVKiA",
+                          "canonicalBaseUrl": "/@RemixTiktokCR"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/7aTnF0NgRSFrHJSj4ukZJO6Fq9TxQxf9K8dTxZy0CyCSt8HVRZ7upEU4DVgvTNMH5Nw-Ll81Jg=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/7aTnF0NgRSFrHJSj4ukZJO6Fq9TxQxf9K8dTxZy0CyCSt8HVRZ7upEU4DVgvTNMH5Nw-Ll81Jg=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          {
+                            "text": "Thank you for tuning in and sharing your thoughts! You make this journey worth it!"
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Remix Tiktok 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFYQ2jAYAyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@RemixTiktokCR",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCmZqPHa-Rl0vD1-cHykVKiA",
+                                "canonicalBaseUrl": "/@RemixTiktokCR"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": { "accessibilityData": { "label": "1 subscriber" } },
+                        "simpleText": "1 subscriber"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@RemixTiktokCR" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CFcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbW5ST0FRVjYyelRKbmJKS1NKOWFjckplbFd4QXxBQ3Jtc0ttTEQ0YmRnYXlQTkwyVXNaR0hsYm5pWXA3NHEtRWNucEFzZ3BiYU14dkZ4Q2V0ZFU3dXc1dGJOc1Z0cTlSeEVDMTcxVnpuczZWcENlUFpJekZxbDRILTl2NjZVcWhzS1hrM0JFRnNrOTVfdHppQzVVS1hxaUJsOWdjdDhfR2tKYkhwcU1ZMUVEWGNVMDhucE9WR195Wlk1MG1jTjNfVGxxeFZoUTAzVVN6QUxYa2dIWHFXM01weTZvdk14cUNPRXRqSC1EamY&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CFcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbW5ST0FRVjYyelRKbmJKS1NKOWFjckplbFd4QXxBQ3Jtc0ttTEQ0YmRnYXlQTkwyVXNaR0hsYm5pWXA3NHEtRWNucEFzZ3BiYU14dkZ4Q2V0ZFU3dXc1dGJOc1Z0cTlSeEVDMTcxVnpuczZWcENlUFpJekZxbDRILTl2NjZVcWhzS1hrM0JFRnNrOTVfdHppQzVVS1hxaUJsOWdjdDhfR2tKYkhwcU1ZMUVEWGNVMDhucE9WR195Wlk1MG1jTjNfVGxxeFZoUTAzVVN6QUxYa2dIWHFXM01weTZvdk14cUNPRXRqSC1EamY"
+                            }
+                          },
+                          "trackingParams": "CFcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CFYQ2jAYAyITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Remix Tiktok 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFYQ2jAYAyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@RemixTiktokCR",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCmZqPHa-Rl0vD1-cHykVKiA",
+                                "canonicalBaseUrl": "/@RemixTiktokCR"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCd_RcBL5IBFYvO_cOqsmAxA",
+                      "title": { "simpleText": "TIKTOK REMIX 2025" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CFQQ2jAYBCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@tiktok25390",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCd_RcBL5IBFYvO_cOqsmAxA",
+                          "canonicalBaseUrl": "/@tiktok25390"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/ARD0vUuCPYAeTDKI0gg9mUEAKNSU-MNpfdJQRRykG6GPP1frvBz9uiKRZ4OiGeBI9wBK7jPThGg=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/ARD0vUuCPYAeTDKI0gg9mUEAKNSU-MNpfdJQRRykG6GPP1frvBz9uiKRZ4OiGeBI9wBK7jPThGg=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": { "runs": [{ "text": "Enjoy the music." }] },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "TIKTOK REMIX 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFQQ2jAYBCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@tiktok25390",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCd_RcBL5IBFYvO_cOqsmAxA",
+                                "canonicalBaseUrl": "/@tiktok25390"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": { "accessibilityData": { "label": "5 subscribers" } },
+                        "simpleText": "5 subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@tiktok25390" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CFUQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbXVtb1Vjc2JyY29MU2hVei05ck0zVDVqNkRfQXxBQ3Jtc0trZU9lRmVhVlc4NzJWazN3d1hYU3M3c1BCamtRVm9Rb3hJZ29Ja0VZZjZBcUcxeVEyQUktcV8weHpaMTNYZ25yRkxOcVBtaFE3OFNfMUFsR2JsTEtDVU1mdXZCWjREeDJXNEhiRTFfTmpQODlEb0x4bjU0WVBrM1RlN0lKeHRaMWVBOHRadTBMOXY4MC1HRDRhYi1aMHh4a1otMURnUzRkVEJ4V0NBaEhiTjJzTUJ1MHZEYldYclhqczJ1VXlpUUdESGw0UjA&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CFUQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbXVtb1Vjc2JyY29MU2hVei05ck0zVDVqNkRfQXxBQ3Jtc0trZU9lRmVhVlc4NzJWazN3d1hYU3M3c1BCamtRVm9Rb3hJZ29Ja0VZZjZBcUcxeVEyQUktcV8weHpaMTNYZ25yRkxOcVBtaFE3OFNfMUFsR2JsTEtDVU1mdXZCWjREeDJXNEhiRTFfTmpQODlEb0x4bjU0WVBrM1RlN0lKeHRaMWVBOHRadTBMOXY4MC1HRDRhYi1aMHh4a1otMURnUzRkVEJ4V0NBaEhiTjJzTUJ1MHZEYldYclhqczJ1VXlpUUdESGw0UjA"
+                            }
+                          },
+                          "trackingParams": "CFUQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CFQQ2jAYBCITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "TIKTOK REMIX 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFQQ2jAYBCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@tiktok25390",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCd_RcBL5IBFYvO_cOqsmAxA",
+                                "canonicalBaseUrl": "/@tiktok25390"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCobexnrimh2cH1JB6ZgUt2A",
+                      "title": { "simpleText": "JONEL SAGAYNO REMIX " },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CFIQ2jAYBSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@DJSR20",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCobexnrimh2cH1JB6ZgUt2A",
+                          "canonicalBaseUrl": "/@DJSR20"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/GfPYTbPrCWQjiSMT-GmSsYT_RJdFeRnHOKY3lLRVf7QC-lgm1OKXBsw_J2_mMv_e9Axc6UuezA=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/GfPYTbPrCWQjiSMT-GmSsYT_RJdFeRnHOKY3lLRVf7QC-lgm1OKXBsw_J2_mMv_e9Axc6UuezA=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "DJ FROM PHILLIPINES contact me: jonelsagayno17@gmail.com." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "JONEL SAGAYNO REMIX ",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFIQ2jAYBSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@DJSR20",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCobexnrimh2cH1JB6ZgUt2A",
+                                "canonicalBaseUrl": "/@DJSR20"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "24.4 thousand subscribers" }
+                        },
+                        "simpleText": "24.4K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@DJSR20" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CFMQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbW5MWGlWTG4zNVZJdkVhRWNpTnBVR0cyeHVrZ3xBQ3Jtc0trWGJWaEZrbHkxTXM4a2NxQV9lX0VtZnJucE14QU5RWTNQM2t3Ukhlejd5WlkzMjdBc1RhQ3FFbTUxM2tZYVBNQmQ1bm56LUVyQmg2WlZYRHJoRGZoRDZxSURORzNHRExEeDlVd2ZTcDlhQXRzQkQzQk50eTRsYUZPYmtHOVpnczZkenBOT0pKV3dOWXQ2MV9DUm5uWGdtUTd6T2lmRkdDTnRiV042cnpOYWE3MFEtMFVXdWtPY3B6VUFlTjlWXy1Td2ctUmw&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CFMQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbW5MWGlWTG4zNVZJdkVhRWNpTnBVR0cyeHVrZ3xBQ3Jtc0trWGJWaEZrbHkxTXM4a2NxQV9lX0VtZnJucE14QU5RWTNQM2t3Ukhlejd5WlkzMjdBc1RhQ3FFbTUxM2tZYVBNQmQ1bm56LUVyQmg2WlZYRHJoRGZoRDZxSURORzNHRExEeDlVd2ZTcDlhQXRzQkQzQk50eTRsYUZPYmtHOVpnczZkenBOT0pKV3dOWXQ2MV9DUm5uWGdtUTd6T2lmRkdDTnRiV042cnpOYWE3MFEtMFVXdWtPY3B6VUFlTjlWXy1Td2ctUmw"
+                            }
+                          },
+                          "trackingParams": "CFMQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CFIQ2jAYBSITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "JONEL SAGAYNO REMIX ",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFIQ2jAYBSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@DJSR20",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCobexnrimh2cH1JB6ZgUt2A",
+                                "canonicalBaseUrl": "/@DJSR20"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCWpvPrrpW3kRecnrt4APnIA",
+                      "title": { "simpleText": "Remix TikTok 2025" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CFAQ2jAYBiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@RemixTikTok2025-o9e",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCWpvPrrpW3kRecnrt4APnIA",
+                          "canonicalBaseUrl": "/@RemixTikTok2025-o9e"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/FevMHplWRSOFt4o53z0CtiUvkaMgkNO4aX553qgclWSoNiC4uZPGfgXH51pB1zaDDnTCfmWqaQ=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/FevMHplWRSOFt4o53z0CtiUvkaMgkNO4aX553qgclWSoNiC4uZPGfgXH51pB1zaDDnTCfmWqaQ=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Remix TikTok 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFAQ2jAYBiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@RemixTikTok2025-o9e",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCWpvPrrpW3kRecnrt4APnIA",
+                                "canonicalBaseUrl": "/@RemixTikTok2025-o9e"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": { "accessibilityData": { "label": "1 subscriber" } },
+                        "simpleText": "1 subscriber"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@RemixTikTok2025-o9e" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CFEQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbDFLWkhMcm5Uci1DUnBPSkFRTkN4RS1Vb3FjZ3xBQ3Jtc0tuVURpaEdMcUp4X3B3cVJxakVDMGxoSGlvUFFvN05Qbk1GNGN3UnFDbGl3V3MtbjBiUVI0U2wzVkxIMldNZ1FIdWlhbzhSdFhDNG5ha1lNS1FRVnpRdGJLR0Vpb05lLUw0MUJmQThZZ3Q0SEZWczRWeXQzcGF5NUhQT0VuZlgtVUhaNjVOYmdCd25qaDBTaFpkMC1zVExuUWxMREJuTEpmclNJWmd5bEVQenB5Y3pDM3BvQTFnd3luUThmUEZjZWZNek1VVEg&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CFEQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbDFLWkhMcm5Uci1DUnBPSkFRTkN4RS1Vb3FjZ3xBQ3Jtc0tuVURpaEdMcUp4X3B3cVJxakVDMGxoSGlvUFFvN05Qbk1GNGN3UnFDbGl3V3MtbjBiUVI0U2wzVkxIMldNZ1FIdWlhbzhSdFhDNG5ha1lNS1FRVnpRdGJLR0Vpb05lLUw0MUJmQThZZ3Q0SEZWczRWeXQzcGF5NUhQT0VuZlgtVUhaNjVOYmdCd25qaDBTaFpkMC1zVExuUWxMREJuTEpmclNJWmd5bEVQenB5Y3pDM3BvQTFnd3luUThmUEZjZWZNek1VVEg"
+                            }
+                          },
+                          "trackingParams": "CFEQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CFAQ2jAYBiITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Remix TikTok 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CFAQ2jAYBiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@RemixTikTok2025-o9e",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCWpvPrrpW3kRecnrt4APnIA",
+                                "canonicalBaseUrl": "/@RemixTikTok2025-o9e"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCJqIpDofkN4XdAeOMPKxREw",
+                      "title": { "simpleText": "DJ REMIX HOT TREND" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CE4Q2jAYByITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@dj3tremix",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCJqIpDofkN4XdAeOMPKxREw",
+                          "canonicalBaseUrl": "/@dj3tremix"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/gy0fk56PAfMD7gb82pDXaHzTpqIsHDGsJeFqnlN-pQQqw6jBDTPmMZrs0Uqv6Ds5tsBPaO1Zyw=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/gy0fk56PAfMD7gb82pDXaHzTpqIsHDGsJeFqnlN-pQQqw6jBDTPmMZrs0Uqv6Ds5tsBPaO1Zyw=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "Chào mừng đến với cộng đồng yêu nhạc DJ và " },
+                          { "text": "remix", "bold": true },
+                          { "text": " – DJ " },
+                          { "text": "REMIX", "bold": true },
+                          { "text": " HOT TREND! Đây là nơi bạn sẽ tìm thấy những bản " },
+                          { "text": "remix", "bold": true },
+                          { "text": " ..." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "DJ REMIX HOT TREND",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CE4Q2jAYByITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@dj3tremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCJqIpDofkN4XdAeOMPKxREw",
+                                "canonicalBaseUrl": "/@dj3tremix"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "46.2 thousand subscribers" }
+                        },
+                        "simpleText": "46.2K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@dj3tremix" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CE8Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbFEyOFJXbG5Kd2xVSXdmUVdKMlhUdk5RTGhZZ3xBQ3Jtc0tuUkFmSnhzdURCaEY2NXRvN1cwdWRwSDN3dEFwcUpVbWJSUmZQM2Fqb0Jxemp5U3E3aUFVc0stYk4xNmN0M1A5Ym1ud1N3RXlzOE5GVEtoR3gzT1V2ZEhwUy1vZThINVNYUmd4QUdxTU5aMlZkMXViT1hheVhBNFNwMDk3eWd0QWNLalp3a3V0akQtVl9hNGtmczJHYXcyeDloZXhTNXlmYzFJRGtLcFYtb2NMVGd5UnJoa3pUejJTNF9RaXM3Qm9kNzB3elI&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CE8Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbFEyOFJXbG5Kd2xVSXdmUVdKMlhUdk5RTGhZZ3xBQ3Jtc0tuUkFmSnhzdURCaEY2NXRvN1cwdWRwSDN3dEFwcUpVbWJSUmZQM2Fqb0Jxemp5U3E3aUFVc0stYk4xNmN0M1A5Ym1ud1N3RXlzOE5GVEtoR3gzT1V2ZEhwUy1vZThINVNYUmd4QUdxTU5aMlZkMXViT1hheVhBNFNwMDk3eWd0QWNLalp3a3V0akQtVl9hNGtmczJHYXcyeDloZXhTNXlmYzFJRGtLcFYtb2NMVGd5UnJoa3pUejJTNF9RaXM3Qm9kNzB3elI"
+                            }
+                          },
+                          "trackingParams": "CE8Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CE4Q2jAYByITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "DJ REMIX HOT TREND",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CE4Q2jAYByITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@dj3tremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCJqIpDofkN4XdAeOMPKxREw",
+                                "canonicalBaseUrl": "/@dj3tremix"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UChCBlWkMtYj8C9loTWtWedA",
+                      "title": { "simpleText": "Pháp Sư Việt Nam Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CEwQ2jAYCCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@PhapSuVietNam2807",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UChCBlWkMtYj8C9loTWtWedA",
+                          "canonicalBaseUrl": "/@PhapSuVietNam2807"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/bSksQwMjDXvQ_u0avETFUlha2MRJ3wDenhZLwXlmLmFiIhMDxRfoH_oc-uDWE9rTsyaW25zQYQ=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/bSksQwMjDXvQ_u0avETFUlha2MRJ3wDenhZLwXlmLmFiIhMDxRfoH_oc-uDWE9rTsyaW25zQYQ=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "Pháp Sư Việt Nam " },
+                          { "text": "Remix", "bold": true },
+                          {
+                            "text": " là kênh chọn lọc những ca khúc nhạc trẻ mới hay nhất và được yêu thích hiện tại. Kênh "
+                          },
+                          { "text": "Remix", "bold": true },
+                          { "text": " lại các ..." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Pháp Sư Việt Nam Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEwQ2jAYCCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@PhapSuVietNam2807",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UChCBlWkMtYj8C9loTWtWedA",
+                                "canonicalBaseUrl": "/@PhapSuVietNam2807"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "36.6 thousand subscribers" }
+                        },
+                        "simpleText": "36.6K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@PhapSuVietNam2807" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CE0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbGQ4UWJsSWhSWUZNOGR1RHltdW0xQ1U5WWNuQXxBQ3Jtc0ttNndvRGIzOEJlMWFDZ1BIUTRnYjhLb3BJUml3RTBETFhqNGlIejFQWHNwNVhtOUxKck9LeE5DMEoxZHhXYk5QUTVOd2VGSGhQMzB0QUt3UEladlpPVnpwU2RneHVkMWxucEtSZkRqcnRvTGhJRE9EdFlsbVpiZXdJM2pCZjhPRENRelpzbWtrZ3lvWGN6MG4weTU4WGhxVkowem9nUHNSanQ0dnBXcGNEdGk5cy1CdWlQUDBoZ2lnZkxaMVltbkp3ekpiZGs&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CE0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbGQ4UWJsSWhSWUZNOGR1RHltdW0xQ1U5WWNuQXxBQ3Jtc0ttNndvRGIzOEJlMWFDZ1BIUTRnYjhLb3BJUml3RTBETFhqNGlIejFQWHNwNVhtOUxKck9LeE5DMEoxZHhXYk5QUTVOd2VGSGhQMzB0QUt3UEladlpPVnpwU2RneHVkMWxucEtSZkRqcnRvTGhJRE9EdFlsbVpiZXdJM2pCZjhPRENRelpzbWtrZ3lvWGN6MG4weTU4WGhxVkowem9nUHNSanQ0dnBXcGNEdGk5cy1CdWlQUDBoZ2lnZkxaMVltbkp3ekpiZGs"
+                            }
+                          },
+                          "trackingParams": "CE0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CEwQ2jAYCCITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Pháp Sư Việt Nam Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEwQ2jAYCCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@PhapSuVietNam2807",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UChCBlWkMtYj8C9loTWtWedA",
+                                "canonicalBaseUrl": "/@PhapSuVietNam2807"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCB0IYy2tKgWWDT6UaTujhAw",
+                      "title": { "simpleText": "DjRanel Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CEoQ2jAYCSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@djranelremix1513",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCB0IYy2tKgWWDT6UaTujhAw",
+                          "canonicalBaseUrl": "/@djranelremix1513"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/DXOguYjGdMM6RAo9gnPSCrPoIyjkDqgMN6w5TVG_UyxEyz0A6DgNF1YjTbLzmEDL07Yw6BOjGg=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/DXOguYjGdMM6RAo9gnPSCrPoIyjkDqgMN6w5TVG_UyxEyz0A6DgNF1YjTbLzmEDL07Yw6BOjGg=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [{ "text": "UPDATED PARTY MUSIC CHANNEL." }]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "DjRanel Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEoQ2jAYCSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djranelremix1513",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCB0IYy2tKgWWDT6UaTujhAw",
+                                "canonicalBaseUrl": "/@djranelremix1513"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "238 thousand subscribers" }
+                        },
+                        "simpleText": "238K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@djranelremix1513" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CEsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbm05RHpHd2FHeUdia3YwMmVac3hWcU1ET0w5Z3xBQ3Jtc0tsOWZ2UnBRbmhvb0FoWTJackFRN3VVRm9XQWUwSHMwczZUQXZVTGZiLVpuaThaNHBhWlM4RVZfLWpZMk9DeWJVcTBEN2UtRmZwVzlwb25KU2xqUnVfcmp6dTV6QUJGc3JuQW5Fc1pQN0tlYldPU3hqQklGd3Z0aElDaVZlWWRQUDEyY1BraGU0aWlyMFpPZWh1d19ScmVaWFcxUDhuLUxCa25uSUlQUTlCZ0k2WDFFUG1VZkhaSjBQbi1DUjVGYXlxdmlDeEs&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CEsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbm05RHpHd2FHeUdia3YwMmVac3hWcU1ET0w5Z3xBQ3Jtc0tsOWZ2UnBRbmhvb0FoWTJackFRN3VVRm9XQWUwSHMwczZUQXZVTGZiLVpuaThaNHBhWlM4RVZfLWpZMk9DeWJVcTBEN2UtRmZwVzlwb25KU2xqUnVfcmp6dTV6QUJGc3JuQW5Fc1pQN0tlYldPU3hqQklGd3Z0aElDaVZlWWRQUDEyY1BraGU0aWlyMFpPZWh1d19ScmVaWFcxUDhuLUxCa25uSUlQUTlCZ0k2WDFFUG1VZkhaSjBQbi1DUjVGYXlxdmlDeEs"
+                            }
+                          },
+                          "trackingParams": "CEsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CEoQ2jAYCSITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "DjRanel Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEoQ2jAYCSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djranelremix1513",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCB0IYy2tKgWWDT6UaTujhAw",
+                                "canonicalBaseUrl": "/@djranelremix1513"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCGEhny2Z82jE6sYfGUN7YkA",
+                      "title": { "simpleText": "Tiktok Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CEgQ2jAYCiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@TiktokRemix.6868",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCGEhny2Z82jE6sYfGUN7YkA",
+                          "canonicalBaseUrl": "/@TiktokRemix.6868"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/ui3TvAKmVDm0eMv5xm8_ddDC4p-VLRrYlDtYKxdZC2UUJwokCgN8oOMyli-M_5LTgaPb-MLB=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/ui3TvAKmVDm0eMv5xm8_ddDC4p-VLRrYlDtYKxdZC2UUJwokCgN8oOMyli-M_5LTgaPb-MLB=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          {
+                            "text": "Welcome to My Chanel Wish your every day will be more beautiful with the music we share Don't Forget To SUBCRIBE, LIKE ..."
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Tiktok Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEgQ2jAYCiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@TiktokRemix.6868",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCGEhny2Z82jE6sYfGUN7YkA",
+                                "canonicalBaseUrl": "/@TiktokRemix.6868"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "155 thousand subscribers" }
+                        },
+                        "simpleText": "155K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@TiktokRemix.6868" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CEkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqa1NVOXktYTVicnZhQjl6U3ZOTVVjQzlMS3UwUXxBQ3Jtc0ttVW5id3BmbVRsMlVHUXBtTmVYZTJOdWU4OUc1dm9nUHhfUVV2S1BZQ2xIOWNOQ2JaQ3hSZG0yeWE0UVp4YzVGMWZtaUtkYkRKbm9BZU4xZW9FSEt0UnFYanBBTmVOYm5VV1RlQ3VIVmZkYWNSSjZraE5aREpqUzZfOHRVY29BQUhZNXlsTjRWUEV5TEczb2VGXzFya2w5UUdVMlc1LVQwbUxyb1AzS2FtQm1RU0RVYktHRnEzRVRnMkFZamkwN0FQeDc4MHk&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CEkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqa1NVOXktYTVicnZhQjl6U3ZOTVVjQzlMS3UwUXxBQ3Jtc0ttVW5id3BmbVRsMlVHUXBtTmVYZTJOdWU4OUc1dm9nUHhfUVV2S1BZQ2xIOWNOQ2JaQ3hSZG0yeWE0UVp4YzVGMWZtaUtkYkRKbm9BZU4xZW9FSEt0UnFYanBBTmVOYm5VV1RlQ3VIVmZkYWNSSjZraE5aREpqUzZfOHRVY29BQUhZNXlsTjRWUEV5TEczb2VGXzFya2w5UUdVMlc1LVQwbUxyb1AzS2FtQm1RU0RVYktHRnEzRVRnMkFZamkwN0FQeDc4MHk"
+                            }
+                          },
+                          "trackingParams": "CEkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CEgQ2jAYCiITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Tiktok Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEgQ2jAYCiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@TiktokRemix.6868",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCGEhny2Z82jE6sYfGUN7YkA",
+                                "canonicalBaseUrl": "/@TiktokRemix.6868"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCkr5Zpx32je2SadsD0yqMRg",
+                      "title": { "simpleText": "Huy PT Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CEYQ2jAYCyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@huyptremixofficial",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCkr5Zpx32je2SadsD0yqMRg",
+                          "canonicalBaseUrl": "/@huyptremixofficial"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "https://yt3.ggpht.com/AfFNQ6Q82fzDpk6jfx2PLGexrT-pYY0gjuq8i2D3cUbipXgH1YpoUouhvjO1q4ur8a1xwhYQ=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "https://yt3.ggpht.com/AfFNQ6Q82fzDpk6jfx2PLGexrT-pYY0gjuq8i2D3cUbipXgH1YpoUouhvjO1q4ur8a1xwhYQ=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "Huy PT " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " Youtube Channel Official Chào mừng bạn đến với Huy PT " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " - Channel chính thức của Huy PT Huy PT " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " ..." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Huy PT Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEYQ2jAYCyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@huyptremixofficial",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCkr5Zpx32je2SadsD0yqMRg",
+                                "canonicalBaseUrl": "/@huyptremixofficial"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "42.2 thousand subscribers" }
+                        },
+                        "simpleText": "42.2K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "ownerBadges": [
+                        {
+                          "metadataBadgeRenderer": {
+                            "icon": { "iconType": "AUDIO_BADGE" },
+                            "style": "BADGE_STYLE_TYPE_VERIFIED_ARTIST",
+                            "tooltip": "Official Artist Channel",
+                            "trackingParams": "CEYQ2jAYCyITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                            "accessibilityData": { "label": "Official Artist Channel" }
+                          }
+                        }
+                      ],
+                      "subscriberCountText": { "simpleText": "@huyptremixofficial" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CEcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbkxOSlBBbV9jS2duMERTMjdPdmExdnFaejdaZ3xBQ3Jtc0ttR1V2dEZUcHJ6TmhjbVhReUNpbjNDcUZ2VHl1Vk5GUGtXMkVUSEpuOEZDeDRNaExPRGV2X25RejhFeEV6QTR1NHNzNktWVHVVODRZWExmRHc3QXdVTXhMSjB3U1NTRUNOLXIyaTNmdUtUY3FEOHd6dW1paHRxRlNxSmtXcXFveVp1NDJBUUZrMkwxcFl5WGozQ3ZvLWtTbFhIS0NYMUVfVVZENlYzenBnN0dodUZLOElQODdxbVlUSTRCM0lBSEdUVHE1OU4&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CEcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbkxOSlBBbV9jS2duMERTMjdPdmExdnFaejdaZ3xBQ3Jtc0ttR1V2dEZUcHJ6TmhjbVhReUNpbjNDcUZ2VHl1Vk5GUGtXMkVUSEpuOEZDeDRNaExPRGV2X25RejhFeEV6QTR1NHNzNktWVHVVODRZWExmRHc3QXdVTXhMSjB3U1NTRUNOLXIyaTNmdUtUY3FEOHd6dW1paHRxRlNxSmtXcXFveVp1NDJBUUZrMkwxcFl5WGozQ3ZvLWtTbFhIS0NYMUVfVVZENlYzenBnN0dodUZLOElQODdxbVlUSTRCM0lBSEdUVHE1OU4"
+                            }
+                          },
+                          "trackingParams": "CEcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CEYQ2jAYCyITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Huy PT Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEYQ2jAYCyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@huyptremixofficial",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCkr5Zpx32je2SadsD0yqMRg",
+                                "canonicalBaseUrl": "/@huyptremixofficial"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UC7-rmv0PsKnesFmHd18EiZg",
+                      "title": { "simpleText": "DJ DANIEL REMIX OFFICIAL " },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CEQQ2jAYDCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@DJDANIELREMIXOFFICIAL",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UC7-rmv0PsKnesFmHd18EiZg",
+                          "canonicalBaseUrl": "/@DJDANIELREMIXOFFICIAL"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/RR3Cm8Wdr6wdiswG5b46Uy0_3EEx2tSVvtTxvxABqYs40BreQ6RT6Fd6X08Ku6DgLu11mMnB=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/RR3Cm8Wdr6wdiswG5b46Uy0_3EEx2tSVvtTxvxABqYs40BreQ6RT6Fd6X08Ku6DgLu11mMnB=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          {
+                            "text": "https://www.facebook.com/share/18VE8VpqQE/?mibextid=wwXIfr Facebook ☝️DANIEL DEINLA MIRATA."
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "DJ DANIEL REMIX OFFICIAL ",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEQQ2jAYDCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@DJDANIELREMIXOFFICIAL",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UC7-rmv0PsKnesFmHd18EiZg",
+                                "canonicalBaseUrl": "/@DJDANIELREMIXOFFICIAL"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "14.3 thousand subscribers" }
+                        },
+                        "simpleText": "14.3K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@DJDANIELREMIXOFFICIAL" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CEUQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbkNWTC1KMXd0bXhqWFpidjJualFXcjU0NDJEQXxBQ3Jtc0tsTzloZ1B5Yll6clk5NFhlUnJBc2o0R01zS0VLNExRUzU0bUtCZi1RMkgzckdLMXF3cGNXSzJBLXZFLWlSMnBtbTBUNHMyOURWU2NIS0s0OVNZYnF2NFN2NkNEN1c2UHUxb2pQd3Z6cThFd2puSVBiQkNZU2JRdlJ5UXJyOXBuaGxHUjhZb0xpRURTVE9jdi10MTc0RkZ2LU5ZWFdXZzFKLUdzcGF5Nzk4QzgxbXBaanZEbDBBOVBEU05YMEI1U1R0anZ1Y1Q&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CEUQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbkNWTC1KMXd0bXhqWFpidjJualFXcjU0NDJEQXxBQ3Jtc0tsTzloZ1B5Yll6clk5NFhlUnJBc2o0R01zS0VLNExRUzU0bUtCZi1RMkgzckdLMXF3cGNXSzJBLXZFLWlSMnBtbTBUNHMyOURWU2NIS0s0OVNZYnF2NFN2NkNEN1c2UHUxb2pQd3Z6cThFd2puSVBiQkNZU2JRdlJ5UXJyOXBuaGxHUjhZb0xpRURTVE9jdi10MTc0RkZ2LU5ZWFdXZzFKLUdzcGF5Nzk4QzgxbXBaanZEbDBBOVBEU05YMEI1U1R0anZ1Y1Q"
+                            }
+                          },
+                          "trackingParams": "CEUQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CEQQ2jAYDCITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "DJ DANIEL REMIX OFFICIAL ",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEQQ2jAYDCITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@DJDANIELREMIXOFFICIAL",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UC7-rmv0PsKnesFmHd18EiZg",
+                                "canonicalBaseUrl": "/@DJDANIELREMIXOFFICIAL"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCNqxJlGAjU-t37A38QHqIgw",
+                      "title": { "simpleText": "TIKTOK MUSIC REMIX 2025" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CEIQ2jAYDSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@TIKTOKMUSICREMIX2025",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCNqxJlGAjU-t37A38QHqIgw",
+                          "canonicalBaseUrl": "/@TIKTOKMUSICREMIX2025"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/FwdGoy3aZL62ap6FpdGC9NhGoLJVr6se4Qp8Q4hfVhZ-7fIAmfEYM0z7p-KDAQme1K7D2Uk6=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/FwdGoy3aZL62ap6FpdGC9NhGoLJVr6se4Qp8Q4hfVhZ-7fIAmfEYM0z7p-KDAQme1K7D2Uk6=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "TIKTOK MUSIC REMIX 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEIQ2jAYDSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@TIKTOKMUSICREMIX2025",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCNqxJlGAjU-t37A38QHqIgw",
+                                "canonicalBaseUrl": "/@TIKTOKMUSICREMIX2025"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": { "accessibilityData": { "label": "9 subscribers" } },
+                        "simpleText": "9 subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@TIKTOKMUSICREMIX2025" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CEMQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqa2hoNkJBWVFlTjN3QV80b0U0aXdTUXAzN2VqQXxBQ3Jtc0tsTGFLX29oRGg2WTRub0lEX29PVWJxWDVLQjlJV3dqc2pqNW1PVkJtS1phY1FTeXFCNG9kTTZ6dzFrTmNKd1J3alQ1RUI4QTFvRGM5RkNsNGtxWE1DYXI4TTBhdEtFdE9WNXV3dmgzWVpRenpSdEFLWmNUcTdBOF9mbVFCRk5jU0k4emI3YkhoaWZVdW5Uazk4ajlBby1ZMzdMVEFtSWJqdFhPbHdQeXNhdHZVbWNpSXlDdXQ3OHJFMDBaUUVwU2RPZ24wM2c&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CEMQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqa2hoNkJBWVFlTjN3QV80b0U0aXdTUXAzN2VqQXxBQ3Jtc0tsTGFLX29oRGg2WTRub0lEX29PVWJxWDVLQjlJV3dqc2pqNW1PVkJtS1phY1FTeXFCNG9kTTZ6dzFrTmNKd1J3alQ1RUI4QTFvRGM5RkNsNGtxWE1DYXI4TTBhdEtFdE9WNXV3dmgzWVpRenpSdEFLWmNUcTdBOF9mbVFCRk5jU0k4emI3YkhoaWZVdW5Uazk4ajlBby1ZMzdMVEFtSWJqdFhPbHdQeXNhdHZVbWNpSXlDdXQ3OHJFMDBaUUVwU2RPZ24wM2c"
+                            }
+                          },
+                          "trackingParams": "CEMQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CEIQ2jAYDSITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "TIKTOK MUSIC REMIX 2025",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEIQ2jAYDSITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@TIKTOKMUSICREMIX2025",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCNqxJlGAjU-t37A38QHqIgw",
+                                "canonicalBaseUrl": "/@TIKTOKMUSICREMIX2025"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCeOm15iPny7xGNViaJ_TIZw",
+                      "title": { "simpleText": "DJ MELJON REMIX" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CEAQ2jAYDiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@djmeljonremix4261",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCeOm15iPny7xGNViaJ_TIZw",
+                          "canonicalBaseUrl": "/@djmeljonremix4261"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/5h5dDDiavm8HSdN4UMzzlazCmwtzPNQYpAsH50PJMP6gSDekPkb9LwqcgVuQi_xsZzAOGH6xjQ=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/5h5dDDiavm8HSdN4UMzzlazCmwtzPNQYpAsH50PJMP6gSDekPkb9LwqcgVuQi_xsZzAOGH6xjQ=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "GUMAGAWA PO AKO NG NONSTOP " },
+                          { "text": "REMIX", "bold": true },
+                          {
+                            "text": " WITH YOUR CUSTOMIZED DJ NAME; ☑ DJ NAME FLOATERS; ☑ DJ NAME ..."
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "DJ MELJON REMIX",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEAQ2jAYDiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djmeljonremix4261",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCeOm15iPny7xGNViaJ_TIZw",
+                                "canonicalBaseUrl": "/@djmeljonremix4261"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "48.8 thousand subscribers" }
+                        },
+                        "simpleText": "48.8K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@djmeljonremix4261" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CEEQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqa0FLQk9CNFZrWjNsOUhZbDlCTk9NLTM5QWNwZ3xBQ3Jtc0ttVGlzV3lQbzBpREtqQWFkc3pXMGdpNElzSUVwOXVHbXkwN2JiSTBzZDVsUjJpUjJMQW5hWEpPbDZtZy02cUZORnE4UjBSYUtlMzlmZ2tFb21UUFVxbEFaRDdLLW1RYUktM1JWRlpaSHpEMGZBa0FhR0R6eXM2MDdWaHZOSHpwRWVvVThWVy10N0gwbzMxVzh0Mm1MV050T2VXQjF5U1FHV0ZDcDRUS1Q2bFJBZDIwVkU1cmM5aHFzdWQ4NERkdzBhbW1mMlY&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CEEQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqa0FLQk9CNFZrWjNsOUhZbDlCTk9NLTM5QWNwZ3xBQ3Jtc0ttVGlzV3lQbzBpREtqQWFkc3pXMGdpNElzSUVwOXVHbXkwN2JiSTBzZDVsUjJpUjJMQW5hWEpPbDZtZy02cUZORnE4UjBSYUtlMzlmZ2tFb21UUFVxbEFaRDdLLW1RYUktM1JWRlpaSHpEMGZBa0FhR0R6eXM2MDdWaHZOSHpwRWVvVThWVy10N0gwbzMxVzh0Mm1MV050T2VXQjF5U1FHV0ZDcDRUS1Q2bFJBZDIwVkU1cmM5aHFzdWQ4NERkdzBhbW1mMlY"
+                            }
+                          },
+                          "trackingParams": "CEEQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CEAQ2jAYDiITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "DJ MELJON REMIX",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CEAQ2jAYDiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djmeljonremix4261",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCeOm15iPny7xGNViaJ_TIZw",
+                                "canonicalBaseUrl": "/@djmeljonremix4261"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCc8jP7W4OdNnU2F6isek9xA",
+                      "title": { "simpleText": "Dj RR Remix Official" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CD4Q2jAYDyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@DJRRREMIX",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCc8jP7W4OdNnU2F6isek9xA",
+                          "canonicalBaseUrl": "/@DJRRREMIX"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/mw5kT6D8RYY6LBi_P-7-NqBd5xQXwYegHxSId4tsxq5OIxVYxAxNN2L0gHgrOz1gxpep0QVk=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/mw5kT6D8RYY6LBi_P-7-NqBd5xQXwYegHxSId4tsxq5OIxVYxAxNN2L0gHgrOz1gxpep0QVk=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "DJ FROM THIS IS DJ RR " },
+                          { "text": "REMIX", "bold": true },
+                          { "text": "." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Dj RR Remix Official",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CD4Q2jAYDyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@DJRRREMIX",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCc8jP7W4OdNnU2F6isek9xA",
+                                "canonicalBaseUrl": "/@DJRRREMIX"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "21.5 thousand subscribers" }
+                        },
+                        "simpleText": "21.5K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@DJRRREMIX" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CD8Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbE5sc0czSlNWTVUzOTlDMWd6M191emMtSWdxZ3xBQ3Jtc0tua3FHekt3OFdza1RmLW85OU5VWlZVcmMyaGtyUGZuRm1EX2J2bzhER185Z2F5T2tmWlQ1VXBJNHNpMDN2eGowVWtnVmpuSXc5c2dQWkxCN0RkaXkwNDdrdGRYZWZTanZkbWwwOFg1STlIelhjTnZiazgtUi1ZVkgzU2ZaYW1aM2xtWVVqS0RyYkpvUlJuYUd4ZDRJLWN6bk54T201cS03UVpaaThnbUNKbHIxZGlKX2RsSjNoMDFHcXFfYldvb2RzbGF5U3Y&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CD8Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbE5sc0czSlNWTVUzOTlDMWd6M191emMtSWdxZ3xBQ3Jtc0tua3FHekt3OFdza1RmLW85OU5VWlZVcmMyaGtyUGZuRm1EX2J2bzhER185Z2F5T2tmWlQ1VXBJNHNpMDN2eGowVWtnVmpuSXc5c2dQWkxCN0RkaXkwNDdrdGRYZWZTanZkbWwwOFg1STlIelhjTnZiazgtUi1ZVkgzU2ZaYW1aM2xtWVVqS0RyYkpvUlJuYUd4ZDRJLWN6bk54T201cS03UVpaaThnbUNKbHIxZGlKX2RsSjNoMDFHcXFfYldvb2RzbGF5U3Y"
+                            }
+                          },
+                          "trackingParams": "CD8Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CD4Q2jAYDyITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Dj RR Remix Official",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CD4Q2jAYDyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@DJRRREMIX",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCc8jP7W4OdNnU2F6isek9xA",
+                                "canonicalBaseUrl": "/@DJRRREMIX"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UC_g7yy8nhgBoWSeSSim8CDQ",
+                      "title": { "simpleText": "Oanh Cherry Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CDwQ2jAYECITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@oanhcherry-b9r",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UC_g7yy8nhgBoWSeSSim8CDQ",
+                          "canonicalBaseUrl": "/@oanhcherry-b9r"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/6aucVSnvzQfznaMoQVwI9lsBwCPTYIh6bYLJQJu0LNGmBwat-rxu-lOF-pkYUODR7o6Qd4w0=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/6aucVSnvzQfznaMoQVwI9lsBwCPTYIh6bYLJQJu0LNGmBwat-rxu-lOF-pkYUODR7o6Qd4w0=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "Theo dõi Oanh Cherry " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " : / @oanhcherryremix ➨ Fanpage : ➨ " },
+                          { "text": "TikTok", "bold": true },
+                          { "text": " : ➨ Oanh Cherry " },
+                          { "text": "Remix", "bold": true },
+                          { "text": " là kênh chọn lọc những ca ..." }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Oanh Cherry Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDwQ2jAYECITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@oanhcherry-b9r",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UC_g7yy8nhgBoWSeSSim8CDQ",
+                                "canonicalBaseUrl": "/@oanhcherry-b9r"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "10 thousand subscribers" }
+                        },
+                        "simpleText": "10K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@oanhcherry-b9r" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CD0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbE4tTENveEprVDJRejhpTnVEQ3ItYTdQLWFyUXxBQ3Jtc0tsdlpia2NabF9XSnNvYnFnWWwwLWdsOUo3T2pHUDgzcXNYcnpUc3ZXdUl3eGVWX0xCb2F4Vkd6MGh0NTdUa0dNd01mMk95UFk3MVB1eE5IdnJNVEpkWkxVUjQ0a3VTREhIQ2tlSGN0enBlR0tTeENPek9MbmRMYzQ5OUtHenZwS3djWGU0N3lZRFk2X3JjU2tOT3RteTJhMVlLcFVZV2ZTT3hqN1Z3cmU3aE1TbzNhSngzMUN1ZHdncnB6aW1aRnNmX3c1Yjc&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CD0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbE4tTENveEprVDJRejhpTnVEQ3ItYTdQLWFyUXxBQ3Jtc0tsdlpia2NabF9XSnNvYnFnWWwwLWdsOUo3T2pHUDgzcXNYcnpUc3ZXdUl3eGVWX0xCb2F4Vkd6MGh0NTdUa0dNd01mMk95UFk3MVB1eE5IdnJNVEpkWkxVUjQ0a3VTREhIQ2tlSGN0enBlR0tTeENPek9MbmRMYzQ5OUtHenZwS3djWGU0N3lZRFk2X3JjU2tOT3RteTJhMVlLcFVZV2ZTT3hqN1Z3cmU3aE1TbzNhSngzMUN1ZHdncnB6aW1aRnNmX3c1Yjc"
+                            }
+                          },
+                          "trackingParams": "CD0Q8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CDwQ2jAYECITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Oanh Cherry Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDwQ2jAYECITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@oanhcherry-b9r",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UC_g7yy8nhgBoWSeSSim8CDQ",
+                                "canonicalBaseUrl": "/@oanhcherry-b9r"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCTOs-dCgyOtQRbtgvMwRS9A",
+                      "title": { "simpleText": "Phương Anh Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CDoQ2jAYESITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@phuonganhremix",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCTOs-dCgyOtQRbtgvMwRS9A",
+                          "canonicalBaseUrl": "/@phuonganhremix"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.ggpht.com/L8TsbTtOZ0_wVYJn_LSsX-vPrFhLYv8PKo4fnypBQltyDvdTnd6EjYaRyS1aHU6JxG-k46Ygdw=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.ggpht.com/L8TsbTtOZ0_wVYJn_LSsX-vPrFhLYv8PKo4fnypBQltyDvdTnd6EjYaRyS1aHU6JxG-k46Ygdw=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          { "text": "Phương Anh " },
+                          { "text": "Remix", "bold": true },
+                          {
+                            "text": " là kênh âm nhạc trực thuộc hệ thống Meme Media. - Chúc mọi người có thật nhiều năng lượng tích cực khi ..."
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Phương Anh Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDoQ2jAYESITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@phuonganhremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCTOs-dCgyOtQRbtgvMwRS9A",
+                                "canonicalBaseUrl": "/@phuonganhremix"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "94.6 thousand subscribers" }
+                        },
+                        "simpleText": "94.6K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "subscriberCountText": { "simpleText": "@phuonganhremix" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CDsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbUQyMFdQd01UZklVUDMtSVhQR0dIeThtYVM2UXxBQ3Jtc0trQnFKWmFXT3BvSFZhZ0FfMEpKNWhDLUxnaTBPZGdXaUhpUXpZRFFQWFRHdlFsckJtMGdKNkhnX2F1UmdvcXo4OWdSaVVvMTRsUk56QWI4bk11Qk8yZjBZRzcwa19Kc3RoVzl6ZEs4Rk1MWUZsNjB0Y21lYkxhU1lPcHhINkdQem9UYms0UU85ckM3YUxHa2pHV0RsS1I4TzR0VTF3dDNZQldKX0hDTzNTNkFEZG9Vdml0NUpfa21MU3dOWXZsMGlNekRPekw&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CDsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbUQyMFdQd01UZklVUDMtSVhQR0dIeThtYVM2UXxBQ3Jtc0trQnFKWmFXT3BvSFZhZ0FfMEpKNWhDLUxnaTBPZGdXaUhpUXpZRFFQWFRHdlFsckJtMGdKNkhnX2F1UmdvcXo4OWdSaVVvMTRsUk56QWI4bk11Qk8yZjBZRzcwa19Kc3RoVzl6ZEs4Rk1MWUZsNjB0Y21lYkxhU1lPcHhINkdQem9UYms0UU85ckM3YUxHa2pHV0RsS1I4TzR0VTF3dDNZQldKX0hDTzNTNkFEZG9Vdml0NUpfa21MU3dOWXZsMGlNekRPekw"
+                            }
+                          },
+                          "trackingParams": "CDsQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CDoQ2jAYESITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Phương Anh Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDoQ2jAYESITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@phuonganhremix",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCTOs-dCgyOtQRbtgvMwRS9A",
+                                "canonicalBaseUrl": "/@phuonganhremix"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCR-BxV0AmcHxE8v-ALg8YXg",
+                      "title": { "simpleText": "Dj Sandy Remix" },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CDgQ2jAYEiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@djsandyremixofficial",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCR-BxV0AmcHxE8v-ALg8YXg",
+                          "canonicalBaseUrl": "/@djsandyremixofficial"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "//yt3.googleusercontent.com/MUdxSLveK-SdghS3N2jPO_fgimMqg0faVAkxjy8rHjcgiK3b18dF8gZR2nApXEwzH2b0WnFEUA=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "//yt3.googleusercontent.com/MUdxSLveK-SdghS3N2jPO_fgimMqg0faVAkxjy8rHjcgiK3b18dF8gZR2nApXEwzH2b0WnFEUA=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          {
+                            "text": "DJ FROM LAVEZARES N. SAMAR PH Hello Idol! Welcome to my YouTube Channel! please Subscribe and On the Notification ..."
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Dj Sandy Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDgQ2jAYEiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djsandyremixofficial",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCR-BxV0AmcHxE8v-ALg8YXg",
+                                "canonicalBaseUrl": "/@djsandyremixofficial"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "870 thousand subscribers" }
+                        },
+                        "simpleText": "870K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "ownerBadges": [
+                        {
+                          "metadataBadgeRenderer": {
+                            "icon": { "iconType": "AUDIO_BADGE" },
+                            "style": "BADGE_STYLE_TYPE_VERIFIED_ARTIST",
+                            "tooltip": "Official Artist Channel",
+                            "trackingParams": "CDgQ2jAYEiITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                            "accessibilityData": { "label": "Official Artist Channel" }
+                          }
+                        }
+                      ],
+                      "subscriberCountText": { "simpleText": "@djsandyremixofficial" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CDkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqbVVPV2FDY1JrOTUwQTBpZFBVTUFoS2Fvc1ZLUXxBQ3Jtc0ttS2pyZ3N6SFBWZGx5eEpDMGVfZl8wZGdySktzWl80UlRMeUZOWk8tTHJycDFpcTZDU3FBOExmNThHcUFkV2xsdGgtNl9DeFExc2xta0xGcG1PZ0hZT0U5VGpPeEhkMVBCSHJueFVLdWdickV0OE00amEtTU1qNG9nRENrdXFXRWp3OGJCSmdWbEN0aENObzlWUGxRcDlzZlFIR0EtUUJ0YUFQVDBrVGNxVW9KdFZTdHRGa0FmZVhPSXJIQlNfaTZrcTdseEQ&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CDkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqbVVPV2FDY1JrOTUwQTBpZFBVTUFoS2Fvc1ZLUXxBQ3Jtc0ttS2pyZ3N6SFBWZGx5eEpDMGVfZl8wZGdySktzWl80UlRMeUZOWk8tTHJycDFpcTZDU3FBOExmNThHcUFkV2xsdGgtNl9DeFExc2xta0xGcG1PZ0hZT0U5VGpPeEhkMVBCSHJueFVLdWdickV0OE00amEtTU1qNG9nRENrdXFXRWp3OGJCSmdWbEN0aENObzlWUGxRcDlzZlFIR0EtUUJ0YUFQVDBrVGNxVW9KdFZTdHRGa0FmZVhPSXJIQlNfaTZrcTdseEQ"
+                            }
+                          },
+                          "trackingParams": "CDkQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CDgQ2jAYEiITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Dj Sandy Remix",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDgQ2jAYEiITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djsandyremixofficial",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCR-BxV0AmcHxE8v-ALg8YXg",
+                                "canonicalBaseUrl": "/@djsandyremixofficial"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  {
+                    "channelRenderer": {
+                      "channelId": "UCwPQNeLP8um8V1f5JjN8W3Q",
+                      "title": { "simpleText": "Dj Johnrey Masbate Remix " },
+                      "navigationEndpoint": {
+                        "clickTrackingParams": "CDYQ2jAYEyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                        "commandMetadata": {
+                          "webCommandMetadata": {
+                            "url": "/@djjohnreymasbateremix1654",
+                            "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                            "rootVe": 3611,
+                            "apiUrl": "/youtubei/v1/browse"
+                          }
+                        },
+                        "browseEndpoint": {
+                          "browseId": "UCwPQNeLP8um8V1f5JjN8W3Q",
+                          "canonicalBaseUrl": "/@djjohnreymasbateremix1654"
+                        }
+                      },
+                      "thumbnail": {
+                        "thumbnails": [
+                          {
+                            "url": "https://yt3.ggpht.com/jwS4FTY2dZVP7Z-cpmFO0N8G2Uyz81ht-pEIJRpIjSt0Klmyd6tN4hoE86fQ3or7q8pgxHwQng=s88-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 88,
+                            "height": 88
+                          },
+                          {
+                            "url": "https://yt3.ggpht.com/jwS4FTY2dZVP7Z-cpmFO0N8G2Uyz81ht-pEIJRpIjSt0Klmyd6tN4hoE86fQ3or7q8pgxHwQng=s176-c-k-c0x00ffffff-no-rj-mo",
+                            "width": 176,
+                            "height": 176
+                          }
+                        ]
+                      },
+                      "descriptionSnippet": {
+                        "runs": [
+                          {
+                            "text": "Welcome to my official YouTube channel! Ako po si DJ Johnrey, isang passionate na Filipino DJ/remixer na gumagawa ng mga ..."
+                          }
+                        ]
+                      },
+                      "shortBylineText": {
+                        "runs": [
+                          {
+                            "text": "Dj Johnrey Masbate Remix ",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDYQ2jAYEyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djjohnreymasbateremix1654",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCwPQNeLP8um8V1f5JjN8W3Q",
+                                "canonicalBaseUrl": "/@djjohnreymasbateremix1654"
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "videoCountText": {
+                        "accessibility": {
+                          "accessibilityData": { "label": "504 thousand subscribers" }
+                        },
+                        "simpleText": "504K subscribers"
+                      },
+                      "subscriptionButton": { "subscribed": false },
+                      "ownerBadges": [
+                        {
+                          "metadataBadgeRenderer": {
+                            "icon": { "iconType": "AUDIO_BADGE" },
+                            "style": "BADGE_STYLE_TYPE_VERIFIED_ARTIST",
+                            "tooltip": "Official Artist Channel",
+                            "trackingParams": "CDYQ2jAYEyITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                            "accessibilityData": { "label": "Official Artist Channel" }
+                          }
+                        }
+                      ],
+                      "subscriberCountText": { "simpleText": "@djjohnreymasbateremix1654" },
+                      "subscribeButton": {
+                        "buttonRenderer": {
+                          "style": "STYLE_DESTRUCTIVE",
+                          "size": "SIZE_DEFAULT",
+                          "isDisabled": false,
+                          "text": { "runs": [{ "text": "Subscribe" }] },
+                          "navigationEndpoint": {
+                            "clickTrackingParams": "CDcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                            "commandMetadata": {
+                              "webCommandMetadata": {
+                                "url": "https://accounts.google.com/ServiceLogin?service=youtube&uilel=3&passive=true&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3D%252Fresults%253Fsearch_query%253Dremix%252Btiktok%252B2025%2526sp%253DEgIQAg%2525253D%2525253D%26continue_action%3DQUFFLUhqblJJSkhlUFVnZEUwUUgxdDhMc1VTUEQ1SXVnd3xBQ3Jtc0tsVXJrSVFWOW1PNkVTXzU3azlQQ2VwVjh5bTRzekFjaEZlOE44X1o4U21iMUdGOENlbF9kQVl1VWFDMVhrZjdUeDJGNkpGZWRTV0lRUDFIV0ZHemh1ZHJKdVhIbFEycTFOR1Ria2dJcGQ5dTJlUlNsZGpKV0kzVnh1WnhidE1ocjU5bERVRTJuOW8yZzN3emZLejhVLVFTZHpNWWR6TGFyUEVYQTNlbU5JVEhPalVWeEgtX0J0d1ktR0lWblVjTlZHMFlSZjM&hl=en",
+                                "webPageType": "WEB_PAGE_TYPE_UNKNOWN",
+                                "rootVe": 83769
+                              }
+                            },
+                            "signInEndpoint": {
+                              "nextEndpoint": {
+                                "clickTrackingParams": "CDcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                                "commandMetadata": {
+                                  "webCommandMetadata": {
+                                    "url": "/results?search_query=remix+tiktok+2025&sp=EgIQAg%253D%253D",
+                                    "webPageType": "WEB_PAGE_TYPE_SEARCH",
+                                    "rootVe": 4724
+                                  }
+                                },
+                                "searchEndpoint": {
+                                  "query": "remix tiktok 2025",
+                                  "params": "EgIQAg%3D%3D"
+                                }
+                              },
+                              "continueAction": "QUFFLUhqblJJSkhlUFVnZEUwUUgxdDhMc1VTUEQ1SXVnd3xBQ3Jtc0tsVXJrSVFWOW1PNkVTXzU3azlQQ2VwVjh5bTRzekFjaEZlOE44X1o4U21iMUdGOENlbF9kQVl1VWFDMVhrZjdUeDJGNkpGZWRTV0lRUDFIV0ZHemh1ZHJKdVhIbFEycTFOR1Ria2dJcGQ5dTJlUlNsZGpKV0kzVnh1WnhidE1ocjU5bERVRTJuOW8yZzN3emZLejhVLVFTZHpNWWR6TGFyUEVYQTNlbU5JVEhPalVWeEgtX0J0d1ktR0lWblVjTlZHMFlSZjM"
+                            }
+                          },
+                          "trackingParams": "CDcQ8FsiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                        }
+                      },
+                      "trackingParams": "CDYQ2jAYEyITCM7VqtHHnJMDFf7uTAId2aMohA==",
+                      "longBylineText": {
+                        "runs": [
+                          {
+                            "text": "Dj Johnrey Masbate Remix ",
+                            "navigationEndpoint": {
+                              "clickTrackingParams": "CDYQ2jAYEyITCM7VqtHHnJMDFf7uTAId2aMohMoBBP_5BtA=",
+                              "commandMetadata": {
+                                "webCommandMetadata": {
+                                  "url": "/@djjohnreymasbateremix1654",
+                                  "webPageType": "WEB_PAGE_TYPE_CHANNEL",
+                                  "rootVe": 3611,
+                                  "apiUrl": "/youtubei/v1/browse"
+                                }
+                              },
+                              "browseEndpoint": {
+                                "browseId": "UCwPQNeLP8um8V1f5JjN8W3Q",
+                                "canonicalBaseUrl": "/@djjohnreymasbateremix1654"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ],
+                "trackingParams": "CDUQuy8YACITCM7VqtHHnJMDFf7uTAId2aMohA=="
+              }
+            },
+            {
+              "continuationItemRenderer": {
+                "trigger": "CONTINUATION_TRIGGER_ON_ITEM_SHOWN",
+                "continuationEndpoint": {
+                  "clickTrackingParams": "CDQQt6kLGAEiEwjO1arRx5yTAxX-7kwCHdmjKITKAQT_-QbQ",
+                  "commandMetadata": {
+                    "webCommandMetadata": { "sendPost": true, "apiUrl": "/youtubei/v1/search" }
+                  },
+                  "continuationCommand": {
+                    "token": "EvoFEhFyZW1peCB0aWt0b2sgMjAyNRrkBUVnSVFBa2dVZ2dFWVZVTkhUek40VDJScWRVdG9WVXhHYTNkM1VHOUZNMDFuZ2dFWVZVTjViRlk1YnpoaWFEWmZWVkZaUzNZemVFbDFNV3RSZ2dFWVZVTlFaelk1WVRCc2NsSTNRVTlwT0RoWU5rTlJSMlZCZ2dFWVZVTnRXbkZRU0dFdFVtd3dka1F4TFdOSWVXdFdTMmxCZ2dFWVZVTmtYMUpqUWt3MVNVSkdXWFpQWDJOUGNYTnRRWGhCZ2dFWVZVTnZZbVY0Ym5KcGJXZ3lZMGd4U2tJMldtZFZkREpCZ2dFWVZVTlhjSFpRY25Kd1Z6TnJVbVZqYm5KME5FRlFia2xCZ2dFWVZVTktjVWx3Ukc5bWEwNDBXR1JCWlU5TlVFdDRVa1YzZ2dFWVZVTm9RMEpzVjJ0TmRGbHFPRU01Ykc5VVYzUlhaV1JCZ2dFWVZVTkNNRWxaZVRKMFMyZFhWMFJVTmxWaFZIVnFhRUYzZ2dFWVZVTkhSV2h1ZVRKYU9ESnFSVFp6V1daSFZVNDNXV3RCZ2dFWVZVTnJjalZhY0hnek1tcGxNbE5oWkhORU1IbHhUVkpuZ2dFWVZVTTNMWEp0ZGpCUWMwdHVaWE5HYlVoa01UaEZhVnBuZ2dFWVZVTk9jWGhLYkVkQmFsVXRkRE0zUVRNNFVVaHhTV2QzZ2dFWVZVTmxUMjB4TldsUWJuazNlRWRPVm1saFNsOVVTVnAzZ2dFWVZVTmpPR3BRTjFjMFQyUk9ibFV5UmpacGMyVnJPWGhCZ2dFWVZVTmZaemQ1ZVRodWFHZENiMWRUWlZOVGFXMDRRMFJSZ2dFWVZVTlVUM010WkVObmVVOTBVVkppZEdkMlRYZFNVemxCZ2dFWVZVTlNMVUo0VmpCQmJXTkllRVU0ZGkxQlRHYzRXVmhuZ2dFWVZVTjNVRkZPWlV4UU9IVnRPRll4WmpWS2FrNDRWek5Sc2dFR0NnUUlGQkFDGIHg6BgiC3NlYXJjaC1mZWVk",
+                    "request": "CONTINUATION_REQUEST_TYPE_SEARCH"
+                  }
+                },
+                "loggingDirectives": {
+                  "trackingParams": "CDQQt6kLGAEiEwjO1arRx5yTAxX-7kwCHdmjKIQ="
+                }
+              }
+            }
+          ],
+          "trackingParams": "CDIQui8iEwjO1arRx5yTAxX-7kwCHdmjKIQ=",
+          "subMenu": {
+            "searchSubMenuRenderer": { "trackingParams": "CDMQkXUiEwjO1arRx5yTAxX-7kwCHdmjKIQ=" }
+          },
+          "hideBottomSeparator": true,
+          "targetId": "search-feed"
+        }
+      }
+    }
+  }
+}

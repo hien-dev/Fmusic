@@ -1,6 +1,7 @@
 import { Ionicons } from "@expo/vector-icons";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
 import { useDesignSystem } from "@shared/provider";
+import { tr, useLocale } from "@shared/locales/i18n";
 import { sizes, spacing, Typography } from "@shared/themes";
 import * as React from "react";
 import { LayoutChangeEvent, Platform, Pressable as RNButton, StyleSheet, View } from "react-native";
@@ -16,6 +17,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 export function BottomBar({ state, navigation }: BottomTabBarProps) {
   const { bottom } = useSafeAreaInsets();
   const { typography, colors } = useDesignSystem();
+  useLocale(); // subscribe to locale changes for re-render
 
   const onPressTab = (index: number) => {
     const route = state.routes[index];
@@ -36,9 +38,9 @@ export function BottomBar({ state, navigation }: BottomTabBarProps) {
   };
 
   const labelFor = (name: string) => {
-    if (name.startsWith("search")) return "Search";
-    if (name.startsWith("favorite")) return "Favorite";
-    return "Settings";
+    if (name.startsWith("search")) return tr("bottomTabs.search");
+    if (name.startsWith("favorite")) return tr("bottomTabs.favorite");
+    return tr("bottomTabs.settings");
   };
 
   return (

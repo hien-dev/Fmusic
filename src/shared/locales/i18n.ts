@@ -1,8 +1,10 @@
 import * as Localization from "expo-localization";
 import { I18n } from "i18n-js";
+import { useEffect, useState } from "react";
 
 import en from "./en.json";
 import vi from "./vi.json";
+import ko from "./ko.json";
 
 type Primitive = string | number | boolean | null | undefined;
 
@@ -18,11 +20,18 @@ type DotPaths<T> = T extends Primitive
 
 export type TxKey = DotPaths<typeof en>;
 
-export const i18n = new I18n({ en, vi });
+export const i18n = new I18n({ en, vi, ko });
 i18n.enableFallback = true;
 
 const device = Localization.getLocales?.()[0]?.languageTag ?? "en";
 i18n.locale = device;
+
+type LocaleListener = () => void;
+const localeListeners = new Set<LocaleListener>();
+
+function notifyLocaleChanged() {
+  localeListeners.forEach((l) => l());
+}
 
 export type TranslateValues = Record<string, string | number | undefined>;
 
@@ -32,7 +41,23 @@ export function tr<K extends TxKey>(key: K, values?: TranslateValues) {
 
 export function setLocale(locale: string) {
   i18n.locale = locale;
+  notifyLocaleChanged();
 }
+
 export function getLocale() {
   return i18n.locale;
+}
+
+export function useLocale(): string {
+  const [locale, setLocaleState] = useState<string>(() => i18n.locale);
+
+  useEffect(() => {
+    const listener = () => setLocaleState(i18n.locale);
+    localeListeners.add(listener);
+    return () => {
+      localeListeners.delete(listener);
+    };
+  }, []);
+
+  return locale;
 }

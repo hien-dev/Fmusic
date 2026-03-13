@@ -5,18 +5,18 @@ import { windowSize } from "@shared/utils/constants";
 import { useEventListener } from "expo";
 import { useVideoPlayer } from "expo-video";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { StyleSheet, View, ViewStyle } from "react-native";
+import { StyleSheet, ViewStyle } from "react-native";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
-import Animated, {
+import {
   Extrapolation,
   interpolate,
   useAnimatedStyle,
   useSharedValue,
 } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useMusicBottomSheet } from "../hooks/useMusicBottomSheet";
 import { MiniPlayer } from "../components/MiniPlayer";
 import { MusicBottomSheetContent } from "../components/MusicBottomSheetContent";
+import { useMusicBottomSheet } from "../hooks/useMusicBottomSheet";
 
 interface Props {
   children?: React.ReactNode | undefined;
@@ -30,7 +30,8 @@ interface VideoSize {
 export default function MusicBottomSheetScreen({ children }: Props) {
   const { colors } = useTheme();
   const { bottom } = useSafeAreaInsets();
-  const { isShowBottomSheet, video, nextVideos, onChangeShowBottomSheet } = useMusicBottomSheet();
+  const { isShowBottomSheet, video, nextVideos, onChangeShowBottomSheet, fetchMusicById } =
+    useMusicBottomSheet();
 
   const [videoSize, onChangeVideoSize] = useState<VideoSize>({
     width: windowSize.width,
@@ -126,6 +127,7 @@ export default function MusicBottomSheetScreen({ children }: Props) {
           videoContainerStyle={videoContainerStyle}
           animatedIndex={animatedIndex}
           onChange={handleSheetChanges}
+          fetchMusicById={fetchMusicById}
         />
 
         {video && (

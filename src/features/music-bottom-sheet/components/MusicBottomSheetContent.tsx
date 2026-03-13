@@ -11,6 +11,7 @@ type MusicBottomSheetContentProps = {
   video: any;
   nextVideos: any;
   player: any;
+  fetchMusicById: (videoId: string) => void;
   videoContainerStyle: ViewStyle;
   animatedIndex: any;
   onChange: (index: number) => void;
@@ -22,6 +23,7 @@ export function MusicBottomSheetContent({
   colors,
   video,
   nextVideos,
+  fetchMusicById,
   player,
   videoContainerStyle,
   animatedIndex,
@@ -55,7 +57,15 @@ export function MusicBottomSheetContent({
           <Text tx="music.next" variant="h4" align="left" />
         </View>
         <View style={styles.nextVideos}>
-          <Playlists data={nextVideos?.playlist || []} isLoading={false} onPress={() => {}} />
+          <Playlists
+            data={nextVideos?.playlist || []}
+            isLoading={false}
+            onPress={(video) => {
+              if (video.videoId) {
+                fetchMusicById(video.videoId);
+              }
+            }}
+          />
         </View>
       </BottomSheetView>
     </BottomSheet>
@@ -93,4 +103,3 @@ const styles = StyleSheet.create({
     marginTop: spacing.xs,
   },
 });
-

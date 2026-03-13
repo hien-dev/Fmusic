@@ -12,15 +12,15 @@ export type Colors = {
 };
 
 export const colorsLight: Colors = {
-  accent: "#FF7F7F",
-  primary: "#FF5A5A",
-  background: "#FFFFFF",
-  card: "#FDF0F0",
-  text: "#222222",
-  icon: "#222222",
-  placeholder: "#999999",
-  border: "#E0E0E0",
-  line: "#E0E0E0",
+  accent: "#FF6B6B",
+  primary: "#FF4A4A",
+  background: "#F6F6F8",
+  card: "#FFFFFF",
+  text: "#111827",
+  icon: "#111827",
+  placeholder: "#9CA3AF",
+  border: "#E5E7EB",
+  line: "#E5E7EB",
   transparent: "#FFFFFF00",
 };
 

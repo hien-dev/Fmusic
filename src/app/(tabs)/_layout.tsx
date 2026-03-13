@@ -1,4 +1,6 @@
 import { Ionicons } from "@expo/vector-icons";
+import { useColorState } from "@shared/hooks/useTheme";
+import { tr, useLocale } from "@shared/locales/i18n";
 import { useDesignSystem } from "@shared/provider";
 import { useUIStore } from "@shared/store/ui-store";
 import { BottomBar, Sidebar } from "@shared/ui";
@@ -15,24 +17,32 @@ import { useWindowDimensions } from "react-native";
 
 export default function TabsLayout() {
   const { colors } = useDesignSystem();
+  const themePref = useColorState((s) => s.theme);
+  const locale = useLocale();
 
   const renderSidebar = useCallback((props: any) => <Sidebar {...props} />, []);
   const renderBottomBar = useCallback((props: any) => <BottomBar {...props} />, []);
 
   if (iPhone) {
     return (
-      <NativeTabs iconColor={colors.accent}>
+      <NativeTabs key={themePref} iconColor={colors.accent}>
         <NativeTabs.Trigger name="search/index">
           <Icon sf={"magnifyingglass"} />
-          <Label>Search</Label>
+          <Label>{tr("bottomTabs.search")}</Label>
         </NativeTabs.Trigger>
-        <NativeTabs.Trigger name="favorite/index" options={{ title: "Favorite" }}>
+        <NativeTabs.Trigger
+          name="favorite/index"
+          options={{ title: tr("bottomTabs.favorite") }}
+        >
           <Icon sf={"heart"} />
-          <Label>Favorite</Label>
+          <Label>{tr("bottomTabs.favorite")}</Label>
         </NativeTabs.Trigger>
-        <NativeTabs.Trigger name="settings/index" options={{ title: "Settings" }}>
+        <NativeTabs.Trigger
+          name="settings/index"
+          options={{ title: tr("bottomTabs.settings") }}
+        >
           <Icon sf={"gear"} />
-          <Label>Settings</Label>
+          <Label>{tr("bottomTabs.settings")}</Label>
         </NativeTabs.Trigger>
       </NativeTabs>
     );
@@ -47,6 +57,7 @@ export default function TabsLayout() {
 
     return (
       <Tabs
+        key={themePref}
         screenOptions={{
           headerShown: false,
           tabBarShowLabel: false,
@@ -58,16 +69,22 @@ export default function TabsLayout() {
       >
         <Tabs.Screen
           name="search/index"
-          options={{ title: "Search", tabBarIcon: (p) => <Ionicons name="search" {...p} /> }}
+          options={{
+            title: tr("bottomTabs.search"),
+            tabBarIcon: (p) => <Ionicons name="search" {...p} />,
+          }}
         />
         <Tabs.Screen
           name="favorite/index"
-          options={{ title: "Favorite", tabBarIcon: (p) => <Ionicons name="heart" {...p} /> }}
+          options={{
+            title: tr("bottomTabs.favorite"),
+            tabBarIcon: (p) => <Ionicons name="heart" {...p} />,
+          }}
         />
         <Tabs.Screen
           name="settings/index"
           options={{
-            title: "Settings",
+            title: tr("bottomTabs.settings"),
             tabBarIcon: (p) => <Ionicons name="settings-outline" {...p} />,
           }}
         />
@@ -77,6 +94,7 @@ export default function TabsLayout() {
 
   return (
     <Tabs
+      key={themePref}
       screenOptions={{
         headerShown: false,
         tabBarShowLabel: false,

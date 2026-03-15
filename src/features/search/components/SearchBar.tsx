@@ -48,6 +48,7 @@ export default function SearchBar({
           enterKeyHint="search"
           onChangeText={onChange}
           onSubmitEditing={onSubmit}
+          placeholderTextColor={colors.placeholder}
           style={{ color: colors.text }}
         />
       </View>

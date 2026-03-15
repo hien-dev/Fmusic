@@ -1,10 +1,14 @@
 import { ContentTabs } from "@shared/api/config";
 import { tr } from "@shared/locales/i18n";
 import { PlaylistDTO } from "@shared/model";
+import { useSearchState } from "../services/search.state";
 import { debounce } from "@shared/utils/debounce";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Alert, LayoutAnimation } from "react-native";
 import { continuationFetch, fetchSuggestions, initFetch } from "../services/search.api";
+
+/** Persists across remounts (e.g. theme change) so we don't re-fetch initial data */
+let searchInitialized = false;
 
 interface UseSearch {
   isShowSearch: boolean;
@@ -24,7 +28,8 @@ export const useSearch = (): UseSearch => {
   const [isShowSearch, onChangeShowSearch] = useState(false);
   const [searching, setSearching] = useState("");
   const [isLoading, onChangeLoading] = useState(false);
-  const [playlists, onChangePlaylists] = useState<PlaylistDTO | undefined>(undefined);
+  const playlists = useSearchState((s) => s.playlists);
+  const onChangePlaylists = useSearchState((s) => s.onChangePlaylists);
   const [suggestions, onChangeSuggestions] = useState<string[]>([]);
   const [contentTab, onChangeContentTab] = useState<ContentTabs>(ContentTabs.all);
 
@@ -37,8 +42,6 @@ export const useSearch = (): UseSearch => {
       onChangeSuggestions(suggestions);
     }, 300)
   );
-
-  const initializedRef = useRef(false);
 
   const fetchPlaylists = useCallback((query: string, tab: ContentTabs) => {
     onChangeLoading(true);
@@ -62,8 +65,8 @@ export const useSearch = (): UseSearch => {
   }, []);
 
   useEffect(() => {
-    if (initializedRef.current) return;
-    initializedRef.current = true;
+    if (searchInitialized) return;
+    searchInitialized = true;
     fetchPlaylists("Dj phuong kally", ContentTabs.all);
   }, [fetchPlaylists]);
 

@@ -1,8 +1,9 @@
 import { Ionicons } from "@expo/vector-icons";
 import { BottomTabBarProps } from "@react-navigation/bottom-tabs";
-import { useDesignSystem } from "@shared/provider";
 import { tr, useLocale } from "@shared/locales/i18n";
-import { sizes, spacing, Typography } from "@shared/themes";
+import { useDesignSystem } from "@shared/provider";
+import { colorsDark, sizes, spacing, Typography } from "@shared/themes";
+import { BlurView } from "expo-blur";
 import * as React from "react";
 import { LayoutChangeEvent, Platform, Pressable as RNButton, StyleSheet, View } from "react-native";
 import Animated, {
@@ -47,34 +48,39 @@ export function BottomBar({ state, navigation }: BottomTabBarProps) {
     <View pointerEvents="box-none" style={StyleSheet.absoluteFill}>
       <View
         pointerEvents="auto"
-        style={[
-          styles.barWrap,
-          { paddingBottom: bottom > 0 ? bottom - 2 : 8, backgroundColor: colors.background },
-        ]}
+        style={[styles.barWrap, { paddingBottom: bottom > 0 ? bottom - 10 : 8 }]}
       >
-        <View
-          style={[
-            styles.bar,
-            {
-              backgroundColor: colors.primary,
-              shadowColor: colors.background,
-            },
-          ]}
-        >
-          {state.routes.map((r, i) => {
-            const focused = state.index === i;
-            return (
-              <TabButton
-                key={r.key}
-                focused={focused}
-                label={labelFor(r.name)}
-                icon={iconFor(r.name)}
-                onPress={() => onPressTab(i)}
-                typography={typography}
-                colors={colors}
-              />
-            );
-          })}
+        <View style={[styles.barOuter, { borderColor: colors.border }]}>
+          <BlurView
+            intensity={50}
+            tint={colors.background === colorsDark.background ? "dark" : "light"}
+            style={styles.barBlur}
+          >
+            <View
+              style={[
+                styles.barInner,
+                {
+                  backgroundColor: colors.overlay,
+                  borderColor: colors.overlayBorder,
+                },
+              ]}
+            >
+              {state.routes.map((r, i) => {
+                const focused = state.index === i;
+                return (
+                  <TabButton
+                    key={r.key}
+                    focused={focused}
+                    label={labelFor(r.name)}
+                    icon={iconFor(r.name)}
+                    onPress={() => onPressTab(i)}
+                    typography={typography}
+                    colors={colors}
+                  />
+                );
+              })}
+            </View>
+          </BlurView>
         </View>
       </View>
     </View>
@@ -182,13 +188,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingTop: spacing.xs,
   },
-  bar: {
+  barOuter: {
     width: "78%",
     maxWidth: 420,
-    flexDirection: "row",
-    padding: spacing.sm,
     borderRadius: 40,
-    gap: 10,
+    overflow: "hidden",
+    borderWidth: 1,
     ...Platform.select({
       ios: {
         shadowOpacity: 0.25,
@@ -197,6 +202,18 @@ const styles = StyleSheet.create({
       },
       android: { elevation: 6 },
     }),
+  },
+  barBlur: {
+    flex: 1,
+    borderRadius: 40,
+    overflow: "hidden",
+  },
+  barInner: {
+    flexDirection: "row",
+    padding: spacing.sm,
+    borderRadius: 40,
+    gap: 10,
+    borderWidth: StyleSheet.hairlineWidth,
   },
   pressArea: {
     borderRadius: 999,

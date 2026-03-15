@@ -134,7 +134,7 @@ export default function MusicBottomSheetScreen({ children }: Props) {
           <MiniPlayer
             video={video}
             isPlaying={isPlaying}
-            bottomInset={bottom + 50}
+            bottomInset={bottom + 65}
             colors={colors}
             animatedStyle={miniPlayerStyle}
             onTogglePlayPause={togglePlayPause}

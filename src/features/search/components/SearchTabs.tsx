@@ -1,6 +1,7 @@
 import { ContentTabs } from "@shared/api/config";
 import { tr } from "@shared/locales/i18n";
 import { useDesignSystem } from "@shared/provider";
+import { colorsDark } from "@shared/themes";
 import { BlurView } from "expo-blur";
 import { useEffect, useState } from "react";
 import { LayoutChangeEvent, Pressable, StyleSheet, Text, View } from "react-native";
@@ -57,11 +58,13 @@ export function SearchTabs({ activeTab, onChangeTab }: Props) {
     <View style={styles.tabsOuter}>
       <BlurView
         intensity={50}
-        tint={colors.background === "#0D0D0D" ? "dark" : "light"}
-        style={[styles.tabsBlur, { borderColor: colors.border }]}
+        tint={colors.background === colorsDark.background ? "dark" : "light"}
+        style={[styles.tabsBlur, { borderColor: colors.border, backgroundColor: colors.overlay }]}
       >
         <View style={styles.tabsContainer}>
-          <Animated.View style={[styles.tabIndicator, indicatorStyle]} />
+          <Animated.View
+            style={[styles.tabIndicator, indicatorStyle, { backgroundColor: colors.tabIndicator }]}
+          />
           {tabs.map((tab, index) => {
             const isActive = activeTab === tab.key;
             return (
@@ -71,7 +74,13 @@ export function SearchTabs({ activeTab, onChangeTab }: Props) {
                 style={({ pressed }) => [styles.tabItem, pressed && styles.tabItemPressed]}
                 onPress={() => onChangeTab(tab.key)}
               >
-                <Text style={[styles.tabLabel, isActive && styles.tabLabelActive]}>
+                <Text
+                  style={[
+                    styles.tabLabel,
+                    { color: colors.placeholder },
+                    isActive && [styles.tabLabelActive, { color: colors.text }],
+                  ]}
+                >
                   {tab.label}
                 </Text>
               </Pressable>
@@ -92,7 +101,6 @@ const styles = StyleSheet.create({
     borderRadius: 999,
     overflow: "hidden",
     borderWidth: StyleSheet.hairlineWidth,
-    backgroundColor: "rgba(0,0,0,0.25)",
   },
   tabsContainer: {
     flexDirection: "row",
@@ -108,7 +116,6 @@ const styles = StyleSheet.create({
     bottom: 2,
     left: 0,
     borderRadius: 999,
-    backgroundColor: "rgba(255,255,255,0.18)",
   },
   tabItem: {
     flex: 1,
@@ -123,10 +130,8 @@ const styles = StyleSheet.create({
   },
   tabLabel: {
     fontSize: 12,
-    color: "#999",
   },
   tabLabelActive: {
-    color: "#fff",
     fontWeight: "600",
   },
 });

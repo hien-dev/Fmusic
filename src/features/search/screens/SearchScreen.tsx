@@ -48,6 +48,7 @@ export default function SearchScreen() {
       ) : (
         <Playlists
           data={playlists?.playlist || []}
+          activeTab={contentTab}
           isLoading={isLoading}
           onLoadMore={onLoadMore}
           onPress={(video) => {

@@ -1,3 +1,4 @@
+import { ContentTabs } from "@shared/api/config";
 import { VideoDTO } from "@shared/model";
 import { useDesignSystem } from "@shared/provider";
 import { spacing } from "@shared/themes";
@@ -8,18 +9,35 @@ import { Text } from "./Text";
 
 interface Props {
   data: VideoDTO[];
+  activeTab?: ContentTabs;
   isLoading: boolean;
   scrollEnabled?: boolean;
   onPress: (video: VideoDTO) => void;
   onLoadMore?: () => void;
 }
 
-export function Playlists({ data, isLoading, scrollEnabled = true, onPress, onLoadMore }: Props) {
+export function Playlists({
+  data,
+  activeTab,
+  isLoading,
+  scrollEnabled = true,
+  onPress,
+  onLoadMore,
+}: Props) {
   const { colors } = useDesignSystem();
+  const isCircle = activeTab === ContentTabs.artists;
 
   const renderItem: ListRenderItem<VideoDTO> = ({ item }) => (
     <Button style={[styles.item, { borderColor: colors.border }]} onPress={() => onPress(item)}>
-      <Image source={{ uri: item.thumbnailURL }} resizeMode="center" style={styles.image} />
+      <Image
+        source={{ uri: item.thumbnailURL }}
+        resizeMode={isCircle ? "cover" : "center"}
+        style={[
+          styles.image,
+          { width: isCircle ? 60 : 75,
+            borderRadius: isCircle ? 999 : 5 },
+        ]}
+      />
       <View style={styles.flex}>
         <Text variant="h5" numberOfLines={2} align="left">
           {item.title}

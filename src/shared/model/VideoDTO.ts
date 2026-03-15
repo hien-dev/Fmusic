@@ -260,8 +260,7 @@ export class VideoDTO {
 
     if (channelRenderer) {
       const browseId =
-        channelRenderer?.navigationEndpoint?.browseEndpoint?.browseId ??
-        channelRenderer?.channelId;
+        channelRenderer?.navigationEndpoint?.browseEndpoint?.browseId ?? channelRenderer?.channelId;
       const title = channelRenderer?.title?.simpleText ?? "";
       const rawThumb = channelRenderer?.thumbnail?.thumbnails?.[0]?.url ?? "";
       const thumbnailURL = rawThumb.startsWith("//") ? `https:${rawThumb}` : rawThumb;

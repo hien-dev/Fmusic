@@ -9,6 +9,9 @@ export type Colors = {
   text: string;
   line: string;
   transparent: string;
+  overlay: string;
+  overlayBorder: string;
+  tabIndicator: string;
 };
 
 export const colorsLight: Colors = {
@@ -22,6 +25,9 @@ export const colorsLight: Colors = {
   border: "#E5E7EB",
   line: "#E5E7EB",
   transparent: "#FFFFFF00",
+  overlay: "rgba(0, 0, 0, 0.25)",
+  overlayBorder: "rgba(0, 0, 0, 0.4)",
+  tabIndicator: "rgba(255, 255, 255, 0.18)",
 };
 
 export const colorsDark: Colors = {
@@ -35,4 +41,7 @@ export const colorsDark: Colors = {
   border: "#2A2A2A",
   line: "#2A2A2A",
   transparent: "#00000000",
+  overlay: "rgba(0, 0, 0, 0.25)",
+  overlayBorder: "rgba(0, 0, 0, 0.4)",
+  tabIndicator: "rgba(255, 255, 255, 0.18)",
 };

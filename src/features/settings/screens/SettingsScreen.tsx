@@ -1,6 +1,5 @@
 import { ThemePref, useColorState } from "@shared/hooks/useTheme";
 import { getLocale, setLocale, tr, useLocale } from "@shared/locales/i18n";
-import { useState } from "react";
 import { useDesignSystem } from "@shared/provider";
 import { spacing } from "@shared/themes";
 import { Screen } from "@shared/ui";

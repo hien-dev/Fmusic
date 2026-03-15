@@ -24,18 +24,6 @@
     },
     "plugins": [
       "expo-router",
-      [
-        "expo-splash-screen",
-        {
-          "backgroundColor": "#FFFFFF",
-          "image": "./assets/images/logo-light.png",
-          "dark": {
-            "image": "./assets/images/logo-dark.png",
-            "backgroundColor": "#000000"
-          },
-          "imageWidth": 200
-        }
-      ],
       "expo-localization",
       "expo-video",
       "expo-font"

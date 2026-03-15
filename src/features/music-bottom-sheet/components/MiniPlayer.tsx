@@ -1,5 +1,5 @@
 import { Ionicons } from "@expo/vector-icons";
-import { spacing } from "@shared/themes";
+import { colorsDark, spacing } from "@shared/themes";
 import { Text } from "@shared/ui";
 import { BlurView } from "expo-blur";
 import { Image, Pressable, StyleSheet, View } from "react-native";
@@ -43,10 +43,16 @@ export function MiniPlayer({
     >
       <BlurView
         intensity={65}
-        tint={colors.background === "#0D0D0D" ? "dark" : "light"}
+        tint={colors.background === colorsDark.background ? "dark" : "light"}
         style={styles.miniPlayerBlur}
       >
-        <Pressable onPress={onPress} style={styles.miniPlayer}>
+        <Pressable
+          onPress={onPress}
+          style={[
+            styles.miniPlayer,
+            { backgroundColor: colors.overlay, borderColor: colors.overlayBorder },
+          ]}
+        >
           <Image
             source={{ uri: video.thumbnailURL }}
             style={styles.miniThumbnail}
@@ -94,9 +100,7 @@ const styles = StyleSheet.create({
     paddingRight: spacing.sm,
     paddingLeft: spacing.xs,
     paddingVertical: spacing.xs,
-    backgroundColor: "rgba(0, 0, 0, 0.25)",
     borderWidth: StyleSheet.hairlineWidth,
-    borderColor: "rgba(0, 0, 0, 0.4)",
   },
   miniThumbnail: {
     width: 56,

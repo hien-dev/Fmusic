@@ -4,7 +4,7 @@ import { useDesignSystem } from "@shared/provider";
 import { colorsDark } from "@shared/themes";
 import { BlurView } from "expo-blur";
 import { useEffect, useState } from "react";
-import { LayoutChangeEvent, Pressable, StyleSheet, Text, View } from "react-native";
+import { LayoutChangeEvent, Platform, Pressable, StyleSheet, Text, View } from "react-native";
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from "react-native-reanimated";
 
 const TAB_GAP = 4;
@@ -60,6 +60,7 @@ export function SearchTabs({ activeTab, onChangeTab }: Props) {
         intensity={50}
         tint={colors.background === colorsDark.background ? "dark" : "light"}
         style={[styles.tabsBlur, { borderColor: colors.border, backgroundColor: colors.overlay }]}
+        {...(Platform.OS === "android" && { experimentalBlurMethod: "dimezisBlurView" })}
       >
         <View style={styles.tabsContainer}>
           <Animated.View

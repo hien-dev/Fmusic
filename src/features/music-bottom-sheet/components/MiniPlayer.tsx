@@ -2,7 +2,7 @@ import { Ionicons } from "@expo/vector-icons";
 import { colorsDark, spacing } from "@shared/themes";
 import { Text } from "@shared/ui";
 import { BlurView } from "expo-blur";
-import { Image, Pressable, StyleSheet, View } from "react-native";
+import { Image, Platform, Pressable, StyleSheet, View } from "react-native";
 import Animated from "react-native-reanimated";
 
 type MiniPlayerVideo = {
@@ -40,11 +40,13 @@ export function MiniPlayer({
           borderColor: colors.border,
         },
       ]}
+      {...(Platform.OS === "android" && { needsOffscreenAlphaCompositing: true })}
     >
       <BlurView
         intensity={65}
         tint={colors.background === colorsDark.background ? "dark" : "light"}
         style={styles.miniPlayerBlur}
+        {...(Platform.OS === "android" && { experimentalBlurMethod: "dimezisBlurView" })}
       >
         <Pressable
           onPress={onPress}
@@ -56,7 +58,7 @@ export function MiniPlayer({
           <Image
             source={{ uri: video.thumbnailURL }}
             style={styles.miniThumbnail}
-            resizeMode="stretch"
+            resizeMode="cover"
           />
 
           <View style={styles.miniInfo}>

@@ -55,6 +55,7 @@ export function BottomBar({ state, navigation }: BottomTabBarProps) {
             intensity={50}
             tint={colors.background === colorsDark.background ? "dark" : "light"}
             style={styles.barBlur}
+            {...(Platform.OS === "android" && { experimentalBlurMethod: "dimezisBlurView" })}
           >
             <View
               style={[

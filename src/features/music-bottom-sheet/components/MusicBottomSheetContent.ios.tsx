@@ -2,20 +2,8 @@ import BottomSheet, { BottomSheetView } from "@gorhom/bottom-sheet";
 import { spacing } from "@shared/themes";
 import { Playlists, Text } from "@shared/ui";
 import { VideoView } from "expo-video";
-import { ActivityIndicator, StyleSheet, View, ViewStyle } from "react-native";
-
-type MusicBottomSheetContentProps = {
-  bottomSheetRef: React.RefObject<BottomSheet>;
-  snapPoints: string[];
-  colors: any;
-  video: any;
-  nextVideos: any;
-  player: any;
-  fetchMusicById: (videoId: string) => void;
-  videoContainerStyle: ViewStyle;
-  animatedIndex: any;
-  onChange: (index: number) => void;
-};
+import { ActivityIndicator, StyleSheet, View } from "react-native";
+import type { MusicBottomSheetContentProps } from "./MusicBottomSheetContent.types";
 
 export function MusicBottomSheetContent({
   bottomSheetRef,
@@ -60,10 +48,8 @@ export function MusicBottomSheetContent({
           <Playlists
             data={nextVideos?.playlist || []}
             isLoading={false}
-            onPress={(video) => {
-              if (video.videoId) {
-                fetchMusicById(video.videoId);
-              }
+            onPress={(v) => {
+              if (v.videoId) fetchMusicById(v.videoId);
             }}
           />
         </View>

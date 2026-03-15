@@ -15,7 +15,7 @@ import {
 } from "react-native-reanimated";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { MiniPlayer } from "../components/MiniPlayer";
-import { MusicBottomSheetContent } from "../components/MusicBottomSheetContent";
+import { MusicBottomSheetContent } from "../components/MusicBottomSheetContent.ios";
 import { useMusicBottomSheet } from "../hooks/useMusicBottomSheet";
 
 interface Props {
@@ -42,8 +42,21 @@ export default function MusicBottomSheetScreen({ children }: Props) {
   const snapPoints = useMemo(() => ["98%"], []);
 
   const animatedIndex = useSharedValue(-1);
+  const sheetOpenForMini = useSharedValue(0);
 
   const [isPlaying, setIsPlaying] = useState(false);
+
+  useEffect(() => {
+    sheetOpenForMini.value = isShowBottomSheet ? 1 : 0;
+  }, [isShowBottomSheet]);
+
+  const videoSource = video && video.url ? createVideoSource(video) : undefined;
+  const player = useVideoPlayer(videoSource as any, (player) => {
+    player.loop = false;
+    player.staysActiveInBackground = true;
+    player.showNowPlayingNotification = true;
+    player.play();
+  });
 
   const handleSheetChanges = useCallback(
     (index: number) => {
@@ -51,7 +64,7 @@ export default function MusicBottomSheetScreen({ children }: Props) {
         onChangeShowBottomSheet(false);
       }
     },
-    [isShowBottomSheet]
+    [isShowBottomSheet, onChangeShowBottomSheet]
   );
 
   useEffect(() => {
@@ -63,33 +76,16 @@ export default function MusicBottomSheetScreen({ children }: Props) {
     } else {
       bottomSheetRef.current?.close();
     }
-  }, [isShowBottomSheet]);
-
-  const miniPlayerStyle = useAnimatedStyle(() => {
-    const opacity = interpolate(animatedIndex.value, [-1, -0.8, 0], [1, 0, 0], Extrapolation.CLAMP);
-    const translateY = interpolate(animatedIndex.value, [-1, 0], [0, 50], Extrapolation.CLAMP);
-
-    return {
-      opacity,
-      transform: [{ translateY }],
-      zIndex: animatedIndex.value <= -0.5 ? 99 : -1,
-    };
-  });
-
-  const videoSource = video && video.url ? createVideoSource(video) : undefined;
-  const player = useVideoPlayer(videoSource as any, (player) => {
-    player.loop = false;
-    player.staysActiveInBackground = true;
-    player.showNowPlayingNotification = true;
-    player.play();
-  });
+  }, [isShowBottomSheet, player]);
 
   useEventListener(player, "playingChange", (event) => {
     setIsPlaying(event.isPlaying);
   });
 
   useEventListener(player, "videoTrackChange", (event) => {
-    onChangeVideoSize(event.videoTrack.size);
+    if (event.videoTrack?.size) {
+      onChangeVideoSize(event.videoTrack.size);
+    }
   });
 
   useEventListener(player, "timeUpdate", (event) => {
@@ -113,6 +109,24 @@ export default function MusicBottomSheetScreen({ children }: Props) {
     } as ViewStyle;
   }, [videoSize]);
 
+  const miniPlayerStyle = useAnimatedStyle(() => {
+    const sheetOpen = sheetOpenForMini.value === 1;
+    const opacityByIndex = interpolate(
+      animatedIndex.value,
+      [-1, -0.8, 0],
+      [1, 0, 0],
+      Extrapolation.CLAMP
+    );
+    const opacity = sheetOpen ? 0 : opacityByIndex;
+    const translateY = interpolate(animatedIndex.value, [-1, 0], [0, 50], Extrapolation.CLAMP);
+
+    return {
+      opacity,
+      transform: [{ translateY }],
+      zIndex: 99,
+    };
+  });
+
   return (
     <>
       <GestureHandlerRootView style={styles.root}>
@@ -134,7 +148,7 @@ export default function MusicBottomSheetScreen({ children }: Props) {
           <MiniPlayer
             video={video}
             isPlaying={isPlaying}
-            bottomInset={bottom + 65}
+            bottomInset={bottom + 88}
             colors={colors}
             animatedStyle={miniPlayerStyle}
             onTogglePlayPause={togglePlayPause}
@@ -145,6 +159,7 @@ export default function MusicBottomSheetScreen({ children }: Props) {
     </>
   );
 }
+
 const styles = StyleSheet.create({
   root: {
     flex: 1,

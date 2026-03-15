@@ -12,11 +12,14 @@ type HeadingKey = `h${1 | 2 | 3 | 4 | 5}`;
 type RegularKey = `r${1 | 2 | 3 | 4 | 5}`;
 export type Typography = Record<HeadingKey | RegularKey, TextStyle>;
 
-export const createTypography = (colors: Colors): Typography => {
+/** Scale factor for typography (e.g. 0.9 on Android for smaller UI) */
+export const createTypography = (colors: Colors, scale = 1): Typography => {
+  const s = (n: number) => Math.round(n * scale);
+
   const base: TextStyle = {
     fontFamily: fonts.regular,
-    fontSize: 16,
-    lineHeight: 22,
+    fontSize: s(16),
+    lineHeight: s(22),
     color: colors.text,
   };
 
@@ -31,19 +34,21 @@ export const createTypography = (colors: Colors): Typography => {
   const typography: Partial<Typography> = {};
 
   for (let i = 1; i <= 5; i++) {
+    const { fontSize, lineHeight } = sizes[i as keyof typeof sizes];
     typography[`h${i}` as HeadingKey] = {
       ...base,
       fontFamily: fonts.bold,
-      fontSize: sizes[i as keyof typeof sizes].fontSize,
-      lineHeight: sizes[i as keyof typeof sizes].lineHeight,
+      fontSize: s(fontSize),
+      lineHeight: s(lineHeight),
     };
   }
 
   for (let i = 1; i <= 5; i++) {
+    const { fontSize, lineHeight } = sizes[i as keyof typeof sizes];
     typography[`r${i}` as RegularKey] = {
       ...base,
-      fontSize: sizes[i as keyof typeof sizes].fontSize,
-      lineHeight: sizes[i as keyof typeof sizes].lineHeight,
+      fontSize: s(fontSize),
+      lineHeight: s(lineHeight),
     };
   }
 

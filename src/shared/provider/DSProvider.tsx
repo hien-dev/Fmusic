@@ -1,5 +1,5 @@
 import { useTheme } from "@shared/hooks/useTheme";
-import { createTypography, sizes, spacing } from "@shared/themes";
+import { createTypography, getScale, sizes, spacing } from "@shared/themes";
 import { createContext, PropsWithChildren, useContext, useMemo } from "react";
 
 type DesignSystem = {
@@ -16,7 +16,7 @@ const DesignSystemContext = createContext<DesignSystem | null>(null);
 export function DesignSystemProvider({ children }: PropsWithChildren) {
   const { colors, isDark, mode } = useTheme();
 
-  const typography = useMemo(() => createTypography(colors), [colors]);
+  const typography = useMemo(() => createTypography(colors, getScale()), [colors]);
 
   const value = useMemo<DesignSystem>(
     () => ({

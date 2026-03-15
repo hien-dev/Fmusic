@@ -31,7 +31,7 @@ export function Playlists({
     <Button style={[styles.item, { borderColor: colors.border }]} onPress={() => onPress(item)}>
       <Image
         source={{ uri: item.thumbnailURL }}
-        resizeMode={isCircle ? "cover" : "center"}
+        resizeMode={"cover"}
         style={[
           styles.image,
           { width: isCircle ? 60 : 75,

@@ -1,6 +1,6 @@
 import API from "@shared/api";
-import { ContentTabs, baseWebBody, endpointPath } from "@shared/api/config";
-import { PlaylistDTO } from "@shared/model";
+import { BROWSER_PARAMS, ContentTabs, baseWebBody, endpointPath } from "@shared/api/config";
+import { ChannelDTO, PlaylistDTO } from "@shared/model";
 import { Log, suggestQueriesParse } from "@shared/utils/function";
 
 export const initFetch = async (query: string, tab?: ContentTabs) => {
@@ -21,6 +21,18 @@ export const continuationFetch = async (continuation: string) => {
     return PlaylistDTO.searchContinuations(response.data);
   } catch (error) {
     Log.error("Search->continuation\n", JSON.stringify(error));
+    throw error;
+  }
+};
+
+export const fetchArtists = async (browseId: string) => {
+  try {
+    const body = baseWebBody({ browseId, params: BROWSER_PARAMS });
+    const response = await API.post(endpointPath("browse"), body);
+    console.log("Search->fetchArtists\n", JSON.stringify(response.data));
+    return ChannelDTO.create(response.data);
+  } catch (error) {
+    Log.error("Search->fetchArtists\n", JSON.stringify(error));
     throw error;
   }
 };

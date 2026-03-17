@@ -9,7 +9,10 @@ export function getScale(): number {
 
 function scaleValues<T extends Record<string, number>>(obj: T, scale: number): T {
   return Object.fromEntries(
-    Object.entries(obj).map(([k, v]) => [k, k === "radiusFull" || k === "line" ? v : Math.round(v * scale)])
+    Object.entries(obj).map(([k, v]) => [
+      k,
+      k === "radiusFull" || k === "line" ? v : Math.round(v * scale),
+    ])
   ) as T;
 }
 

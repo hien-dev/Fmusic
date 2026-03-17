@@ -7,6 +7,7 @@ export const ANDROID_SDK_VERSION = "34";
 export const ANDROID_CLIENT_VERSION = "19.28.35";
 export const BROWSER_VERSION = "92.0.3404.129";
 export const VISITOR_DATA = "Cgs0VzczaDg0NERzNCj0wsDEBjIKCgJWThIEGgAgLw%3D%3D";
+export const BROWSER_PARAMS = "EgZ2aWRlb3PyBgQKAjoA";
 
 export enum Endpoint {
   requestHeader = "requestHeader",
@@ -37,7 +38,7 @@ export const endpointPath = (endpoint: keyof typeof Endpoint): string => {
     case Endpoint.next:
       return `${BASE_URL}youtubei/v1/next?prettyPrint=false&key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8`;
     case Endpoint.browse:
-      return `${BASE_URL}youtubei/v1/browse?prettyPrint=false&key=AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8`;
+      return `${BASE_URL}youtubei/v1/browse?prettyPrint=false`;
     case Endpoint.reel:
       return "https://youtubei.googleapis.com/youtubei/v1/reel/reel_item_watch?%24fields=playerResponse";
     case Endpoint.player:
@@ -52,11 +53,13 @@ export const baseWebBody = ({
   continuation,
   videoId,
   params,
+  browseId,
 }: {
   query?: string;
   continuation?: string;
   videoId?: string;
   params?: string;
+  browseId?: string;
 }) => {
   return {
     context: {
@@ -69,10 +72,22 @@ export const baseWebBody = ({
     ...(continuation ? { continuation } : {}),
     ...(videoId ? { videoId } : {}),
     ...(params ? { params } : {}),
+    ...(browseId ? { browseId } : {}),
     contentCheckOk: true,
     racyCheckOk: true,
   };
 };
+
+// {
+//   "browseId": "UCPg69a0lrR7AOi88X6CQGeA",
+//   "params": "EgZ2aWRlb3PyBgQKAjoA",
+//   "context": {
+//     "client": {
+//       "clientName": "WEB",
+//       "clientVersion": "2.20240224.11.00"
+//     }
+//   }
+// }
 
 export const baseAudioBody = (videoId: string) => {
   return {

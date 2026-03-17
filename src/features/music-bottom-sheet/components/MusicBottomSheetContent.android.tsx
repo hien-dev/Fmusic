@@ -1,6 +1,4 @@
-import BottomSheet, {
-  BottomSheetFlatList
-} from "@gorhom/bottom-sheet";
+import BottomSheet, { BottomSheetFlatList } from "@gorhom/bottom-sheet";
 import { VideoDTO } from "@shared/model";
 import { useDesignSystem } from "@shared/provider";
 import { spacing } from "@shared/themes";
@@ -43,11 +41,7 @@ export function MusicBottomSheetContent({
       }}
     >
       <View style={styles.itemContent}>
-        <Image
-          source={{ uri: item.thumbnailURL }}
-          resizeMode="center"
-          style={styles.image}
-        />
+        <Image source={{ uri: item.thumbnailURL }} resizeMode="center" style={styles.image} />
         <View style={styles.itemText}>
           <Text variant="h5" numberOfLines={2} align="left">
             {item.title}
@@ -95,11 +89,7 @@ export function MusicBottomSheetContent({
             <ActivityIndicator size="small" color={colors.icon} />
           </View>
           {player ? (
-            <VideoView
-              style={StyleSheet.absoluteFill}
-              player={player}
-              nativeControls={false}
-            />
+            <VideoView style={StyleSheet.absoluteFill} player={player} nativeControls={false} />
           ) : null}
         </View>
         <View style={styles.content}>

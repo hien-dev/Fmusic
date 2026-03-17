@@ -1,5 +1,7 @@
+import { useChannelDetail } from "@features/channel-detail";
 import { useMusicBottomSheet } from "@features/music-bottom-sheet";
 import { Header, Playlists, Screen } from "@shared/ui";
+import { router, type Href } from "expo-router";
 import { StyleSheet } from "react-native";
 import SearchBar from "../components/SearchBar";
 import { SearchTabs } from "../components/SearchTabs";
@@ -22,6 +24,7 @@ export default function SearchScreen() {
   } = useSearch();
 
   const { fetchMusicById, toggleBottomSheet } = useMusicBottomSheet();
+  const { load: loadChannel, clear: clearChannel } = useChannelDetail();
 
   return (
     <Screen style={styles.container}>
@@ -54,6 +57,11 @@ export default function SearchScreen() {
           onPress={(video) => {
             if (video.videoId) {
               fetchMusicById(video.videoId);
+            } else if (video.browseId) {
+              clearChannel();
+              loadChannel(video.browseId).finally(() => {
+                router.push("/channel-detail" as Href);
+              });
             }
           }}
         />

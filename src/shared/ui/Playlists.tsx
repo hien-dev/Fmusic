@@ -32,11 +32,7 @@ export function Playlists({
       <Image
         source={{ uri: item.thumbnailURL }}
         resizeMode={"cover"}
-        style={[
-          styles.image,
-          { width: isCircle ? 60 : 75,
-            borderRadius: isCircle ? 999 : 5 },
-        ]}
+        style={[styles.image, { width: isCircle ? 60 : 75, borderRadius: isCircle ? 999 : 5 }]}
       />
       <View style={styles.flex}>
         <Text variant="h5" numberOfLines={2} align="left">

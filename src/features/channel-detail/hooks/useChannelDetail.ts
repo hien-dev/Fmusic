@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
 import { fetchChannelDetail } from "../services/channel-detail.api";
 import { useChannelDetailState } from "../services/channel-detail.state";
+import { tr } from "@shared/locales/i18n";
 
 export function useChannelDetail() {
   const { channel, setChannel } = useChannelDetailState();
@@ -15,7 +16,7 @@ export function useChannelDetail() {
         const result = await fetchChannelDetail(browseId);
         setChannel(result);
       } catch (e) {
-        setError("Không thể tải thông tin kênh");
+        setError(tr("channelDetail.cannotLoad"));
       } finally {
         setIsLoading(false);
       }

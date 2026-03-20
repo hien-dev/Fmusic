@@ -28,5 +28,9 @@
   },
   "music": {
     "next": "Next:"
+  },
+  "channelDetail": {
+    "notFound": "Channel information not found",
+    "cannotLoad": "Unable to load channel information"
   }
 }

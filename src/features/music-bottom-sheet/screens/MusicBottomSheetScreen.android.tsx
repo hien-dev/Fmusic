@@ -3,6 +3,7 @@ import { createVideoSource } from "@shared/model";
 import { spacing } from "@shared/themes";
 import { windowSize } from "@shared/utils/constants";
 import { useEventListener } from "expo";
+import { usePathname } from "expo-router";
 import { useVideoPlayer } from "expo-video";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { StyleSheet, ViewStyle } from "react-native";
@@ -30,8 +31,14 @@ interface VideoSize {
 export default function MusicBottomSheetScreen({ children }: Props) {
   const { colors } = useTheme();
   const { bottom } = useSafeAreaInsets();
+  const pathname = usePathname();
   const { isShowBottomSheet, video, nextVideos, onChangeShowBottomSheet, fetchMusicById } =
     useMusicBottomSheet();
+
+  const isInTabs =
+    pathname?.startsWith("/search") ||
+    pathname?.startsWith("/favorite") ||
+    pathname?.startsWith("/settings");
 
   const [videoSize, onChangeVideoSize] = useState<VideoSize>({
     width: windowSize.width,
@@ -153,7 +160,7 @@ export default function MusicBottomSheetScreen({ children }: Props) {
           <MiniPlayer
             video={video}
             isPlaying={isPlaying}
-            bottomInset={bottom + 75}
+            bottomInset={bottom + (isInTabs ? 75 : 0)}
             colors={colors}
             animatedStyle={miniPlayerStyle}
             onTogglePlayPause={togglePlayPause}

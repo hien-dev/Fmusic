@@ -28,5 +28,9 @@
   },
   "music": {
     "next": "Tiếp theo:"
+  },
+  "channelDetail": {
+    "notFound": "Không tìm thấy thông tin kênh",
+    "cannotLoad": "Không thể tải thông tin kênh"
   }
 }

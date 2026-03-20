@@ -39,7 +39,7 @@ export class ChannelDTO {
   /**
    * Tạo đầy đủ ChannelDTO từ response browse channel:
    * - Lấy metadata từ metadata.channelMetadataRenderer
-   * - Lấy list video + continuation từ playlistVideoListRenderer
+   * - Lấy list video từ richGridRenderer (tab "Videos" đang selected)
    */
   static create(json: any): ChannelDTO | null {
     const metadataRenderer =
@@ -49,18 +49,53 @@ export class ChannelDTO {
       json?.contents?.twoColumnBrowseResultsRenderer ??
       json?.contents?.singleColumnBrowseResultsRenderer;
 
-    const playlistData =
-      browseRenderer?.tabs?.[0]?.tabRenderer?.content?.sectionListRenderer?.contents?.[0]
-        ?.itemSectionRenderer?.contents?.[0]?.playlistVideoListRenderer;
+    const tabs = browseRenderer?.tabs ?? [];
+    const selectedTab =
+      tabs.find((t: any) => t?.tabRenderer?.selected) ??
+      // fallback: tab videos thường nằm sau tab "Home"
+      tabs?.[1] ??
+      tabs?.[0];
 
-    const contents = playlistData?.contents ?? [];
-    const continuation =
-      playlistData?.continuations?.[0]?.nextContinuationData?.continuation ?? undefined;
+    const richGridRenderer =
+      selectedTab?.tabRenderer?.content?.richGridRenderer ??
+      selectedTab?.tabRenderer?.content?.sectionListRenderer?.contents?.[0]
+        ?.itemSectionRenderer?.contents?.[0]?.richGridRenderer;
 
-    const videos: VideoDTO[] = contents
-      .map((c: any) => (c?.playlistVideoRenderer ? c.playlistVideoRenderer : null))
+    const gridContents = richGridRenderer?.contents ?? [];
+
+    const videos: VideoDTO[] = gridContents
+      .map((c: any) => c?.richItemRenderer?.content?.videoRenderer ?? null)
       .filter(Boolean)
-      .map((node: any) => VideoDTO.browse(node))
+      .map((videoRenderer: any) => {
+        // Ưu tiên dùng helper sẵn có của VideoDTO để map author/title/thumbnail
+        const v = VideoDTO.search({ videoRenderer });
+        if (v) return v;
+
+        // fallback nếu thiếu some fields mà VideoDTO.search trả về null
+        const videoId = videoRenderer?.videoId;
+        const title =
+          videoRenderer?.title?.runs?.[0]?.text ??
+          videoRenderer?.title?.simpleText ??
+          "";
+        const author =
+          videoRenderer?.shortBylineText?.runs?.[0]?.text ??
+          videoRenderer?.longBylineText?.runs?.[0]?.text ??
+          videoRenderer?.ownerText?.runs?.[0]?.text ??
+          "";
+        const thumbnailURL =
+          videoRenderer?.thumbnail?.thumbnails?.[0]?.url ??
+          videoRenderer?.thumbnail?.thumbnails?.slice(-1)?.[0]?.url ??
+          "";
+
+        if (!videoId && !title && !thumbnailURL) return null;
+
+        return new VideoDTO({
+          title,
+          thumbnailURL,
+          author,
+          videoId,
+        });
+      })
       .filter((v: VideoDTO | null): v is VideoDTO => !!v);
 
     if (!metadataRenderer && videos.length === 0) return null;

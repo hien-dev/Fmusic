@@ -1,7 +1,7 @@
 import { ChannelDTO } from "@shared/model";
 import { useDesignSystem } from "@shared/provider";
-import { Text } from "@shared/ui";
 import { spacing } from "@shared/themes";
+import { Text } from "@shared/ui";
 import { Image, StyleSheet, View } from "react-native";
 
 interface Props {
@@ -29,9 +29,6 @@ export default function ChannelHeader({ channel }: Props) {
       )}
 
       <View style={styles.info}>
-        <Text variant="h3" align="left" numberOfLines={2}>
-          {title}
-        </Text>
         {subscriberText ? (
           <Text variant="r5" align="left" numberOfLines={1}>
             {subscriberText}
@@ -59,6 +56,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     paddingHorizontal: spacing.md,
     paddingVertical: spacing.md,
+    marginBottom: spacing.md,
     gap: spacing.md,
     borderBottomWidth: 1,
   },
